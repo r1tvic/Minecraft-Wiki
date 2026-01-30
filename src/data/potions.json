@@ -1,0 +1,316 @@
+{
+    "potions": [
+        {
+            "id": "healing",
+            "name": "Potion of Healing",
+            "emoji": "❤️",
+            "description": "Instantly restores health. Potion of Healing restores 4 hearts (Instant Health I) or 8 hearts (Instant Health II).",
+            "category": "Positive",
+            "effect": "Instant Health",
+            "duration": "Instant",
+            "baseDuration": null,
+            "extendedDuration": null,
+            "brewing": {
+                "base": "Awkward Potion",
+                "ingredient": "Glistering Melon Slice",
+                "upgrade": "Glowstone Dust (for level II)"
+            },
+            "tips": [
+                "Damages undead mobs",
+                "Cannot be extended with redstone",
+                "Splash version great for combat healing"
+            ]
+        },
+        {
+            "id": "regeneration",
+            "name": "Potion of Regeneration",
+            "emoji": "💗",
+            "description": "Restores health over time. Essential for boss fights and dangerous situations.",
+            "category": "Positive",
+            "effect": "Regeneration",
+            "duration": "0:45",
+            "baseDuration": "0:45",
+            "extendedDuration": "2:00",
+            "brewing": {
+                "base": "Awkward Potion",
+                "ingredient": "Ghast Tear",
+                "upgrade": "Glowstone (strength) or Redstone (duration)"
+            },
+            "tips": [
+                "Combine with golden apples for maximum healing",
+                "Level II heals faster but for shorter time"
+            ]
+        },
+        {
+            "id": "strength",
+            "name": "Potion of Strength",
+            "emoji": "💪",
+            "description": "Increases melee damage by 3 hearts (+130%). Essential for melee combat and boss fights.",
+            "category": "Positive",
+            "effect": "Strength",
+            "duration": "3:00",
+            "baseDuration": "3:00",
+            "extendedDuration": "8:00",
+            "brewing": {
+                "base": "Awkward Potion",
+                "ingredient": "Blaze Powder",
+                "upgrade": "Glowstone (damage) or Redstone (duration)"
+            },
+            "tips": [
+                "Stacks with weapon enchantments",
+                "Great for Wither and dragon fights"
+            ]
+        },
+        {
+            "id": "swiftness",
+            "name": "Potion of Swiftness",
+            "emoji": "⚡",
+            "description": "Increases movement speed by 20% (level I) or 40% (level II). Also increases jump distance.",
+            "category": "Positive",
+            "effect": "Speed",
+            "duration": "3:00",
+            "baseDuration": "3:00",
+            "extendedDuration": "8:00",
+            "brewing": {
+                "base": "Awkward Potion",
+                "ingredient": "Sugar",
+                "upgrade": "Glowstone (speed) or Redstone (duration)"
+            },
+            "tips": [
+                "Great for exploring and traveling",
+                "Combines well with sprinting and jumping"
+            ]
+        },
+        {
+            "id": "fire_resistance",
+            "name": "Potion of Fire Resistance",
+            "emoji": "🔥",
+            "description": "Grants complete immunity to fire and lava damage. Essential for Nether exploration.",
+            "category": "Positive",
+            "effect": "Fire Resistance",
+            "duration": "3:00",
+            "baseDuration": "3:00",
+            "extendedDuration": "8:00",
+            "brewing": {
+                "base": "Awkward Potion",
+                "ingredient": "Magma Cream",
+                "upgrade": "Redstone (duration only)"
+            },
+            "tips": [
+                "Must-have for Nether exploration",
+                "Cannot be upgraded with glowstone",
+                "Swim in lava safely with this"
+            ]
+        },
+        {
+            "id": "invisibility",
+            "name": "Potion of Invisibility",
+            "emoji": "👻",
+            "description": "Makes the player invisible. Mobs cannot see you unless you wear armor or get very close.",
+            "category": "Positive",
+            "effect": "Invisibility",
+            "duration": "3:00",
+            "baseDuration": "3:00",
+            "extendedDuration": "8:00",
+            "brewing": {
+                "base": "Potion of Night Vision",
+                "ingredient": "Fermented Spider Eye",
+                "upgrade": "Redstone (duration only)"
+            },
+            "tips": [
+                "Remove armor for full effect",
+                "Particles still visible",
+                "Spiders can still detect you if close"
+            ]
+        },
+        {
+            "id": "night_vision",
+            "name": "Potion of Night Vision",
+            "emoji": "👁️",
+            "description": "Allows you to see clearly in darkness and underwater. Everything appears at maximum brightness.",
+            "category": "Positive",
+            "effect": "Night Vision",
+            "duration": "3:00",
+            "baseDuration": "3:00",
+            "extendedDuration": "8:00",
+            "brewing": {
+                "base": "Awkward Potion",
+                "ingredient": "Golden Carrot",
+                "upgrade": "Redstone (duration only)"
+            },
+            "tips": [
+                "Essential for cave exploration",
+                "Helps with underwater exploration",
+                "Base for Invisibility potion"
+            ]
+        },
+        {
+            "id": "water_breathing",
+            "name": "Potion of Water Breathing",
+            "emoji": "🫧",
+            "description": "Allows unlimited breathing underwater. Essential for ocean monuments and underwater exploration.",
+            "category": "Positive",
+            "effect": "Water Breathing",
+            "duration": "3:00",
+            "baseDuration": "3:00",
+            "extendedDuration": "8:00",
+            "brewing": {
+                "base": "Awkward Potion",
+                "ingredient": "Pufferfish",
+                "upgrade": "Redstone (duration only)"
+            },
+            "tips": [
+                "Essential for Ocean Monument raids",
+                "Combine with Night Vision for best results",
+                "Respiration enchantment is an alternative"
+            ]
+        },
+        {
+            "id": "slow_falling",
+            "name": "Potion of Slow Falling",
+            "emoji": "🪶",
+            "description": "Reduces falling speed and negates all fall damage. Great for End exploration.",
+            "category": "Positive",
+            "effect": "Slow Falling",
+            "duration": "1:30",
+            "baseDuration": "1:30",
+            "extendedDuration": "4:00",
+            "brewing": {
+                "base": "Awkward Potion",
+                "ingredient": "Phantom Membrane",
+                "upgrade": "Redstone (duration only)"
+            },
+            "tips": [
+                "Essential for End island hopping",
+                "Useful for building at heights",
+                "Great for Elytra beginners"
+            ]
+        },
+        {
+            "id": "leaping",
+            "name": "Potion of Leaping",
+            "emoji": "🦘",
+            "description": "Increases jump height by 0.5 blocks (level I) or 1.25 blocks (level II). Also reduces fall damage.",
+            "category": "Positive",
+            "effect": "Jump Boost",
+            "duration": "3:00",
+            "baseDuration": "3:00",
+            "extendedDuration": "8:00",
+            "brewing": {
+                "base": "Awkward Potion",
+                "ingredient": "Rabbit's Foot",
+                "upgrade": "Glowstone (height) or Redstone (duration)"
+            },
+            "tips": [
+                "Great for parkour and exploration",
+                "Reduces fall damage taken",
+                "Level II lets you jump 2.5 blocks high"
+            ]
+        },
+        {
+            "id": "poison",
+            "name": "Potion of Poison",
+            "emoji": "☠️",
+            "description": "Deals damage over time but cannot kill (leaves at half heart). Useful as splash potion for combat.",
+            "category": "Negative",
+            "effect": "Poison",
+            "duration": "0:45",
+            "baseDuration": "0:45",
+            "extendedDuration": "2:00",
+            "brewing": {
+                "base": "Awkward Potion",
+                "ingredient": "Spider Eye",
+                "upgrade": "Glowstone (damage) or Redstone (duration)"
+            },
+            "tips": [
+                "Cannot kill targets",
+                "Undead are immune",
+                "Great as splash potion against enemies"
+            ]
+        },
+        {
+            "id": "weakness",
+            "name": "Potion of Weakness",
+            "emoji": "😷",
+            "description": "Reduces melee attack damage. Required for curing zombie villagers.",
+            "category": "Negative",
+            "effect": "Weakness",
+            "duration": "1:30",
+            "baseDuration": "1:30",
+            "extendedDuration": "4:00",
+            "brewing": {
+                "base": "Water Bottle",
+                "ingredient": "Fermented Spider Eye",
+                "upgrade": "Redstone (duration only)"
+            },
+            "tips": [
+                "Essential for curing zombie villagers",
+                "Can be brewed directly from water",
+                "Splash on zombie villager then feed golden apple"
+            ]
+        },
+        {
+            "id": "harming",
+            "name": "Potion of Harming",
+            "emoji": "💔",
+            "description": "Instantly deals 6 damage (level I) or 12 damage (level II). Heals undead mobs.",
+            "category": "Negative",
+            "effect": "Instant Damage",
+            "duration": "Instant",
+            "baseDuration": null,
+            "extendedDuration": null,
+            "brewing": {
+                "base": "Potion of Poison or Healing",
+                "ingredient": "Fermented Spider Eye",
+                "upgrade": "Glowstone Dust (for level II)"
+            },
+            "tips": [
+                "Heals zombies and skeletons",
+                "Great as splash/lingering for combat",
+                "One of the most damaging potions"
+            ]
+        },
+        {
+            "id": "slowness",
+            "name": "Potion of Slowness",
+            "emoji": "🐢",
+            "description": "Reduces movement speed by 15% per level. Useful for slowing enemies in combat.",
+            "category": "Negative",
+            "effect": "Slowness",
+            "duration": "1:30",
+            "baseDuration": "1:30",
+            "extendedDuration": "4:00",
+            "brewing": {
+                "base": "Potion of Swiftness or Leaping",
+                "ingredient": "Fermented Spider Eye",
+                "upgrade": "Glowstone (level) or Redstone (duration)"
+            },
+            "tips": [
+                "Splash version useful for escaping enemies",
+                "Strays inflict slowness with arrows",
+                "Level IV exists only through commands"
+            ]
+        },
+        {
+            "id": "turtle_master",
+            "name": "Potion of the Turtle Master",
+            "emoji": "🐢",
+            "description": "Grants Resistance IV and Slowness IV. Massive damage reduction but very slow movement.",
+            "category": "Mixed",
+            "effect": "Resistance IV + Slowness IV",
+            "duration": "0:20",
+            "baseDuration": "0:20",
+            "extendedDuration": "0:40",
+            "brewing": {
+                "base": "Awkward Potion",
+                "ingredient": "Turtle Shell",
+                "upgrade": "Glowstone (level) or Redstone (duration)"
+            },
+            "tips": [
+                "80% damage resistance at level II",
+                "Great for tanking heavy hits",
+                "Movement almost stops at level II"
+            ]
+        }
+    ]
+}

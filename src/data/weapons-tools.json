@@ -1,0 +1,497 @@
+{
+    "weapons_and_tools": [
+        {
+            "id": "diamond_sword",
+            "name": "Diamond Sword",
+            "emoji": "⚔️",
+            "description": "A diamond sword is one of the strongest melee weapons. It deals 7 points of damage and has 1561 durability.",
+            "category": "Weapons",
+            "type": "Sword",
+            "material": "Diamond",
+            "damage": 7,
+            "attackSpeed": 1.6,
+            "durability": 1561,
+            "enchantable": true,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        null,
+                        "diamond",
+                        null
+                    ],
+                    [
+                        null,
+                        "diamond",
+                        null
+                    ],
+                    [
+                        null,
+                        "stick",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "diamond_sword",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "netherite_sword",
+            "name": "Netherite Sword",
+            "emoji": "⚔️",
+            "description": "The most powerful sword in the game. Deals 8 damage and has 2031 durability. Fire-resistant and floats in lava.",
+            "category": "Weapons",
+            "type": "Sword",
+            "material": "Netherite",
+            "damage": 8,
+            "attackSpeed": 1.6,
+            "durability": 2031,
+            "enchantable": true,
+            "upgradeFrom": "diamond_sword"
+        },
+        {
+            "id": "iron_sword",
+            "name": "Iron Sword",
+            "emoji": "⚔️",
+            "description": "A reliable mid-game sword. Deals 6 damage and has 250 durability. A good balance of availability and power.",
+            "category": "Weapons",
+            "type": "Sword",
+            "material": "Iron",
+            "damage": 6,
+            "attackSpeed": 1.6,
+            "durability": 250,
+            "enchantable": true,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        null,
+                        "iron_ingot",
+                        null
+                    ],
+                    [
+                        null,
+                        "iron_ingot",
+                        null
+                    ],
+                    [
+                        null,
+                        "stick",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "iron_sword",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "bow",
+            "name": "Bow",
+            "emoji": "🏹",
+            "description": "A ranged weapon that shoots arrows. Can be enchanted with Power, Flame, Infinity, and more for enhanced damage.",
+            "category": "Weapons",
+            "type": "Ranged",
+            "material": "Wood",
+            "damage": "1-10 (varies with charge)",
+            "durability": 384,
+            "enchantable": true,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        null,
+                        "stick",
+                        "string"
+                    ],
+                    [
+                        "stick",
+                        null,
+                        "string"
+                    ],
+                    [
+                        null,
+                        "stick",
+                        "string"
+                    ]
+                ],
+                "result": {
+                    "item": "bow",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "crossbow",
+            "name": "Crossbow",
+            "emoji": "🏹",
+            "description": "A powerful ranged weapon that can fire arrows and fireworks. Higher damage than bow but slower to reload.",
+            "category": "Weapons",
+            "type": "Ranged",
+            "material": "Mixed",
+            "damage": "6-11",
+            "durability": 465,
+            "enchantable": true,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "stick",
+                        "iron_ingot",
+                        "stick"
+                    ],
+                    [
+                        "string",
+                        "tripwire_hook",
+                        "string"
+                    ],
+                    [
+                        null,
+                        "stick",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "crossbow",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "trident",
+            "name": "Trident",
+            "emoji": "🔱",
+            "description": "A unique weapon that can be thrown or used in melee. Special enchantments include Riptide, Loyalty, and Channeling.",
+            "category": "Weapons",
+            "type": "Both",
+            "material": "Prismarine",
+            "damage": 9,
+            "durability": 250,
+            "enchantable": true,
+            "obtainedFrom": "Drowned drops (8.5% chance)"
+        },
+        {
+            "id": "diamond_pickaxe",
+            "name": "Diamond Pickaxe",
+            "emoji": "⛏️",
+            "description": "Essential for mining obsidian and the fastest pickaxe before netherite. Has 1561 durability.",
+            "category": "Tools",
+            "type": "Pickaxe",
+            "material": "Diamond",
+            "miningSpeed": 8,
+            "durability": 1561,
+            "enchantable": true,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "diamond",
+                        "diamond",
+                        "diamond"
+                    ],
+                    [
+                        null,
+                        "stick",
+                        null
+                    ],
+                    [
+                        null,
+                        "stick",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "diamond_pickaxe",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "netherite_pickaxe",
+            "name": "Netherite Pickaxe",
+            "emoji": "⛏️",
+            "description": "The ultimate mining tool. Faster than diamond with 2031 durability. Fire-resistant and floats in lava.",
+            "category": "Tools",
+            "type": "Pickaxe",
+            "material": "Netherite",
+            "miningSpeed": 9,
+            "durability": 2031,
+            "enchantable": true,
+            "upgradeFrom": "diamond_pickaxe"
+        },
+        {
+            "id": "iron_pickaxe",
+            "name": "Iron Pickaxe",
+            "emoji": "⛏️",
+            "description": "Required to mine gold, redstone, and diamond ores. A reliable mid-game mining tool with 250 durability.",
+            "category": "Tools",
+            "type": "Pickaxe",
+            "material": "Iron",
+            "miningSpeed": 6,
+            "durability": 250,
+            "enchantable": true,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "iron_ingot",
+                        "iron_ingot",
+                        "iron_ingot"
+                    ],
+                    [
+                        null,
+                        "stick",
+                        null
+                    ],
+                    [
+                        null,
+                        "stick",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "iron_pickaxe",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "diamond_axe",
+            "name": "Diamond Axe",
+            "emoji": "🪓",
+            "description": "A powerful tool for chopping wood and a deadly weapon. Deals 9 damage but has slow attack speed.",
+            "category": "Tools",
+            "type": "Axe",
+            "material": "Diamond",
+            "damage": 9,
+            "attackSpeed": 1.0,
+            "durability": 1561,
+            "enchantable": true,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "diamond",
+                        "diamond",
+                        null
+                    ],
+                    [
+                        "diamond",
+                        "stick",
+                        null
+                    ],
+                    [
+                        null,
+                        "stick",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "diamond_axe",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "diamond_shovel",
+            "name": "Diamond Shovel",
+            "emoji": "🥄",
+            "description": "The fastest shovel for digging dirt, sand, gravel, and snow. Can create paths on grass blocks.",
+            "category": "Tools",
+            "type": "Shovel",
+            "material": "Diamond",
+            "miningSpeed": 8,
+            "durability": 1561,
+            "enchantable": true,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        null,
+                        "diamond",
+                        null
+                    ],
+                    [
+                        null,
+                        "stick",
+                        null
+                    ],
+                    [
+                        null,
+                        "stick",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "diamond_shovel",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "diamond_hoe",
+            "name": "Diamond Hoe",
+            "emoji": "🌾",
+            "description": "Used for tilling dirt into farmland and harvesting certain crops faster. Once considered wasteful, now useful with durability.",
+            "category": "Tools",
+            "type": "Hoe",
+            "material": "Diamond",
+            "durability": 1561,
+            "enchantable": true,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "diamond",
+                        "diamond",
+                        null
+                    ],
+                    [
+                        null,
+                        "stick",
+                        null
+                    ],
+                    [
+                        null,
+                        "stick",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "diamond_hoe",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "fishing_rod",
+            "name": "Fishing Rod",
+            "emoji": "🎣",
+            "description": "Used for fishing to obtain fish, treasure, and junk items. Can also hook and pull entities.",
+            "category": "Tools",
+            "type": "Fishing",
+            "material": "Wood",
+            "durability": 64,
+            "enchantable": true,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        null,
+                        null,
+                        "stick"
+                    ],
+                    [
+                        null,
+                        "stick",
+                        "string"
+                    ],
+                    [
+                        "stick",
+                        null,
+                        "string"
+                    ]
+                ],
+                "result": {
+                    "item": "fishing_rod",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "shears",
+            "name": "Shears",
+            "emoji": "✂️",
+            "description": "Used for harvesting wool from sheep, collecting leaves, vines, and cobwebs without destroying them.",
+            "category": "Tools",
+            "type": "Shears",
+            "material": "Iron",
+            "durability": 238,
+            "enchantable": true,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        null,
+                        "iron_ingot",
+                        null
+                    ],
+                    [
+                        "iron_ingot",
+                        null,
+                        null
+                    ],
+                    [
+                        null,
+                        null,
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "shears",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "flint_and_steel",
+            "name": "Flint and Steel",
+            "emoji": "🔥",
+            "description": "Creates fire when used. Essential for lighting Nether Portals and igniting TNT.",
+            "category": "Tools",
+            "type": "Fire Starter",
+            "material": "Iron/Flint",
+            "durability": 64,
+            "enchantable": false,
+            "recipe": {
+                "type": "shapeless",
+                "ingredients": [
+                    "iron_ingot",
+                    "flint"
+                ],
+                "result": {
+                    "item": "flint_and_steel",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "shield",
+            "name": "Shield",
+            "emoji": "🛡️",
+            "description": "Blocks incoming attacks when held in the offhand. Can be decorated with banners.",
+            "category": "Armor",
+            "type": "Shield",
+            "material": "Wood/Iron",
+            "durability": 336,
+            "enchantable": true,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "oak_planks",
+                        "iron_ingot",
+                        "oak_planks"
+                    ],
+                    [
+                        "oak_planks",
+                        "oak_planks",
+                        "oak_planks"
+                    ],
+                    [
+                        null,
+                        "oak_planks",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "shield",
+                    "count": 1
+                }
+            }
+        }
+    ]
+}

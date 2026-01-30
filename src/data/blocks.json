@@ -1,0 +1,796 @@
+{
+    "blocks": [
+        {
+            "id": "crafting_table",
+            "name": "Crafting Table",
+            "emoji": "🪵",
+            "description": "A crafting table is a utility block that allows the player to craft a wide variety of blocks and items using a 3×3 crafting grid.",
+            "category": "Utility",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Axe",
+            "hardness": 2.5,
+            "blastResistance": 2.5,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "oak_planks",
+                        "oak_planks",
+                        null
+                    ],
+                    [
+                        "oak_planks",
+                        "oak_planks",
+                        null
+                    ],
+                    [
+                        null,
+                        null,
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "crafting_table",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "furnace",
+            "name": "Furnace",
+            "emoji": "🔥",
+            "description": "A furnace is a utility block used for smelting ores, cooking food, and creating other materials. It requires fuel to operate.",
+            "category": "Utility",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Pickaxe",
+            "hardness": 3.5,
+            "blastResistance": 3.5,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "cobblestone",
+                        "cobblestone",
+                        "cobblestone"
+                    ],
+                    [
+                        "cobblestone",
+                        null,
+                        "cobblestone"
+                    ],
+                    [
+                        "cobblestone",
+                        "cobblestone",
+                        "cobblestone"
+                    ]
+                ],
+                "result": {
+                    "item": "furnace",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "chest",
+            "name": "Chest",
+            "emoji": "📦",
+            "description": "A chest is a block that stores items. Two chests placed side by side combine to form a large chest with double storage capacity.",
+            "category": "Storage",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Axe",
+            "hardness": 2.5,
+            "blastResistance": 2.5,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "oak_planks",
+                        "oak_planks",
+                        "oak_planks"
+                    ],
+                    [
+                        "oak_planks",
+                        null,
+                        "oak_planks"
+                    ],
+                    [
+                        "oak_planks",
+                        "oak_planks",
+                        "oak_planks"
+                    ]
+                ],
+                "result": {
+                    "item": "chest",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "enchanting_table",
+            "name": "Enchanting Table",
+            "emoji": "📖",
+            "description": "An enchanting table is a block that allows players to spend their experience points to enchant tools, weapons, armor, and books.",
+            "category": "Utility",
+            "stackSize": 64,
+            "renewable": false,
+            "tool": "Pickaxe",
+            "hardness": 5,
+            "blastResistance": 1200,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        null,
+                        "book",
+                        null
+                    ],
+                    [
+                        "diamond",
+                        "obsidian",
+                        "diamond"
+                    ],
+                    [
+                        "obsidian",
+                        "obsidian",
+                        "obsidian"
+                    ]
+                ],
+                "result": {
+                    "item": "enchanting_table",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "anvil",
+            "name": "Anvil",
+            "emoji": "⚒️",
+            "description": "An anvil is a block that allows players to repair items, rename items, and combine enchantments. It can also be damaged by use.",
+            "category": "Utility",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Pickaxe",
+            "hardness": 5,
+            "blastResistance": 1200,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "iron_block",
+                        "iron_block",
+                        "iron_block"
+                    ],
+                    [
+                        null,
+                        "iron_ingot",
+                        null
+                    ],
+                    [
+                        "iron_ingot",
+                        "iron_ingot",
+                        "iron_ingot"
+                    ]
+                ],
+                "result": {
+                    "item": "anvil",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "beacon",
+            "name": "Beacon",
+            "emoji": "🔦",
+            "description": "A beacon is a block that projects a light beam skyward and can provide status effects to nearby players when placed on a pyramid of iron, gold, diamond, emerald, or netherite blocks.",
+            "category": "Utility",
+            "stackSize": 64,
+            "renewable": false,
+            "tool": "Pickaxe",
+            "hardness": 3,
+            "blastResistance": 3,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "glass",
+                        "glass",
+                        "glass"
+                    ],
+                    [
+                        "glass",
+                        "nether_star",
+                        "glass"
+                    ],
+                    [
+                        "obsidian",
+                        "obsidian",
+                        "obsidian"
+                    ]
+                ],
+                "result": {
+                    "item": "beacon",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "brewing_stand",
+            "name": "Brewing Stand",
+            "emoji": "⚗️",
+            "description": "A brewing stand is a utility block used to brew potions. It requires blaze powder as fuel and uses water bottles as a base.",
+            "category": "Utility",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Pickaxe",
+            "hardness": 0.5,
+            "blastResistance": 0.5,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        null,
+                        "blaze_rod",
+                        null
+                    ],
+                    [
+                        "cobblestone",
+                        "cobblestone",
+                        "cobblestone"
+                    ],
+                    [
+                        null,
+                        null,
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "brewing_stand",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "bed",
+            "name": "Bed",
+            "emoji": "🛏️",
+            "description": "A bed is a block that allows the player to sleep through the night and set their spawn point. Beds explode in the Nether and End.",
+            "category": "Utility",
+            "stackSize": 1,
+            "renewable": true,
+            "tool": "Any",
+            "hardness": 0.2,
+            "blastResistance": 0.2,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "wool",
+                        "wool",
+                        "wool"
+                    ],
+                    [
+                        "oak_planks",
+                        "oak_planks",
+                        "oak_planks"
+                    ],
+                    [
+                        null,
+                        null,
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "bed",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "bookshelf",
+            "name": "Bookshelf",
+            "emoji": "📚",
+            "description": "A bookshelf is a decorative block that enhances enchanting tables when placed nearby. It increases the maximum enchantment level available.",
+            "category": "Decoration",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Axe",
+            "hardness": 1.5,
+            "blastResistance": 1.5,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "oak_planks",
+                        "oak_planks",
+                        "oak_planks"
+                    ],
+                    [
+                        "book",
+                        "book",
+                        "book"
+                    ],
+                    [
+                        "oak_planks",
+                        "oak_planks",
+                        "oak_planks"
+                    ]
+                ],
+                "result": {
+                    "item": "bookshelf",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "tnt",
+            "name": "TNT",
+            "emoji": "💥",
+            "description": "TNT is an explosive block that can be ignited by fire, redstone, or projectiles. When detonated, it destroys nearby blocks and damages entities.",
+            "category": "Redstone",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Any",
+            "hardness": 0,
+            "blastResistance": 0,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "gunpowder",
+                        "sand",
+                        "gunpowder"
+                    ],
+                    [
+                        "sand",
+                        "gunpowder",
+                        "sand"
+                    ],
+                    [
+                        "gunpowder",
+                        "sand",
+                        "gunpowder"
+                    ]
+                ],
+                "result": {
+                    "item": "tnt",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "ladder",
+            "name": "Ladder",
+            "emoji": "🪜",
+            "description": "A ladder is a wooden block used for climbing. Players can ascend or descend ladders by pressing the movement keys.",
+            "category": "Utility",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Axe",
+            "hardness": 0.4,
+            "blastResistance": 0.4,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "stick",
+                        null,
+                        "stick"
+                    ],
+                    [
+                        "stick",
+                        "stick",
+                        "stick"
+                    ],
+                    [
+                        "stick",
+                        null,
+                        "stick"
+                    ]
+                ],
+                "result": {
+                    "item": "ladder",
+                    "count": 3
+                }
+            }
+        },
+        {
+            "id": "torch",
+            "name": "Torch",
+            "emoji": "🔦",
+            "description": "A torch is a non-solid block that emits light. Torches can be placed on walls or floors and prevent hostile mob spawning.",
+            "category": "Decoration",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Any",
+            "hardness": 0,
+            "blastResistance": 0,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        null,
+                        "coal",
+                        null
+                    ],
+                    [
+                        null,
+                        "stick",
+                        null
+                    ],
+                    [
+                        null,
+                        null,
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "torch",
+                    "count": 4
+                }
+            }
+        },
+        {
+            "id": "piston",
+            "name": "Piston",
+            "emoji": "⬆️",
+            "description": "A piston is a block capable of pushing other blocks when activated by redstone. It can push up to 12 blocks in a row.",
+            "category": "Redstone",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Pickaxe",
+            "hardness": 1.5,
+            "blastResistance": 0.5,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "oak_planks",
+                        "oak_planks",
+                        "oak_planks"
+                    ],
+                    [
+                        "cobblestone",
+                        "iron_ingot",
+                        "cobblestone"
+                    ],
+                    [
+                        "cobblestone",
+                        "redstone",
+                        "cobblestone"
+                    ]
+                ],
+                "result": {
+                    "item": "piston",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "hopper",
+            "name": "Hopper",
+            "emoji": "🔽",
+            "description": "A hopper is a block that can transfer items between containers automatically. It collects items from above and pushes them to containers below or beside it.",
+            "category": "Redstone",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Pickaxe",
+            "hardness": 3,
+            "blastResistance": 4.8,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "iron_ingot",
+                        null,
+                        "iron_ingot"
+                    ],
+                    [
+                        "iron_ingot",
+                        "chest",
+                        "iron_ingot"
+                    ],
+                    [
+                        null,
+                        "iron_ingot",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "hopper",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "dispenser",
+            "name": "Dispenser",
+            "emoji": "📤",
+            "description": "A dispenser is a solid block used as a redstone component to dispense items. It can shoot projectiles, place blocks, and more.",
+            "category": "Redstone",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Pickaxe",
+            "hardness": 3.5,
+            "blastResistance": 3.5,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "cobblestone",
+                        "cobblestone",
+                        "cobblestone"
+                    ],
+                    [
+                        "cobblestone",
+                        "bow",
+                        "cobblestone"
+                    ],
+                    [
+                        "cobblestone",
+                        "redstone",
+                        "cobblestone"
+                    ]
+                ],
+                "result": {
+                    "item": "dispenser",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "observer",
+            "name": "Observer",
+            "emoji": "👁️",
+            "description": "An observer is a block that emits a redstone signal when the block it faces is updated. Great for detecting changes in the world.",
+            "category": "Redstone",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Pickaxe",
+            "hardness": 3,
+            "blastResistance": 3,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "cobblestone",
+                        "cobblestone",
+                        "cobblestone"
+                    ],
+                    [
+                        "redstone",
+                        "redstone",
+                        "quartz"
+                    ],
+                    [
+                        "cobblestone",
+                        "cobblestone",
+                        "cobblestone"
+                    ]
+                ],
+                "result": {
+                    "item": "observer",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "jukebox",
+            "name": "Jukebox",
+            "emoji": "🎵",
+            "description": "A jukebox is a block used to play music discs. Right-click with a music disc to insert it and play music.",
+            "category": "Decoration",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Axe",
+            "hardness": 2,
+            "blastResistance": 6,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "oak_planks",
+                        "oak_planks",
+                        "oak_planks"
+                    ],
+                    [
+                        "oak_planks",
+                        "diamond",
+                        "oak_planks"
+                    ],
+                    [
+                        "oak_planks",
+                        "oak_planks",
+                        "oak_planks"
+                    ]
+                ],
+                "result": {
+                    "item": "jukebox",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "smithing_table",
+            "name": "Smithing Table",
+            "emoji": "🔨",
+            "description": "A smithing table is a utility block used for upgrading diamond gear to netherite and applying armor trims. Also serves as a toolsmith villager job site.",
+            "category": "Utility",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Axe",
+            "hardness": 2.5,
+            "blastResistance": 2.5,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "iron_ingot",
+                        "iron_ingot",
+                        null
+                    ],
+                    [
+                        "oak_planks",
+                        "oak_planks",
+                        null
+                    ],
+                    [
+                        "oak_planks",
+                        "oak_planks",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "smithing_table",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "blast_furnace",
+            "name": "Blast Furnace",
+            "emoji": "🔥",
+            "description": "A blast furnace is a utility block that smelts ores, raw metals, and metal armor and tools twice as fast as a regular furnace.",
+            "category": "Utility",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Pickaxe",
+            "hardness": 3.5,
+            "blastResistance": 3.5,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "iron_ingot",
+                        "iron_ingot",
+                        "iron_ingot"
+                    ],
+                    [
+                        "iron_ingot",
+                        "furnace",
+                        "iron_ingot"
+                    ],
+                    [
+                        "smooth_stone",
+                        "smooth_stone",
+                        "smooth_stone"
+                    ]
+                ],
+                "result": {
+                    "item": "blast_furnace",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "smoker",
+            "name": "Smoker",
+            "emoji": "🍖",
+            "description": "A smoker is a utility block that cooks food twice as fast as a regular furnace. It cannot smelt ores or other non-food items.",
+            "category": "Utility",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Pickaxe",
+            "hardness": 3.5,
+            "blastResistance": 3.5,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        null,
+                        "log",
+                        null
+                    ],
+                    [
+                        "log",
+                        "furnace",
+                        "log"
+                    ],
+                    [
+                        null,
+                        "log",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "smoker",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "composter",
+            "name": "Composter",
+            "emoji": "🌱",
+            "description": "A composter is a utility block that converts plant materials and food into bone meal. Fill it with compostable items to produce fertilizer.",
+            "category": "Utility",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Axe",
+            "hardness": 0.6,
+            "blastResistance": 0.6,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "wood_slab",
+                        null,
+                        "wood_slab"
+                    ],
+                    [
+                        "wood_slab",
+                        null,
+                        "wood_slab"
+                    ],
+                    [
+                        "wood_slab",
+                        "wood_slab",
+                        "wood_slab"
+                    ]
+                ],
+                "result": {
+                    "item": "composter",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "lectern",
+            "name": "Lectern",
+            "emoji": "📕",
+            "description": "A lectern is a block used to hold books for multiple players to read. It also emits a redstone signal when the page is turned.",
+            "category": "Decoration",
+            "stackSize": 64,
+            "renewable": true,
+            "tool": "Axe",
+            "hardness": 2.5,
+            "blastResistance": 2.5,
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        "wood_slab",
+                        "wood_slab",
+                        "wood_slab"
+                    ],
+                    [
+                        null,
+                        "bookshelf",
+                        null
+                    ],
+                    [
+                        null,
+                        "wood_slab",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "lectern",
+                    "count": 1
+                }
+            }
+        }
+    ]
+}

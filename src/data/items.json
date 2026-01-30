@@ -1,0 +1,491 @@
+{
+    "items": [
+        {
+            "id": "diamond",
+            "name": "Diamond",
+            "emoji": "💎",
+            "description": "Diamonds are one of the rarest and most valuable materials in Minecraft. They are used to craft the strongest tools, weapons, and armor before netherite.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": false,
+            "obtainedFrom": [
+                "Diamond Ore",
+                "Deepslate Diamond Ore",
+                "Loot Chests"
+            ],
+            "uses": [
+                "Diamond Tools",
+                "Diamond Armor",
+                "Enchanting Table",
+                "Jukebox"
+            ]
+        },
+        {
+            "id": "iron_ingot",
+            "name": "Iron Ingot",
+            "emoji": "🔩",
+            "description": "Iron ingots are a versatile metal used extensively in crafting. They are obtained by smelting iron ore or raw iron in a furnace.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Smelting Iron Ore",
+                "Smelting Raw Iron",
+                "Iron Golem drops",
+                "Zombie drops"
+            ],
+            "uses": [
+                "Iron Tools",
+                "Iron Armor",
+                "Anvil",
+                "Hopper",
+                "Rails"
+            ]
+        },
+        {
+            "id": "gold_ingot",
+            "name": "Gold Ingot",
+            "emoji": "🥇",
+            "description": "Gold ingots are a precious metal with unique properties. Gold tools are fast but fragile, and gold is loved by Piglins in the Nether.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Smelting Gold Ore",
+                "Smelting Raw Gold",
+                "Piglin Bartering",
+                "Drowned drops"
+            ],
+            "uses": [
+                "Gold Tools",
+                "Gold Armor",
+                "Powered Rails",
+                "Clocks",
+                "Piglin Trading"
+            ]
+        },
+        {
+            "id": "netherite_ingot",
+            "name": "Netherite Ingot",
+            "emoji": "⬛",
+            "description": "Netherite ingots are the most powerful material in Minecraft. They are fire-resistant and used to upgrade diamond gear to netherite.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": false,
+            "obtainedFrom": [
+                "Crafting (4 Netherite Scrap + 4 Gold Ingots)"
+            ],
+            "uses": [
+                "Upgrading Diamond Gear",
+                "Lodestone"
+            ]
+        },
+        {
+            "id": "emerald",
+            "name": "Emerald",
+            "emoji": "💚",
+            "description": "Emeralds are the currency used for trading with villagers. They are found only in mountain biomes and are quite rare.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Emerald Ore",
+                "Trading with Villagers",
+                "Raid Drops"
+            ],
+            "uses": [
+                "Villager Trading",
+                "Beacon Base",
+                "Decoration"
+            ]
+        },
+        {
+            "id": "redstone",
+            "name": "Redstone Dust",
+            "emoji": "🔴",
+            "description": "Redstone is Minecraft's equivalent of electricity. It is used to create complex contraptions, circuits, and automated machines.",
+            "category": "Redstone",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Redstone Ore",
+                "Witch drops",
+                "Trading"
+            ],
+            "uses": [
+                "Redstone Circuits",
+                "Pistons",
+                "Dispensers",
+                "Clocks",
+                "Compasses"
+            ]
+        },
+        {
+            "id": "lapis_lazuli",
+            "name": "Lapis Lazuli",
+            "emoji": "🔵",
+            "description": "Lapis lazuli is a blue mineral used primarily for enchanting items at an enchanting table. It is also used as a dye.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Lapis Lazuli Ore",
+                "Trading"
+            ],
+            "uses": [
+                "Enchanting",
+                "Blue Dye",
+                "Decoration"
+            ]
+        },
+        {
+            "id": "coal",
+            "name": "Coal",
+            "emoji": "🖤",
+            "description": "Coal is a common fuel source used in furnaces and for crafting torches. It is one of the first materials players typically gather.",
+            "category": "Fuel",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Coal Ore",
+                "Wither Skeleton drops"
+            ],
+            "uses": [
+                "Fuel",
+                "Torches",
+                "Campfires"
+            ]
+        },
+        {
+            "id": "blaze_rod",
+            "name": "Blaze Rod",
+            "emoji": "🔥",
+            "description": "Blaze rods are dropped by Blazes in the Nether. They are essential for brewing potions and crafting Eyes of Ender.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Blaze drops"
+            ],
+            "uses": [
+                "Blaze Powder",
+                "Brewing Stand",
+                "End Rod"
+            ]
+        },
+        {
+            "id": "ender_pearl",
+            "name": "Ender Pearl",
+            "emoji": "🟣",
+            "description": "Ender pearls allow teleportation when thrown. They are also used to craft Eyes of Ender needed to find the End Portal.",
+            "category": "Materials",
+            "stackSize": 16,
+            "renewable": true,
+            "obtainedFrom": [
+                "Enderman drops",
+                "Piglin Bartering"
+            ],
+            "uses": [
+                "Teleportation",
+                "Eye of Ender",
+                "Ender Chest"
+            ]
+        },
+        {
+            "id": "nether_star",
+            "name": "Nether Star",
+            "emoji": "⭐",
+            "description": "The nether star is a rare item dropped by the Wither boss. It is used to craft beacons.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Wither Boss drop"
+            ],
+            "uses": [
+                "Beacon"
+            ]
+        },
+        {
+            "id": "ghast_tear",
+            "name": "Ghast Tear",
+            "emoji": "💧",
+            "description": "Ghast tears are dropped by Ghasts in the Nether. They are used in brewing potions of Regeneration.",
+            "category": "Brewing",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Ghast drops"
+            ],
+            "uses": [
+                "Potion of Regeneration",
+                "End Crystal"
+            ]
+        },
+        {
+            "id": "bone",
+            "name": "Bone",
+            "emoji": "🦴",
+            "description": "Bones are dropped by Skeletons and can be crafted into bone meal for farming or taming wolves.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Skeleton drops",
+                "Fishing"
+            ],
+            "uses": [
+                "Bone Meal",
+                "Taming Wolves"
+            ]
+        },
+        {
+            "id": "gunpowder",
+            "name": "Gunpowder",
+            "emoji": "💨",
+            "description": "Gunpowder is an explosive material dropped by Creepers. It is used to craft TNT and firework rockets.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Creeper drops",
+                "Witch drops",
+                "Ghast drops"
+            ],
+            "uses": [
+                "TNT",
+                "Firework Rockets",
+                "Fire Charges",
+                "Splash Potions"
+            ]
+        },
+        {
+            "id": "string",
+            "name": "String",
+            "emoji": "🧵",
+            "description": "String is dropped by Spiders and can be found in webs. It is used for crafting bows, fishing rods, and wool.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Spider drops",
+                "Cobwebs",
+                "Fishing"
+            ],
+            "uses": [
+                "Bow",
+                "Fishing Rod",
+                "Wool",
+                "Leads",
+                "Crossbow"
+            ]
+        },
+        {
+            "id": "leather",
+            "name": "Leather",
+            "emoji": "🟤",
+            "description": "Leather is obtained from cows and used to craft leather armor, books, and item frames.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Cow drops",
+                "Horse drops",
+                "Llama drops",
+                "Hoglin drops"
+            ],
+            "uses": [
+                "Leather Armor",
+                "Books",
+                "Item Frames"
+            ]
+        },
+        {
+            "id": "feather",
+            "name": "Feather",
+            "emoji": "🪶",
+            "description": "Feathers are dropped by chickens and parrots. They are essential for crafting arrows.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Chicken drops"
+            ],
+            "uses": [
+                "Arrows",
+                "Book and Quill"
+            ]
+        },
+        {
+            "id": "flint",
+            "name": "Flint",
+            "emoji": "🪨",
+            "description": "Flint is obtained from mining gravel. It is used to craft arrows and flint and steel.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Gravel drops"
+            ],
+            "uses": [
+                "Arrows",
+                "Flint and Steel"
+            ]
+        },
+        {
+            "id": "slime_ball",
+            "name": "Slime Ball",
+            "emoji": "🟢",
+            "description": "Slime balls are dropped by Slimes. They are used to craft sticky pistons, leads, and slime blocks.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Slime drops",
+                "Baby Pandas sneezing"
+            ],
+            "uses": [
+                "Sticky Piston",
+                "Leads",
+                "Slime Block",
+                "Magma Cream"
+            ]
+        },
+        {
+            "id": "book",
+            "name": "Book",
+            "emoji": "📕",
+            "description": "Books are crafted from paper and leather. They are used for bookshelves, enchanting, and written books.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Crafting (Paper + Leather)"
+            ],
+            "uses": [
+                "Bookshelf",
+                "Enchanting Table",
+                "Book and Quill"
+            ],
+            "recipe": {
+                "type": "shapeless",
+                "ingredients": [
+                    "paper",
+                    "paper",
+                    "paper",
+                    "leather"
+                ],
+                "result": {
+                    "item": "book",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "eye_of_ender",
+            "name": "Eye of Ender",
+            "emoji": "👁️",
+            "description": "Eyes of Ender are crafted items used to locate and activate End Portals to reach The End dimension.",
+            "category": "Materials",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Crafting (Ender Pearl + Blaze Powder)"
+            ],
+            "uses": [
+                "Finding Strongholds",
+                "Activating End Portal"
+            ],
+            "recipe": {
+                "type": "shapeless",
+                "ingredients": [
+                    "ender_pearl",
+                    "blaze_powder"
+                ],
+                "result": {
+                    "item": "eye_of_ender",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "clock",
+            "name": "Clock",
+            "emoji": "🕐",
+            "description": "A clock displays the current in-game time using the sun and moon position. Useful when underground or in the Nether.",
+            "category": "Tools",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Crafting"
+            ],
+            "uses": [
+                "Telling Time"
+            ],
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        null,
+                        "gold_ingot",
+                        null
+                    ],
+                    [
+                        "gold_ingot",
+                        "redstone",
+                        "gold_ingot"
+                    ],
+                    [
+                        null,
+                        "gold_ingot",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "clock",
+                    "count": 1
+                }
+            }
+        },
+        {
+            "id": "compass",
+            "name": "Compass",
+            "emoji": "🧭",
+            "description": "A compass points toward the world spawn point. It can be combined with a lodestone to point to that block instead.",
+            "category": "Tools",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Crafting"
+            ],
+            "uses": [
+                "Navigation",
+                "Locator Maps"
+            ],
+            "recipe": {
+                "type": "shaped",
+                "pattern": [
+                    [
+                        null,
+                        "iron_ingot",
+                        null
+                    ],
+                    [
+                        "iron_ingot",
+                        "redstone",
+                        "iron_ingot"
+                    ],
+                    [
+                        null,
+                        "iron_ingot",
+                        null
+                    ]
+                ],
+                "result": {
+                    "item": "compass",
+                    "count": 1
+                }
+            }
+        }
+    ]
+}

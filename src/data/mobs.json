@@ -1,0 +1,414 @@
+{
+    "mobs": [
+        {
+            "id": "creeper",
+            "name": "Creeper",
+            "emoji": "💥",
+            "description": "An iconic hostile mob that silently approaches players and explodes. They are the source of gunpowder and music discs when killed by skeletons.",
+            "category": "Hostile",
+            "health": 20,
+            "damage": "Up to 49 (explosion)",
+            "behavior": "Chases players and explodes when close",
+            "drops": [
+                "Gunpowder (0-2)",
+                "Music Disc (if killed by Skeleton)"
+            ],
+            "spawnBiomes": [
+                "Most Overworld biomes (light level 0)"
+            ],
+            "tips": [
+                "Cats scare away Creepers",
+                "Water reduces explosion damage",
+                "Shield blocks all explosion damage"
+            ]
+        },
+        {
+            "id": "zombie",
+            "name": "Zombie",
+            "emoji": "🧟",
+            "description": "Common undead mobs that spawn in darkness. They burn in sunlight and can break doors on Hard difficulty.",
+            "category": "Hostile",
+            "health": 20,
+            "damage": "2.5-4",
+            "behavior": "Chases players, attacks villagers, burns in sunlight",
+            "drops": [
+                "Rotten Flesh (0-2)",
+                "Iron Ingot (rare)",
+                "Carrot (rare)",
+                "Potato (rare)"
+            ],
+            "spawnBiomes": [
+                "Most Overworld biomes (light level 0)"
+            ],
+            "variants": [
+                "Baby Zombie",
+                "Zombie Villager",
+                "Husk",
+                "Drowned"
+            ]
+        },
+        {
+            "id": "skeleton",
+            "name": "Skeleton",
+            "emoji": "💀",
+            "description": "Undead archers that spawn in darkness. They are accurate shooters and burn in sunlight.",
+            "category": "Hostile",
+            "health": 20,
+            "damage": "2-5 (bow)",
+            "behavior": "Shoots arrows at players from distance, burns in sunlight",
+            "drops": [
+                "Bone (0-2)",
+                "Arrow (0-2)",
+                "Bow (rare)"
+            ],
+            "spawnBiomes": [
+                "Most Overworld biomes (light level 0)"
+            ],
+            "variants": [
+                "Stray",
+                "Wither Skeleton"
+            ]
+        },
+        {
+            "id": "enderman",
+            "name": "Enderman",
+            "emoji": "👾",
+            "description": "Tall, dark neutral mobs that teleport. They become hostile when looked at directly or attacked. They drop Ender Pearls.",
+            "category": "Neutral",
+            "health": 40,
+            "damage": "7-10.5",
+            "behavior": "Teleports, moves blocks, hostile when looked at",
+            "drops": [
+                "Ender Pearl (0-1)"
+            ],
+            "spawnBiomes": [
+                "Most Overworld biomes",
+                "The End (abundant)"
+            ],
+            "tips": [
+                "Wears carved pumpkin to prevent aggro",
+                "Can't teleport in water",
+                "2 blocks tall spaces are safe"
+            ]
+        },
+        {
+            "id": "spider",
+            "name": "Spider",
+            "emoji": "🕷️",
+            "description": "Mobs that can climb walls and are hostile at night but neutral during the day. They drop string and spider eyes.",
+            "category": "Neutral",
+            "health": 16,
+            "damage": "2-3",
+            "behavior": "Climbs walls, hostile at night, neutral in daylight",
+            "drops": [
+                "String (0-2)",
+                "Spider Eye (0-1)"
+            ],
+            "spawnBiomes": [
+                "Most Overworld biomes (light level 0)"
+            ],
+            "variants": [
+                "Cave Spider"
+            ]
+        },
+        {
+            "id": "blaze",
+            "name": "Blaze",
+            "emoji": "🔥",
+            "description": "Flying hostile mobs found in Nether Fortresses. They shoot fireballs and drop Blaze Rods essential for brewing and reaching The End.",
+            "category": "Hostile",
+            "health": 20,
+            "damage": "6 (fireball)",
+            "behavior": "Flies, shoots fireballs, spawns from spawners",
+            "drops": [
+                "Blaze Rod (0-1)"
+            ],
+            "spawnBiomes": [
+                "Nether Fortress"
+            ],
+            "tips": [
+                "Vulnerable to snowballs (3 damage each)",
+                "Water damages them",
+                "Found near spawners in fortresses"
+            ]
+        },
+        {
+            "id": "ghast",
+            "name": "Ghast",
+            "emoji": "👻",
+            "description": "Large floating mobs in the Nether that shoot explosive fireballs. Their tears are used for potions of Regeneration.",
+            "category": "Hostile",
+            "health": 10,
+            "damage": "17 (fireball explosion)",
+            "behavior": "Floats in the Nether, shoots fireballs from range",
+            "drops": [
+                "Ghast Tear (0-1)",
+                "Gunpowder (0-2)"
+            ],
+            "spawnBiomes": [
+                "Nether Wastes",
+                "Soul Sand Valley",
+                "Basalt Deltas"
+            ],
+            "tips": [
+                "Fireballs can be deflected by hitting them",
+                "Low health - easy to kill if you can reach them"
+            ]
+        },
+        {
+            "id": "wither_skeleton",
+            "name": "Wither Skeleton",
+            "emoji": "☠️",
+            "description": "Tall skeleton variants found in Nether Fortresses. They inflict Wither effect and rarely drop Wither Skeleton Skulls for summoning the Wither.",
+            "category": "Hostile",
+            "health": 20,
+            "damage": "5-12",
+            "behavior": "Attacks with stone sword, inflicts Wither effect",
+            "drops": [
+                "Coal (0-1)",
+                "Bone (0-2)",
+                "Wither Skeleton Skull (2.5% chance)"
+            ],
+            "spawnBiomes": [
+                "Nether Fortress"
+            ],
+            "tips": [
+                "3 skulls needed to summon Wither",
+                "Looting enchantment increases skull drop chance"
+            ]
+        },
+        {
+            "id": "piglin",
+            "name": "Piglin",
+            "emoji": "🐷",
+            "description": "Intelligent hostile mobs in the Nether. They can be bartered with using gold ingots and won't attack if you wear gold armor.",
+            "category": "Neutral",
+            "health": 16,
+            "damage": "5-12",
+            "behavior": "Hostile unless wearing gold, trades for gold ingots",
+            "drops": [
+                "Gold-related items when bartering"
+            ],
+            "spawnBiomes": [
+                "Crimson Forest",
+                "Nether Wastes",
+                "Bastion Remnants"
+            ],
+            "tips": [
+                "Always wear at least one piece of gold armor",
+                "Trading gives Ender Pearls, fire resistance potions, and more"
+            ]
+        },
+        {
+            "id": "ender_dragon",
+            "name": "Ender Dragon",
+            "emoji": "🐉",
+            "description": "The main boss of Minecraft found in The End. Defeating it unlocks the exit portal and End gateway to outer End islands.",
+            "category": "Boss",
+            "health": 200,
+            "damage": "15 (contact), 3+ (dragon's breath)",
+            "behavior": "Flies around the End, destroys blocks, charges at player",
+            "drops": [
+                "12,000 XP (first kill)",
+                "Dragon Egg",
+                "Exit Portal activation"
+            ],
+            "spawnBiomes": [
+                "The End (main island)"
+            ],
+            "tips": [
+                "Destroy End Crystals first to stop healing",
+                "Beds explode in The End - can be used as weapons",
+                "Shoot with arrows when perched"
+            ]
+        },
+        {
+            "id": "wither",
+            "name": "Wither",
+            "emoji": "💀",
+            "description": "A player-summoned boss created with 4 Soul Sand and 3 Wither Skeleton Skulls. Drops the Nether Star for crafting Beacons.",
+            "category": "Boss",
+            "health": 300,
+            "damage": "8-12 (wither skull)",
+            "behavior": "Flies, shoots wither skulls, destroys blocks, has shield at 50% health",
+            "drops": [
+                "Nether Star",
+                "50 XP"
+            ],
+            "spawnBiomes": [
+                "Player-summoned anywhere"
+            ],
+            "tips": [
+                "Fight in enclosed space like bedrock ceiling",
+                "Has armor at half health requiring melee attacks",
+                "Smite enchantment is very effective"
+            ]
+        },
+        {
+            "id": "warden",
+            "name": "Warden",
+            "emoji": "👹",
+            "description": "The most powerful mob in Minecraft found in Deep Dark biomes. It's blind but detects vibrations and smell. Best avoided, not fought.",
+            "category": "Hostile",
+            "health": 500,
+            "damage": "16-45",
+            "behavior": "Detects vibrations and smell, one of strongest attacks in game",
+            "drops": [
+                "Sculk Catalyst (rarely)"
+            ],
+            "spawnBiomes": [
+                "Deep Dark (summoned by Sculk Shriekers)"
+            ],
+            "tips": [
+                "Crouch to reduce vibrations",
+                "Throw projectiles to distract it",
+                "Has 250 hearts - not designed to be killed"
+            ]
+        },
+        {
+            "id": "iron_golem",
+            "name": "Iron Golem",
+            "emoji": "🤖",
+            "description": "Powerful utility mobs that protect villages and can be built by players. They attack most hostile mobs.",
+            "category": "Utility",
+            "health": 100,
+            "damage": "7.5-21.5",
+            "behavior": "Protects villagers, attacks hostile mobs, passive to players unless provoked",
+            "drops": [
+                "Iron Ingot (3-5)",
+                "Poppy (0-2)"
+            ],
+            "spawnBiomes": [
+                "Villages (naturally)",
+                "Player-built anywhere"
+            ],
+            "tips": [
+                "Build with 4 iron blocks in T-shape + carved pumpkin",
+                "Can be healed with iron ingots"
+            ]
+        },
+        {
+            "id": "villager",
+            "name": "Villager",
+            "emoji": "🧑‍🌾",
+            "description": "Passive mobs that live in villages. They have different professions and can trade valuable items with players.",
+            "category": "Passive",
+            "health": 20,
+            "damage": 0,
+            "behavior": "Trades items, works at job sites, breeds when happy",
+            "drops": [
+                "Nothing"
+            ],
+            "spawnBiomes": [
+                "Villages"
+            ],
+            "professions": [
+                "Farmer",
+                "Librarian",
+                "Cleric",
+                "Armorer",
+                "Weaponsmith",
+                "Toolsmith",
+                "Fletcher",
+                "Cartographer",
+                "Mason",
+                "Butcher",
+                "Leatherworker",
+                "Fisherman",
+                "Shepherd",
+                "Nitwit"
+            ]
+        },
+        {
+            "id": "wolf",
+            "name": "Wolf",
+            "emoji": "🐺",
+            "description": "Neutral mobs that can be tamed with bones to become loyal pets. Tamed wolves attack what the player attacks.",
+            "category": "Neutral",
+            "health": "8 (wild), 20 (tamed)",
+            "damage": "4 (tamed)",
+            "behavior": "Follows and protects owner when tamed, attacks when provoked",
+            "drops": [
+                "Nothing"
+            ],
+            "spawnBiomes": [
+                "Forest",
+                "Taiga",
+                "Snowy Taiga"
+            ],
+            "tips": [
+                "Feed bones to tame",
+                "Tail height shows health",
+                "Feed meat to heal",
+                "Dye collar different colors"
+            ]
+        },
+        {
+            "id": "cat",
+            "name": "Cat",
+            "emoji": "🐱",
+            "description": "Tameable passive mobs found in villages. Tamed cats scare away Creepers and Phantoms, and bring gifts to sleeping players.",
+            "category": "Passive",
+            "health": 10,
+            "damage": 0,
+            "behavior": "Sits, follows owner, scares Creepers and Phantoms, brings gifts",
+            "drops": [
+                "String (0-2)"
+            ],
+            "spawnBiomes": [
+                "Villages",
+                "Swamp Huts (black cat)"
+            ],
+            "tips": [
+                "Feed raw cod or salmon to tame",
+                "11 different cat variants",
+                "Useful for Creeper defense"
+            ]
+        },
+        {
+            "id": "horse",
+            "name": "Horse",
+            "emoji": "🐴",
+            "description": "Fast passive mobs that can be tamed and ridden with a saddle. They have varying speed, jump height, and health.",
+            "category": "Passive",
+            "health": "15-30",
+            "damage": 0,
+            "behavior": "Can be tamed and ridden, follows player if leashed",
+            "drops": [
+                "Leather (0-2)"
+            ],
+            "spawnBiomes": [
+                "Plains",
+                "Savanna"
+            ],
+            "tips": [
+                "Mount repeatedly to tame",
+                "Needs saddle to be controlled",
+                "Can wear horse armor for protection"
+            ]
+        },
+        {
+            "id": "bee",
+            "name": "Bee",
+            "emoji": "🐝",
+            "description": "Flying neutral mobs that pollinate flowers and produce honey. They attack when provoked but die after stinging.",
+            "category": "Neutral",
+            "health": 10,
+            "damage": "2 + Poison",
+            "behavior": "Pollinates flowers, returns to nests, hostile if attacked or nest damaged",
+            "drops": [
+                "Nothing"
+            ],
+            "spawnBiomes": [
+                "Plains (near flowers)",
+                "Flower Forest",
+                "Meadow"
+            ],
+            "tips": [
+                "Use campfire under nest to harvest safely",
+                "Leads to honey and honeycomb",
+                "Accelerates crop growth through pollination"
+            ]
+        }
+    ]
+}

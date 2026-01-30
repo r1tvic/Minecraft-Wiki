@@ -1,0 +1,196 @@
+.container {
+    max-width: 900px;
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    margin-bottom: 24px;
+    transition: color var(--transition-fast);
+}
+
+.backLink:hover {
+    color: var(--accent);
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.iconWrapper {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--bg-hover) 0%, var(--bg-card) 100%);
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 2px solid var(--border-color);
+}
+
+.emoji {
+    font-size: 4rem;
+}
+
+.titleArea {
+    flex: 1;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.badge {
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    background: var(--accent);
+    color: #1a1a2e;
+    border-radius: 9999px;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.section {
+    margin-bottom: 32px;
+}
+
+.sectionTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+.sectionIcon {
+    font-size: 1.25rem;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.statCard {
+    padding: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+}
+
+.statLabel {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.statValue {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.listItem {
+    padding: 8px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.tipsList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tip {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+}
+
+.tipIcon {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.tipText {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.notFound {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.notFoundEmoji {
+    font-size: 4rem;
+    margin-bottom: 16px;
+}
+
+.notFoundTitle {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.notFoundText {
+    color: var(--text-muted);
+    margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

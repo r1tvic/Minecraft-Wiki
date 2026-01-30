@@ -1,0 +1,496 @@
+{
+    "biomes": [
+        {
+            "id": "plains",
+            "name": "Plains",
+            "emoji": "🌾",
+            "description": "A flat and grassy biome with few trees. Plains are great for building and are home to villages, horses, and donkeys.",
+            "category": "Temperate",
+            "temperature": "Normal",
+            "structures": [
+                "Villages",
+                "Pillager Outposts"
+            ],
+            "mobs": [
+                "Horse",
+                "Donkey",
+                "Sheep",
+                "Cow",
+                "Pig",
+                "Chicken",
+                "Bee"
+            ],
+            "resources": [
+                "Grass",
+                "Flowers",
+                "Hay Bales (in villages)"
+            ],
+            "tips": [
+                "Great starting biome for beginners",
+                "Easy to find villages",
+                "Best biome for horse taming"
+            ]
+        },
+        {
+            "id": "forest",
+            "name": "Forest",
+            "emoji": "🌲",
+            "description": "A biome filled with oak and birch trees. Forests provide abundant wood and are home to wolves.",
+            "category": "Temperate",
+            "temperature": "Normal",
+            "structures": [
+                "None"
+            ],
+            "mobs": [
+                "Wolf",
+                "Sheep",
+                "Cow",
+                "Pig",
+                "Chicken"
+            ],
+            "resources": [
+                "Oak Wood",
+                "Birch Wood",
+                "Flowers",
+                "Mushrooms"
+            ],
+            "variants": [
+                "Birch Forest",
+                "Dark Forest",
+                "Flower Forest"
+            ]
+        },
+        {
+            "id": "jungle",
+            "name": "Jungle",
+            "emoji": "🌴",
+            "description": "A lush biome with towering jungle trees, bamboo, and cocoa beans. Home to ocelots, parrots, and jungle temples.",
+            "category": "Tropical",
+            "temperature": "Warm",
+            "structures": [
+                "Jungle Temple"
+            ],
+            "mobs": [
+                "Ocelot",
+                "Parrot",
+                "Panda (bamboo jungle)"
+            ],
+            "resources": [
+                "Jungle Wood",
+                "Bamboo",
+                "Cocoa Beans",
+                "Melons"
+            ],
+            "tips": [
+                "Difficult to navigate due to dense vegetation",
+                "Unique wood type",
+                "Only place to find cocoa beans naturally"
+            ]
+        },
+        {
+            "id": "desert",
+            "name": "Desert",
+            "emoji": "🏜️",
+            "description": "A sandy biome with cacti, dead bushes, and desert temples. Villages and wells can be found here.",
+            "category": "Dry",
+            "temperature": "Hot",
+            "structures": [
+                "Desert Temple",
+                "Desert Village",
+                "Desert Well",
+                "Pillager Outpost"
+            ],
+            "mobs": [
+                "Rabbit",
+                "Husk (night)"
+            ],
+            "resources": [
+                "Sand",
+                "Sandstone",
+                "Cactus",
+                "Dead Bush"
+            ],
+            "tips": [
+                "Temples have TNT traps - be careful!",
+                "Sand is useful for glass and concrete",
+                "No rain means fire spreads easily"
+            ]
+        },
+        {
+            "id": "savanna",
+            "name": "Savanna",
+            "emoji": "🦒",
+            "description": "A flat, dry biome with acacia trees. Savannas feature villages and are the only place to find acacia wood.",
+            "category": "Dry",
+            "temperature": "Warm",
+            "structures": [
+                "Villages",
+                "Pillager Outposts"
+            ],
+            "mobs": [
+                "Horse",
+                "Donkey",
+                "Llama",
+                "Sheep",
+                "Cow"
+            ],
+            "resources": [
+                "Acacia Wood",
+                "Tall Grass"
+            ],
+            "variants": [
+                "Shattered Savanna (extreme terrain)"
+            ]
+        },
+        {
+            "id": "taiga",
+            "name": "Taiga",
+            "emoji": "🌲",
+            "description": "A cold forested biome with spruce trees and ferns. Home to wolves, foxes, and berries.",
+            "category": "Cold",
+            "temperature": "Cold",
+            "structures": [
+                "Villages"
+            ],
+            "mobs": [
+                "Wolf",
+                "Fox",
+                "Rabbit"
+            ],
+            "resources": [
+                "Spruce Wood",
+                "Ferns",
+                "Sweet Berries",
+                "Podzol"
+            ],
+            "variants": [
+                "Snowy Taiga",
+                "Old Growth Spruce Taiga",
+                "Old Growth Pine Taiga"
+            ]
+        },
+        {
+            "id": "snowy_plains",
+            "name": "Snowy Plains",
+            "emoji": "❄️",
+            "description": "A flat, frozen biome covered in snow. Features igloos, frozen lakes, and polar bears.",
+            "category": "Frozen",
+            "temperature": "Freezing",
+            "structures": [
+                "Igloos",
+                "Villages"
+            ],
+            "mobs": [
+                "Polar Bear",
+                "Rabbit",
+                "Stray (night)"
+            ],
+            "resources": [
+                "Snow",
+                "Ice",
+                "Packed Ice"
+            ],
+            "tips": [
+                "Water freezes to ice",
+                "Igloos sometimes have basements with zombie villagers",
+                "Strays drop Slowness arrows"
+            ]
+        },
+        {
+            "id": "swamp",
+            "name": "Swamp",
+            "emoji": "🐸",
+            "description": "A murky lowland biome with shallow waters, lily pads, and witch huts. Home to slimes at night.",
+            "category": "Wet",
+            "temperature": "Normal",
+            "structures": [
+                "Witch Hut"
+            ],
+            "mobs": [
+                "Slime",
+                "Frog",
+                "Witch (in huts)"
+            ],
+            "resources": [
+                "Lily Pad",
+                "Vines",
+                "Clay",
+                "Blue Orchid"
+            ],
+            "tips": [
+                "Slimes spawn here on full moons",
+                "Good source of clay for bricks",
+                "Mangrove swamps have unique wood and frogs"
+            ]
+        },
+        {
+            "id": "ocean",
+            "name": "Ocean",
+            "emoji": "🌊",
+            "description": "A vast water biome with various depths and features. Contains shipwrecks, ocean monuments, and underwater ruins.",
+            "category": "Aquatic",
+            "temperature": "Normal",
+            "structures": [
+                "Ocean Monument",
+                "Shipwreck",
+                "Underwater Ruins",
+                "Ocean Ruin"
+            ],
+            "mobs": [
+                "Dolphin",
+                "Cod",
+                "Salmon",
+                "Squid",
+                "Drowned",
+                "Guardian",
+                "Elder Guardian"
+            ],
+            "resources": [
+                "Kelp",
+                "Seagrass",
+                "Coral (warm)",
+                "Prismarine (monuments)"
+            ],
+            "variants": [
+                "Deep Ocean",
+                "Warm Ocean",
+                "Lukewarm Ocean",
+                "Cold Ocean",
+                "Frozen Ocean"
+            ]
+        },
+        {
+            "id": "mushroom_island",
+            "name": "Mushroom Fields",
+            "emoji": "🍄",
+            "description": "A rare island biome covered in mycelium and giant mushrooms. Hostile mobs cannot spawn here naturally.",
+            "category": "Special",
+            "temperature": "Normal",
+            "structures": [
+                "None"
+            ],
+            "mobs": [
+                "Mooshroom"
+            ],
+            "resources": [
+                "Mycelium",
+                "Giant Mushrooms",
+                "Mushrooms"
+            ],
+            "tips": [
+                "Safest biome - no hostile mob spawning!",
+                "Mooshrooms give mushroom stew when milked",
+                "Extremely rare to find"
+            ]
+        },
+        {
+            "id": "badlands",
+            "name": "Badlands",
+            "emoji": "🏜️",
+            "description": "A rare biome featuring terracotta mountains and mineshafts. Gold ore generates more frequently here.",
+            "category": "Dry",
+            "temperature": "Hot",
+            "structures": [
+                "Mineshafts (exposed)"
+            ],
+            "mobs": [
+                "Standard Overworld mobs"
+            ],
+            "resources": [
+                "Terracotta (various colors)",
+                "Gold Ore (enhanced)",
+                "Dead Bush",
+                "Cactus"
+            ],
+            "variants": [
+                "Wooded Badlands",
+                "Eroded Badlands"
+            ],
+            "tips": [
+                "Great for mining gold",
+                "Colorful terracotta for building",
+                "Mineshafts spawn at surface level"
+            ]
+        },
+        {
+            "id": "nether_wastes",
+            "name": "Nether Wastes",
+            "emoji": "🔥",
+            "description": "The classic Nether biome with netherrack, lava lakes, and Nether fortresses. Home to Zombified Piglins and Ghasts.",
+            "category": "Nether",
+            "temperature": "Hot",
+            "structures": [
+                "Nether Fortress",
+                "Bastion Remnant"
+            ],
+            "mobs": [
+                "Zombified Piglin",
+                "Ghast",
+                "Magma Cube",
+                "Piglin",
+                "Blaze (fortress)"
+            ],
+            "resources": [
+                "Netherrack",
+                "Nether Quartz",
+                "Glowstone",
+                "Nether Gold Ore"
+            ]
+        },
+        {
+            "id": "crimson_forest",
+            "name": "Crimson Forest",
+            "emoji": "🔴",
+            "description": "A red Nether biome with crimson fungi and huge crimson trees. Safer than other Nether biomes due to fewer Ghasts.",
+            "category": "Nether",
+            "temperature": "Hot",
+            "structures": [
+                "Bastion Remnant"
+            ],
+            "mobs": [
+                "Piglin",
+                "Hoglin",
+                "Zombified Piglin"
+            ],
+            "resources": [
+                "Crimson Wood",
+                "Crimson Fungi",
+                "Shroomlight",
+                "Weeping Vines"
+            ]
+        },
+        {
+            "id": "warped_forest",
+            "name": "Warped Forest",
+            "emoji": "🟢",
+            "description": "A teal Nether biome with warped fungi. The safest Nether biome as hostile mobs rarely spawn here.",
+            "category": "Nether",
+            "temperature": "Hot",
+            "structures": [
+                "Bastion Remnant"
+            ],
+            "mobs": [
+                "Enderman",
+                "Strider"
+            ],
+            "resources": [
+                "Warped Wood",
+                "Warped Fungi",
+                "Shroomlight",
+                "Twisting Vines"
+            ],
+            "tips": [
+                "Safest Nether biome for building",
+                "Good for Enderman farming",
+                "Striders spawn in lava here"
+            ]
+        },
+        {
+            "id": "soul_sand_valley",
+            "name": "Soul Sand Valley",
+            "emoji": "💀",
+            "description": "A haunted Nether biome filled with soul sand, soul fire, and fossils. Very dangerous due to many Ghasts and Skeletons.",
+            "category": "Nether",
+            "temperature": "Hot",
+            "structures": [
+                "Basalt Pillars",
+                "Fossils",
+                "Nether Fortress"
+            ],
+            "mobs": [
+                "Ghast",
+                "Skeleton",
+                "Enderman"
+            ],
+            "resources": [
+                "Soul Sand",
+                "Soul Soil",
+                "Bone Block (fossils)",
+                "Basalt"
+            ]
+        },
+        {
+            "id": "the_end",
+            "name": "The End",
+            "emoji": "🟣",
+            "description": "A dark dimension accessed through End Portals. Features the Ender Dragon boss and End Cities with Elytras.",
+            "category": "End",
+            "temperature": "N/A",
+            "structures": [
+                "End Gateway",
+                "End City",
+                "End Ship"
+            ],
+            "mobs": [
+                "Enderman",
+                "Ender Dragon (boss)",
+                "Shulker (End City)"
+            ],
+            "resources": [
+                "End Stone",
+                "Chorus Fruit",
+                "Purpur Block",
+                "Elytra",
+                "Shulker Shell"
+            ],
+            "tips": [
+                "Defeat dragon to access outer islands",
+                "End Cities have best loot including Elytras",
+                "Bring ender pearls or build bridges"
+            ]
+        },
+        {
+            "id": "deep_dark",
+            "name": "Deep Dark",
+            "emoji": "🌑",
+            "description": "A dangerous underground biome found in the deepslate layer. Contains sculk blocks and the terrifying Warden.",
+            "category": "Cave",
+            "temperature": "N/A",
+            "structures": [
+                "Ancient City"
+            ],
+            "mobs": [
+                "Warden"
+            ],
+            "resources": [
+                "Sculk",
+                "Sculk Sensor",
+                "Sculk Catalyst",
+                "Swift Sneak Enchantment"
+            ],
+            "tips": [
+                "Crouch to avoid triggering sculk sensors",
+                "Don't fight the Warden - sneak past it",
+                "Ancient Cities have unique loot and Echo Shards"
+            ]
+        },
+        {
+            "id": "lush_caves",
+            "name": "Lush Caves",
+            "emoji": "🌿",
+            "description": "Beautiful underground caves with glow berries, dripleaf, and azalea trees. Home to Axolotls.",
+            "category": "Cave",
+            "temperature": "N/A",
+            "structures": [
+                "None"
+            ],
+            "mobs": [
+                "Axolotl",
+                "Glow Squid",
+                "Tropical Fish"
+            ],
+            "resources": [
+                "Glow Berries",
+                "Moss",
+                "Dripleaf",
+                "Azalea",
+                "Spore Blossom"
+            ],
+            "tips": [
+                "Azalea trees on surface indicate lush caves below",
+                "Axolotls help fight underwater mobs",
+                "Great source of food and decoration"
+            ]
+        }
+    ]
+}
