@@ -3,794 +3,986 @@
         {
             "id": "crafting_table",
             "name": "Crafting Table",
-            "emoji": "🪵",
-            "description": "A crafting table is a utility block that allows the player to craft a wide variety of blocks and items using a 3×3 crafting grid.",
+            "description": "A fundamental utility block used to craft items with a 3x3 grid. Essential for creating tools, weapons, and complex items.",
             "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b3/Crafting_Table_JE4.png",
             "stackSize": 64,
-            "renewable": true,
-            "tool": "Axe",
             "hardness": 2.5,
             "blastResistance": 2.5,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "oak_planks",
-                        "oak_planks",
-                        null
-                    ],
-                    [
-                        "oak_planks",
-                        "oak_planks",
-                        null
-                    ],
-                    [
-                        null,
-                        null,
-                        null
-                    ]
-                ],
-                "result": {
-                    "item": "crafting_table",
-                    "count": 1
-                }
-            }
+            "tool": "Axe",
+            "renewable": true
         },
         {
             "id": "furnace",
             "name": "Furnace",
-            "emoji": "🔥",
-            "description": "A furnace is a utility block used for smelting ores, cooking food, and creating other materials. It requires fuel to operate.",
+            "description": "Used for smelting ores, cooking food, and other heating operations. Requires fuel like coal or wood.",
             "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c1/Furnace_JE4_BE2.png",
             "stackSize": 64,
-            "renewable": true,
-            "tool": "Pickaxe",
             "hardness": 3.5,
             "blastResistance": 3.5,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "cobblestone",
-                        "cobblestone",
-                        "cobblestone"
-                    ],
-                    [
-                        "cobblestone",
-                        null,
-                        "cobblestone"
-                    ],
-                    [
-                        "cobblestone",
-                        "cobblestone",
-                        "cobblestone"
-                    ]
-                ],
-                "result": {
-                    "item": "furnace",
-                    "count": 1
-                }
-            }
-        },
-        {
-            "id": "chest",
-            "name": "Chest",
-            "emoji": "📦",
-            "description": "A chest is a block that stores items. Two chests placed side by side combine to form a large chest with double storage capacity.",
-            "category": "Storage",
-            "stackSize": 64,
-            "renewable": true,
-            "tool": "Axe",
-            "hardness": 2.5,
-            "blastResistance": 2.5,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "oak_planks",
-                        "oak_planks",
-                        "oak_planks"
-                    ],
-                    [
-                        "oak_planks",
-                        null,
-                        "oak_planks"
-                    ],
-                    [
-                        "oak_planks",
-                        "oak_planks",
-                        "oak_planks"
-                    ]
-                ],
-                "result": {
-                    "item": "chest",
-                    "count": 1
-                }
-            }
-        },
-        {
-            "id": "enchanting_table",
-            "name": "Enchanting Table",
-            "emoji": "📖",
-            "description": "An enchanting table is a block that allows players to spend their experience points to enchant tools, weapons, armor, and books.",
-            "category": "Utility",
-            "stackSize": 64,
-            "renewable": false,
             "tool": "Pickaxe",
-            "hardness": 5,
-            "blastResistance": 1200,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        null,
-                        "book",
-                        null
-                    ],
-                    [
-                        "diamond",
-                        "obsidian",
-                        "diamond"
-                    ],
-                    [
-                        "obsidian",
-                        "obsidian",
-                        "obsidian"
-                    ]
-                ],
-                "result": {
-                    "item": "enchanting_table",
-                    "count": 1
-                }
-            }
-        },
-        {
-            "id": "anvil",
-            "name": "Anvil",
-            "emoji": "⚒️",
-            "description": "An anvil is a block that allows players to repair items, rename items, and combine enchantments. It can also be damaged by use.",
-            "category": "Utility",
-            "stackSize": 64,
-            "renewable": true,
-            "tool": "Pickaxe",
-            "hardness": 5,
-            "blastResistance": 1200,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "iron_block",
-                        "iron_block",
-                        "iron_block"
-                    ],
-                    [
-                        null,
-                        "iron_ingot",
-                        null
-                    ],
-                    [
-                        "iron_ingot",
-                        "iron_ingot",
-                        "iron_ingot"
-                    ]
-                ],
-                "result": {
-                    "item": "anvil",
-                    "count": 1
-                }
-            }
-        },
-        {
-            "id": "beacon",
-            "name": "Beacon",
-            "emoji": "🔦",
-            "description": "A beacon is a block that projects a light beam skyward and can provide status effects to nearby players when placed on a pyramid of iron, gold, diamond, emerald, or netherite blocks.",
-            "category": "Utility",
-            "stackSize": 64,
-            "renewable": false,
-            "tool": "Pickaxe",
-            "hardness": 3,
-            "blastResistance": 3,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "glass",
-                        "glass",
-                        "glass"
-                    ],
-                    [
-                        "glass",
-                        "nether_star",
-                        "glass"
-                    ],
-                    [
-                        "obsidian",
-                        "obsidian",
-                        "obsidian"
-                    ]
-                ],
-                "result": {
-                    "item": "beacon",
-                    "count": 1
-                }
-            }
-        },
-        {
-            "id": "brewing_stand",
-            "name": "Brewing Stand",
-            "emoji": "⚗️",
-            "description": "A brewing stand is a utility block used to brew potions. It requires blaze powder as fuel and uses water bottles as a base.",
-            "category": "Utility",
-            "stackSize": 64,
-            "renewable": true,
-            "tool": "Pickaxe",
-            "hardness": 0.5,
-            "blastResistance": 0.5,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        null,
-                        "blaze_rod",
-                        null
-                    ],
-                    [
-                        "cobblestone",
-                        "cobblestone",
-                        "cobblestone"
-                    ],
-                    [
-                        null,
-                        null,
-                        null
-                    ]
-                ],
-                "result": {
-                    "item": "brewing_stand",
-                    "count": 1
-                }
-            }
-        },
-        {
-            "id": "bed",
-            "name": "Bed",
-            "emoji": "🛏️",
-            "description": "A bed is a block that allows the player to sleep through the night and set their spawn point. Beds explode in the Nether and End.",
-            "category": "Utility",
-            "stackSize": 1,
-            "renewable": true,
-            "tool": "Any",
-            "hardness": 0.2,
-            "blastResistance": 0.2,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "wool",
-                        "wool",
-                        "wool"
-                    ],
-                    [
-                        "oak_planks",
-                        "oak_planks",
-                        "oak_planks"
-                    ],
-                    [
-                        null,
-                        null,
-                        null
-                    ]
-                ],
-                "result": {
-                    "item": "bed",
-                    "count": 1
-                }
-            }
-        },
-        {
-            "id": "bookshelf",
-            "name": "Bookshelf",
-            "emoji": "📚",
-            "description": "A bookshelf is a decorative block that enhances enchanting tables when placed nearby. It increases the maximum enchantment level available.",
-            "category": "Decoration",
-            "stackSize": 64,
-            "renewable": true,
-            "tool": "Axe",
-            "hardness": 1.5,
-            "blastResistance": 1.5,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "oak_planks",
-                        "oak_planks",
-                        "oak_planks"
-                    ],
-                    [
-                        "book",
-                        "book",
-                        "book"
-                    ],
-                    [
-                        "oak_planks",
-                        "oak_planks",
-                        "oak_planks"
-                    ]
-                ],
-                "result": {
-                    "item": "bookshelf",
-                    "count": 1
-                }
-            }
-        },
-        {
-            "id": "tnt",
-            "name": "TNT",
-            "emoji": "💥",
-            "description": "TNT is an explosive block that can be ignited by fire, redstone, or projectiles. When detonated, it destroys nearby blocks and damages entities.",
-            "category": "Redstone",
-            "stackSize": 64,
-            "renewable": true,
-            "tool": "Any",
-            "hardness": 0,
-            "blastResistance": 0,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "gunpowder",
-                        "sand",
-                        "gunpowder"
-                    ],
-                    [
-                        "sand",
-                        "gunpowder",
-                        "sand"
-                    ],
-                    [
-                        "gunpowder",
-                        "sand",
-                        "gunpowder"
-                    ]
-                ],
-                "result": {
-                    "item": "tnt",
-                    "count": 1
-                }
-            }
-        },
-        {
-            "id": "ladder",
-            "name": "Ladder",
-            "emoji": "🪜",
-            "description": "A ladder is a wooden block used for climbing. Players can ascend or descend ladders by pressing the movement keys.",
-            "category": "Utility",
-            "stackSize": 64,
-            "renewable": true,
-            "tool": "Axe",
-            "hardness": 0.4,
-            "blastResistance": 0.4,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "stick",
-                        null,
-                        "stick"
-                    ],
-                    [
-                        "stick",
-                        "stick",
-                        "stick"
-                    ],
-                    [
-                        "stick",
-                        null,
-                        "stick"
-                    ]
-                ],
-                "result": {
-                    "item": "ladder",
-                    "count": 3
-                }
-            }
-        },
-        {
-            "id": "torch",
-            "name": "Torch",
-            "emoji": "🔦",
-            "description": "A torch is a non-solid block that emits light. Torches can be placed on walls or floors and prevent hostile mob spawning.",
-            "category": "Decoration",
-            "stackSize": 64,
-            "renewable": true,
-            "tool": "Any",
-            "hardness": 0,
-            "blastResistance": 0,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        null,
-                        "coal",
-                        null
-                    ],
-                    [
-                        null,
-                        "stick",
-                        null
-                    ],
-                    [
-                        null,
-                        null,
-                        null
-                    ]
-                ],
-                "result": {
-                    "item": "torch",
-                    "count": 4
-                }
-            }
-        },
-        {
-            "id": "piston",
-            "name": "Piston",
-            "emoji": "⬆️",
-            "description": "A piston is a block capable of pushing other blocks when activated by redstone. It can push up to 12 blocks in a row.",
-            "category": "Redstone",
-            "stackSize": 64,
-            "renewable": true,
-            "tool": "Pickaxe",
-            "hardness": 1.5,
-            "blastResistance": 0.5,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "oak_planks",
-                        "oak_planks",
-                        "oak_planks"
-                    ],
-                    [
-                        "cobblestone",
-                        "iron_ingot",
-                        "cobblestone"
-                    ],
-                    [
-                        "cobblestone",
-                        "redstone",
-                        "cobblestone"
-                    ]
-                ],
-                "result": {
-                    "item": "piston",
-                    "count": 1
-                }
-            }
-        },
-        {
-            "id": "hopper",
-            "name": "Hopper",
-            "emoji": "🔽",
-            "description": "A hopper is a block that can transfer items between containers automatically. It collects items from above and pushes them to containers below or beside it.",
-            "category": "Redstone",
-            "stackSize": 64,
-            "renewable": true,
-            "tool": "Pickaxe",
-            "hardness": 3,
-            "blastResistance": 4.8,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "iron_ingot",
-                        null,
-                        "iron_ingot"
-                    ],
-                    [
-                        "iron_ingot",
-                        "chest",
-                        "iron_ingot"
-                    ],
-                    [
-                        null,
-                        "iron_ingot",
-                        null
-                    ]
-                ],
-                "result": {
-                    "item": "hopper",
-                    "count": 1
-                }
-            }
-        },
-        {
-            "id": "dispenser",
-            "name": "Dispenser",
-            "emoji": "📤",
-            "description": "A dispenser is a solid block used as a redstone component to dispense items. It can shoot projectiles, place blocks, and more.",
-            "category": "Redstone",
-            "stackSize": 64,
-            "renewable": true,
-            "tool": "Pickaxe",
-            "hardness": 3.5,
-            "blastResistance": 3.5,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "cobblestone",
-                        "cobblestone",
-                        "cobblestone"
-                    ],
-                    [
-                        "cobblestone",
-                        "bow",
-                        "cobblestone"
-                    ],
-                    [
-                        "cobblestone",
-                        "redstone",
-                        "cobblestone"
-                    ]
-                ],
-                "result": {
-                    "item": "dispenser",
-                    "count": 1
-                }
-            }
-        },
-        {
-            "id": "observer",
-            "name": "Observer",
-            "emoji": "👁️",
-            "description": "An observer is a block that emits a redstone signal when the block it faces is updated. Great for detecting changes in the world.",
-            "category": "Redstone",
-            "stackSize": 64,
-            "renewable": true,
-            "tool": "Pickaxe",
-            "hardness": 3,
-            "blastResistance": 3,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "cobblestone",
-                        "cobblestone",
-                        "cobblestone"
-                    ],
-                    [
-                        "redstone",
-                        "redstone",
-                        "quartz"
-                    ],
-                    [
-                        "cobblestone",
-                        "cobblestone",
-                        "cobblestone"
-                    ]
-                ],
-                "result": {
-                    "item": "observer",
-                    "count": 1
-                }
-            }
-        },
-        {
-            "id": "jukebox",
-            "name": "Jukebox",
-            "emoji": "🎵",
-            "description": "A jukebox is a block used to play music discs. Right-click with a music disc to insert it and play music.",
-            "category": "Decoration",
-            "stackSize": 64,
-            "renewable": true,
-            "tool": "Axe",
-            "hardness": 2,
-            "blastResistance": 6,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "oak_planks",
-                        "oak_planks",
-                        "oak_planks"
-                    ],
-                    [
-                        "oak_planks",
-                        "diamond",
-                        "oak_planks"
-                    ],
-                    [
-                        "oak_planks",
-                        "oak_planks",
-                        "oak_planks"
-                    ]
-                ],
-                "result": {
-                    "item": "jukebox",
-                    "count": 1
-                }
-            }
-        },
-        {
-            "id": "smithing_table",
-            "name": "Smithing Table",
-            "emoji": "🔨",
-            "description": "A smithing table is a utility block used for upgrading diamond gear to netherite and applying armor trims. Also serves as a toolsmith villager job site.",
-            "category": "Utility",
-            "stackSize": 64,
-            "renewable": true,
-            "tool": "Axe",
-            "hardness": 2.5,
-            "blastResistance": 2.5,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "iron_ingot",
-                        "iron_ingot",
-                        null
-                    ],
-                    [
-                        "oak_planks",
-                        "oak_planks",
-                        null
-                    ],
-                    [
-                        "oak_planks",
-                        "oak_planks",
-                        null
-                    ]
-                ],
-                "result": {
-                    "item": "smithing_table",
-                    "count": 1
-                }
-            }
+            "renewable": true
         },
         {
             "id": "blast_furnace",
             "name": "Blast Furnace",
-            "emoji": "🔥",
-            "description": "A blast furnace is a utility block that smelts ores, raw metals, and metal armor and tools twice as fast as a regular furnace.",
+            "description": "Smelts ores twice as fast as a regular furnace. Can smelt ores and metal armor/tools only.",
             "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/20/Blast_Furnace_JE2.png",
             "stackSize": 64,
-            "renewable": true,
-            "tool": "Pickaxe",
             "hardness": 3.5,
             "blastResistance": 3.5,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "iron_ingot",
-                        "iron_ingot",
-                        "iron_ingot"
-                    ],
-                    [
-                        "iron_ingot",
-                        "furnace",
-                        "iron_ingot"
-                    ],
-                    [
-                        "smooth_stone",
-                        "smooth_stone",
-                        "smooth_stone"
-                    ]
-                ],
-                "result": {
-                    "item": "blast_furnace",
-                    "count": 1
-                }
-            }
+            "tool": "Pickaxe",
+            "renewable": true
         },
         {
             "id": "smoker",
             "name": "Smoker",
-            "emoji": "🍖",
-            "description": "A smoker is a utility block that cooks food twice as fast as a regular furnace. It cannot smelt ores or other non-food items.",
+            "description": "Cooks food twice as fast as a regular furnace. Can only cook food items.",
             "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/ff/Smoker_JE2.png",
             "stackSize": 64,
-            "renewable": true,
-            "tool": "Pickaxe",
             "hardness": 3.5,
             "blastResistance": 3.5,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        null,
-                        "log",
-                        null
-                    ],
-                    [
-                        "log",
-                        "furnace",
-                        "log"
-                    ],
-                    [
-                        null,
-                        "log",
-                        null
-                    ]
-                ],
-                "result": {
-                    "item": "smoker",
-                    "count": 1
-                }
-            }
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "chest",
+            "name": "Chest",
+            "description": "A storage container with 27 slots. Two chests can be placed side by side to form a Large Chest.",
+            "category": "Storage",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b7/Chest_JE2_BE2.png",
+            "stackSize": 64,
+            "hardness": 2.5,
+            "blastResistance": 2.5,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "ender_chest",
+            "name": "Ender Chest",
+            "description": "A personal chest that shares its inventory across all ender chests you access. Perfect for cross-dimensional storage.",
+            "category": "Storage",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2d/Ender_Chest_JE3.png",
+            "stackSize": 64,
+            "hardness": 22.5,
+            "blastResistance": 600,
+            "tool": "Pickaxe",
+            "renewable": false
+        },
+        {
+            "id": "barrel",
+            "name": "Barrel",
+            "description": "A storage block with 27 slots that can be opened without obstruction from blocks above it.",
+            "category": "Storage",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/ff/Barrel_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 2.5,
+            "blastResistance": 2.5,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "shulker_box",
+            "name": "Shulker Box",
+            "description": "A portable storage block that retains its contents when broken. Can be dyed 16 different colors.",
+            "category": "Storage",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/67/Purple_Shulker_Box_JE1_BE1.png",
+            "stackSize": 1,
+            "hardness": 2,
+            "blastResistance": 2,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "anvil",
+            "name": "Anvil",
+            "description": "Used to repair and rename items, combine enchantments. Degrades with use and can fall when unsupported.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f5/Anvil_JE4.png",
+            "stackSize": 64,
+            "hardness": 5,
+            "blastResistance": 1200,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "enchanting_table",
+            "name": "Enchanting Table",
+            "description": "Used to enchant items using experience points. Bookshelves increase the maximum enchantment level.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/01/Enchanting_Table_JE2.png",
+            "stackSize": 64,
+            "hardness": 5,
+            "blastResistance": 1200,
+            "tool": "Pickaxe",
+            "renewable": false
+        },
+        {
+            "id": "bookshelf",
+            "name": "Bookshelf",
+            "description": "Decorative block required to power up enchanting tables. 15 bookshelves unlock maximum enchantments.",
+            "category": "Decoration",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4f/Bookshelf_JE4_BE2.png",
+            "stackSize": 64,
+            "hardness": 1.5,
+            "blastResistance": 1.5,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "brewing_stand",
+            "name": "Brewing Stand",
+            "description": "Used to brew potions using blaze powder as fuel. Can brew up to three potions at once.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/07/Brewing_Stand_JE3_BE3.png",
+            "stackSize": 64,
+            "hardness": 0.5,
+            "blastResistance": 0.5,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "beacon",
+            "name": "Beacon",
+            "description": "Emits a light beam and provides powerful status effects to nearby players when activated.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/19/Beacon_JE6.png",
+            "stackSize": 64,
+            "hardness": 3,
+            "blastResistance": 3,
+            "tool": "Any",
+            "renewable": false
+        },
+        {
+            "id": "bed",
+            "name": "Bed",
+            "description": "Allows sleeping to skip the night and set spawn point. Explodes in the Nether and End.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e8/Red_Bed_JE4_BE2.png",
+            "stackSize": 1,
+            "hardness": 0.2,
+            "blastResistance": 0.2,
+            "tool": "Any",
+            "renewable": true
+        },
+        {
+            "id": "respawn_anchor",
+            "name": "Respawn Anchor",
+            "description": "Sets your respawn point in the Nether. Requires glowstone charges. Explodes in other dimensions.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c1/Respawn_Anchor_JE1.png",
+            "stackSize": 64,
+            "hardness": 50,
+            "blastResistance": 1200,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "stone",
+            "name": "Stone",
+            "description": "A common block found underground. Drops cobblestone when mined without Silk Touch.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/1b/Stone_JE4_BE2.png",
+            "stackSize": 64,
+            "hardness": 1.5,
+            "blastResistance": 6,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "cobblestone",
+            "name": "Cobblestone",
+            "description": "Common building material obtained from mining stone. Used in many crafting recipes.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c8/Cobblestone_JE5_BE3.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 6,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "deepslate",
+            "name": "Deepslate",
+            "description": "A stone variant found deep underground. Harder than regular stone with a dark appearance.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/0a/Deepslate_JE2_BE1.png",
+            "stackSize": 64,
+            "hardness": 3,
+            "blastResistance": 6,
+            "tool": "Pickaxe",
+            "renewable": false
+        },
+        {
+            "id": "obsidian",
+            "name": "Obsidian",
+            "description": "An extremely hard block formed when water meets lava. Required for building Nether portals.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/99/Obsidian_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 50,
+            "blastResistance": 1200,
+            "tool": "Diamond Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "crying_obsidian",
+            "name": "Crying Obsidian",
+            "description": "A purple variant of obsidian that emits particles. Used to craft respawn anchors.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a7/Crying_Obsidian_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 50,
+            "blastResistance": 1200,
+            "tool": "Diamond Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "oak_planks",
+            "name": "Oak Planks",
+            "description": "A versatile building block crafted from oak logs. Used in many crafting recipes.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e0/Oak_Planks_JE6_BE3.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 3,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "spruce_planks",
+            "name": "Spruce Planks",
+            "description": "Dark wood planks from spruce trees. Common in taiga and cold biomes.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/76/Spruce_Planks_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 3,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "birch_planks",
+            "name": "Birch Planks",
+            "description": "Light-colored planks from birch trees. Popular for bright building projects.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2e/Birch_Planks_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 3,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "jungle_planks",
+            "name": "Jungle Planks",
+            "description": "Reddish-brown planks from jungle trees. Found exclusively in jungle biomes.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f3/Jungle_Planks_JE4_BE2.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 3,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "acacia_planks",
+            "name": "Acacia Planks",
+            "description": "Orange-tinted planks from acacia trees. Found in savanna biomes.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/74/Acacia_Planks_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 3,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "dark_oak_planks",
+            "name": "Dark Oak Planks",
+            "description": "Dark brown planks from dark oak trees. Found in dark forest biomes.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/51/Dark_Oak_Planks_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 3,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "mangrove_planks",
+            "name": "Mangrove Planks",
+            "description": "Red-tinted planks from mangrove trees. Found in mangrove swamp biomes.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5c/Mangrove_Planks_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 3,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "cherry_planks",
+            "name": "Cherry Planks",
+            "description": "Pink-tinted planks from cherry trees. Found in cherry grove biomes.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7d/Cherry_Planks_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 3,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "bamboo_planks",
+            "name": "Bamboo Planks",
+            "description": "Yellow-green planks crafted from bamboo blocks. Unique striped texture.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/67/Bamboo_Planks_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 3,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "crimson_planks",
+            "name": "Crimson Planks",
+            "description": "Red planks from crimson fungi in the Nether. Fireproof unlike Overworld wood.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c2/Crimson_Planks_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 3,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "warped_planks",
+            "name": "Warped Planks",
+            "description": "Teal planks from warped fungi in the Nether. Fireproof unlike Overworld wood.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ef/Warped_Planks_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 3,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "glass",
+            "name": "Glass",
+            "description": "A transparent block made by smelting sand. Breaks without dropping unless Silk Touch is used.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5e/Glass_JE4_BE2.png",
+            "stackSize": 64,
+            "hardness": 0.3,
+            "blastResistance": 0.3,
+            "tool": "Any",
+            "renewable": true
+        },
+        {
+            "id": "tinted_glass",
+            "name": "Tinted Glass",
+            "description": "A dark glass block that blocks light but is visually transparent. Drops when broken.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/73/Tinted_Glass_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 0.3,
+            "blastResistance": 0.3,
+            "tool": "Any",
+            "renewable": true
+        },
+        {
+            "id": "bricks",
+            "name": "Bricks",
+            "description": "A classic building block with a warm, rustic appearance. Crafted from clay bricks.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/08/Bricks_JE5_BE3.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 6,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "stone_bricks",
+            "name": "Stone Bricks",
+            "description": "A refined building block crafted from stone. Common in strongholds.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/8b/Stone_Bricks_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 1.5,
+            "blastResistance": 6,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "deepslate_bricks",
+            "name": "Deepslate Bricks",
+            "description": "Dark bricks crafted from polished deepslate. Found in ancient cities.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/51/Deepslate_Bricks_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 3.5,
+            "blastResistance": 6,
+            "tool": "Pickaxe",
+            "renewable": false
+        },
+        {
+            "id": "nether_bricks",
+            "name": "Nether Bricks",
+            "description": "Dark purple bricks found in Nether fortresses. Crafted from Nether brick items.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4f/Nether_Bricks_JE4_BE3.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 6,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "end_stone_bricks",
+            "name": "End Stone Bricks",
+            "description": "Cream-colored bricks crafted from end stone. Found in end cities.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b0/End_Stone_Bricks_JE2_BE2.png",
+            "stackSize": 64,
+            "hardness": 3,
+            "blastResistance": 9,
+            "tool": "Pickaxe",
+            "renewable": false
+        },
+        {
+            "id": "prismarine",
+            "name": "Prismarine",
+            "description": "An animated underwater block with color-shifting properties. Found in ocean monuments.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/09/Prismarine_JE2_BE2.png",
+            "stackSize": 64,
+            "hardness": 1.5,
+            "blastResistance": 6,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "sea_lantern",
+            "name": "Sea Lantern",
+            "description": "An underwater light source found in ocean monuments. Emits a light level of 15.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/97/Sea_Lantern_JE1_BE1.gif",
+            "stackSize": 64,
+            "hardness": 0.3,
+            "blastResistance": 0.3,
+            "tool": "Any",
+            "renewable": true
+        },
+        {
+            "id": "glowstone",
+            "name": "Glowstone",
+            "description": "A bright light source found in the Nether. Emits light level 15.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a0/Glowstone_JE4_BE2.png",
+            "stackSize": 64,
+            "hardness": 0.3,
+            "blastResistance": 0.3,
+            "tool": "Any",
+            "renewable": true
+        },
+        {
+            "id": "lantern",
+            "name": "Lantern",
+            "description": "A light source that can be hung from ceilings. Emits light level 15.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2a/Lantern_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 3.5,
+            "blastResistance": 3.5,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "soul_lantern",
+            "name": "Soul Lantern",
+            "description": "A blue-glowing lantern. Emits light level 10 and repels piglins.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c5/Soul_Lantern_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 3.5,
+            "blastResistance": 3.5,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "torch",
+            "name": "Torch",
+            "description": "A basic light source. Emits light level 14 and can be placed on walls and floors.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7c/Torch_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 0,
+            "blastResistance": 0,
+            "tool": "Any",
+            "renewable": true
+        },
+        {
+            "id": "redstone_torch",
+            "name": "Redstone Torch",
+            "description": "Emits a low light level and provides a constant redstone signal.",
+            "category": "Redstone",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4a/Redstone_Torch_JE4.png",
+            "stackSize": 64,
+            "hardness": 0,
+            "blastResistance": 0,
+            "tool": "Any",
+            "renewable": true
+        },
+        {
+            "id": "soul_torch",
+            "name": "Soul Torch",
+            "description": "A blue-flamed torch. Emits light level 10 and repels piglins.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/94/Soul_Torch_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 0,
+            "blastResistance": 0,
+            "tool": "Any",
+            "renewable": true
+        },
+        {
+            "id": "redstone_lamp",
+            "name": "Redstone Lamp",
+            "description": "A light source that activates when powered by redstone. Emits light level 15.",
+            "category": "Redstone",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/68/Redstone_Lamp_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 0.3,
+            "blastResistance": 0.3,
+            "tool": "Any",
+            "renewable": true
+        },
+        {
+            "id": "piston",
+            "name": "Piston",
+            "description": "Pushes blocks when activated by redstone. Can push up to 12 blocks.",
+            "category": "Redstone",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2f/Piston_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 1.5,
+            "blastResistance": 0.5,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "sticky_piston",
+            "name": "Sticky Piston",
+            "description": "Pushes and pulls blocks when activated. The slime allows block retraction.",
+            "category": "Redstone",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/6f/Sticky_Piston_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 1.5,
+            "blastResistance": 0.5,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "observer",
+            "name": "Observer",
+            "description": "Detects block updates and emits a redstone pulse. Useful for detecting changes.",
+            "category": "Redstone",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3e/Observer_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 3,
+            "blastResistance": 3,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "hopper",
+            "name": "Hopper",
+            "description": "Transfers items between containers and collects items dropped on top of it.",
+            "category": "Redstone",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/0a/Hopper_JE8.png",
+            "stackSize": 64,
+            "hardness": 3,
+            "blastResistance": 4.8,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "dispenser",
+            "name": "Dispenser",
+            "description": "Dispenses items or projectiles when powered by redstone.",
+            "category": "Redstone",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/21/Dispenser_JE4_BE2.png",
+            "stackSize": 64,
+            "hardness": 3.5,
+            "blastResistance": 3.5,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "dropper",
+            "name": "Dropper",
+            "description": "Drops items or transfers them to adjacent containers when powered.",
+            "category": "Redstone",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a5/Dropper_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 3.5,
+            "blastResistance": 3.5,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "comparator",
+            "name": "Redstone Comparator",
+            "description": "Compares, subtracts, or measures redstone signals and container contents.",
+            "category": "Redstone",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5e/Redstone_Comparator_JE4.png",
+            "stackSize": 64,
+            "hardness": 0,
+            "blastResistance": 0,
+            "tool": "Any",
+            "renewable": true
+        },
+        {
+            "id": "repeater",
+            "name": "Redstone Repeater",
+            "description": "Delays, strengthens, and locks redstone signals. Adjustable 1-4 tick delay.",
+            "category": "Redstone",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/82/Redstone_Repeater_JE4.png",
+            "stackSize": 64,
+            "hardness": 0,
+            "blastResistance": 0,
+            "tool": "Any",
+            "renewable": true
+        },
+        {
+            "id": "daylight_detector",
+            "name": "Daylight Detector",
+            "description": "Outputs a redstone signal based on sunlight intensity. Can be inverted.",
+            "category": "Redstone",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ef/Daylight_Detector_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 0.2,
+            "blastResistance": 0.2,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "tnt",
+            "name": "TNT",
+            "description": "An explosive block that detonates when ignited or powered by redstone.",
+            "category": "Redstone",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/84/TNT_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 0,
+            "blastResistance": 0,
+            "tool": "Any",
+            "renewable": true
+        },
+        {
+            "id": "note_block",
+            "name": "Note Block",
+            "description": "Plays musical notes when powered. Pitch changes based on hits, instrument on block below.",
+            "category": "Redstone",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/98/Note_Block_JE2_BE2.png",
+            "stackSize": 64,
+            "hardness": 0.8,
+            "blastResistance": 0.8,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "jukebox",
+            "name": "Jukebox",
+            "description": "Plays music discs when inserted. Outputs a redstone signal based on the disc.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3a/Jukebox_JE2_BE2.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 6,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "iron_block",
+            "name": "Block of Iron",
+            "description": "A decorative and storage block made from 9 iron ingots. Used to build iron golems.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/71/Block_of_Iron_JE4_BE3.png",
+            "stackSize": 64,
+            "hardness": 5,
+            "blastResistance": 6,
+            "tool": "Stone Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "gold_block",
+            "name": "Block of Gold",
+            "description": "A decorative and storage block made from 9 gold ingots. Attracts piglins.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/30/Block_of_Gold_JE6_BE3.png",
+            "stackSize": 64,
+            "hardness": 3,
+            "blastResistance": 6,
+            "tool": "Iron Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "diamond_block",
+            "name": "Block of Diamond",
+            "description": "A highly valuable decorative and storage block made from 9 diamonds.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/28/Block_of_Diamond_JE6_BE3.png",
+            "stackSize": 64,
+            "hardness": 5,
+            "blastResistance": 6,
+            "tool": "Iron Pickaxe",
+            "renewable": false
+        },
+        {
+            "id": "emerald_block",
+            "name": "Block of Emerald",
+            "description": "A rare decorative and storage block made from 9 emeralds. Used for beacon bases.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4f/Block_of_Emerald_JE4_BE3.png",
+            "stackSize": 64,
+            "hardness": 5,
+            "blastResistance": 6,
+            "tool": "Iron Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "netherite_block",
+            "name": "Block of Netherite",
+            "description": "The most blast-resistant block in the game. Made from 9 netherite ingots.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/52/Block_of_Netherite_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 50,
+            "blastResistance": 1200,
+            "tool": "Diamond Pickaxe",
+            "renewable": false
+        },
+        {
+            "id": "lapis_block",
+            "name": "Block of Lapis Lazuli",
+            "description": "A bright blue decorative and storage block made from 9 lapis lazuli.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/23/Block_of_Lapis_Lazuli_JE3_BE3.png",
+            "stackSize": 64,
+            "hardness": 3,
+            "blastResistance": 3,
+            "tool": "Stone Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "redstone_block",
+            "name": "Block of Redstone",
+            "description": "A decorative block that provides a constant redstone power source.",
+            "category": "Redstone",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/35/Block_of_Redstone_JE2_BE2.png",
+            "stackSize": 64,
+            "hardness": 5,
+            "blastResistance": 6,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "copper_block",
+            "name": "Block of Copper",
+            "description": "A decorative block that oxidizes over time, changing color from orange to teal.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/13/Block_of_Copper_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 3,
+            "blastResistance": 6,
+            "tool": "Stone Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "amethyst_block",
+            "name": "Block of Amethyst",
+            "description": "A purple decorative block that makes a chime sound when stepped on or hit.",
+            "category": "Building",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/1c/Block_of_Amethyst_JE2.png",
+            "stackSize": 64,
+            "hardness": 1.5,
+            "blastResistance": 1.5,
+            "tool": "Pickaxe",
+            "renewable": false
+        },
+        {
+            "id": "sponge",
+            "name": "Sponge",
+            "description": "Absorbs water in a 7-block radius. Found in ocean monuments or dropped by elder guardians.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/aa/Sponge_JE3_BE3.png",
+            "stackSize": 64,
+            "hardness": 0.6,
+            "blastResistance": 0.6,
+            "tool": "Hoe",
+            "renewable": false
+        },
+        {
+            "id": "lodestone",
+            "name": "Lodestone",
+            "description": "A magnetic block that can be linked to a compass in any dimension.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c8/Lodestone_JE2_BE1.png",
+            "stackSize": 64,
+            "hardness": 3.5,
+            "blastResistance": 3.5,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "smithing_table",
+            "name": "Smithing Table",
+            "description": "Used to upgrade diamond gear to netherite using smithing templates.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e4/Smithing_Table_JE2_BE2.png",
+            "stackSize": 64,
+            "hardness": 2.5,
+            "blastResistance": 2.5,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "grindstone",
+            "name": "Grindstone",
+            "description": "Removes enchantments from items and repairs tools by combining them.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/42/Grindstone_JE2_BE2.png",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 6,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "stonecutter",
+            "name": "Stonecutter",
+            "description": "Efficiently cuts stone-based blocks into stairs, slabs, and decorative variants.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/04/Stonecutter_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 3.5,
+            "blastResistance": 3.5,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "loom",
+            "name": "Loom",
+            "description": "Used to apply patterns to banners. Much easier than crafting patterns.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c1/Loom_JE1_BE2.png",
+            "stackSize": 64,
+            "hardness": 2.5,
+            "blastResistance": 2.5,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "cartography_table",
+            "name": "Cartography Table",
+            "description": "Used to zoom out, clone, and lock maps. Also a villager job site block.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/96/Cartography_Table_JE5_BE4.png",
+            "stackSize": 64,
+            "hardness": 2.5,
+            "blastResistance": 2.5,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "fletching_table",
+            "name": "Fletching Table",
+            "description": "A villager job site block for the fletcher profession. No player crafting use yet.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/47/Fletching_Table_JE3_BE2.png",
+            "stackSize": 64,
+            "hardness": 2.5,
+            "blastResistance": 2.5,
+            "tool": "Axe",
+            "renewable": true
         },
         {
             "id": "composter",
             "name": "Composter",
-            "emoji": "🌱",
-            "description": "A composter is a utility block that converts plant materials and food into bone meal. Fill it with compostable items to produce fertilizer.",
+            "description": "Converts plant matter into bone meal. Also a villager job site for farmers.",
             "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/32/Composter_JE1_BE1.png",
             "stackSize": 64,
-            "renewable": true,
-            "tool": "Axe",
             "hardness": 0.6,
             "blastResistance": 0.6,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "wood_slab",
-                        null,
-                        "wood_slab"
-                    ],
-                    [
-                        "wood_slab",
-                        null,
-                        "wood_slab"
-                    ],
-                    [
-                        "wood_slab",
-                        "wood_slab",
-                        "wood_slab"
-                    ]
-                ],
-                "result": {
-                    "item": "composter",
-                    "count": 1
-                }
-            }
+            "tool": "Axe",
+            "renewable": true
         },
         {
             "id": "lectern",
             "name": "Lectern",
-            "emoji": "📕",
-            "description": "A lectern is a block used to hold books for multiple players to read. It also emits a redstone signal when the page is turned.",
-            "category": "Decoration",
+            "description": "Holds books for multiple players to read. Outputs redstone when page is turned.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/48/Lectern_JE1_BE2.png",
             "stackSize": 64,
-            "renewable": true,
-            "tool": "Axe",
             "hardness": 2.5,
             "blastResistance": 2.5,
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        "wood_slab",
-                        "wood_slab",
-                        "wood_slab"
-                    ],
-                    [
-                        null,
-                        "bookshelf",
-                        null
-                    ],
-                    [
-                        null,
-                        "wood_slab",
-                        null
-                    ]
-                ],
-                "result": {
-                    "item": "lectern",
-                    "count": 1
-                }
-            }
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "conduit",
+            "name": "Conduit",
+            "description": "Provides Conduit Power effect underwater when activated. Attacks hostile mobs.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b0/Conduit_JE1_BE1.png",
+            "stackSize": 64,
+            "hardness": 3,
+            "blastResistance": 3,
+            "tool": "Any",
+            "renewable": false
+        },
+        {
+            "id": "bell",
+            "name": "Bell",
+            "description": "Alerts villagers of raids when rung. Found in village meeting points.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/64/Bell_JE4_BE2.png",
+            "stackSize": 64,
+            "hardness": 5,
+            "blastResistance": 5,
+            "tool": "Pickaxe",
+            "renewable": true
+        },
+        {
+            "id": "campfire",
+            "name": "Campfire",
+            "description": "Cooks food, sends smoke signals, and damages entities. Can be lit and extinguished.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/54/Campfire_JE2_BE2.gif",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 2,
+            "tool": "Axe",
+            "renewable": true
+        },
+        {
+            "id": "soul_campfire",
+            "name": "Soul Campfire",
+            "description": "A blue-flamed campfire that deals more damage and repels piglins.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a6/Soul_Campfire_JE2_BE2.gif",
+            "stackSize": 64,
+            "hardness": 2,
+            "blastResistance": 2,
+            "tool": "Axe",
+            "renewable": true
         }
     ]
 }

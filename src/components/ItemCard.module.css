@@ -4,244 +4,103 @@
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
-    overflow: hidden;
+    padding: var(--space-md);
     text-decoration: none;
+    color: inherit;
     transition: all var(--transition-normal);
 }
 
 .card:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--shadow-lg), 0 0 20px rgba(23, 221, 98, 0.1);
-    border-color: var(--accent);
+    background: var(--bg-card-hover);
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
 }
 
 .header {
-    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: var(--space-sm);
+}
+
+.iconWrapper {
+    width: 56px;
+    height: 56px;
+    background: var(--bg-elevated);
+    border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 32px 20px;
-    background: linear-gradient(135deg, var(--bg-hover) 0%, var(--bg-card) 100%);
-    border-bottom: 1px solid var(--border-color);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
 }
 
 .emoji {
-    font-size: 3.5rem;
-    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
-    transition: transform var(--transition-normal);
+    font-size: 1.75rem;
+    line-height: 1;
 }
 
-.card:hover .emoji {
-    transform: scale(1.15) rotate(-5deg);
+.itemImage {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    image-rendering: pixelated;
 }
 
 .badge {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    padding: 4px 10px;
+    font-size: 0.6rem;
+    padding: 4px 8px;
     background: var(--accent);
-    color: #1a1a2e;
-    font-size: 0.7rem;
+    color: #0a0a0a;
+    border-radius: 4px;
     font-weight: 700;
-    border-radius: 9999px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 }
 
 .content {
     flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
 }
 
 .name {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
+    margin: 0 0 4px 0;
     color: var(--text-primary);
-    margin: 0;
 }
 
 .category {
     display: inline-block;
-    width: fit-content;
-    padding: 4px 10px;
     font-size: 0.7rem;
-    font-weight: 600;
-    border-radius: 9999px;
+    color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    background: var(--border-color);
-    color: var(--text-secondary);
-}
-
-/* Category-specific colors */
-.badge-utility {
-    background: var(--mc-emerald);
-    color: white;
-}
-
-.badge-storage {
-    background: var(--mc-wood);
-    color: white;
-}
-
-.badge-decoration {
-    background: var(--mc-gold);
-    color: #1a1a2e;
-}
-
-.badge-redstone {
-    background: var(--mc-redstone);
-    color: white;
-}
-
-.badge-materials {
-    background: var(--mc-diamond);
-    color: #1a1a2e;
-}
-
-.badge-brewing {
-    background: var(--mc-water);
-    color: white;
-}
-
-.badge-fuel {
-    background: #333;
-    color: white;
-}
-
-.badge-weapons {
-    background: var(--mc-redstone);
-    color: white;
-}
-
-.badge-tools {
-    background: var(--mc-stone);
-    color: white;
-}
-
-.badge-armor {
-    background: var(--mc-cobble);
-    color: white;
-}
-
-.badge-hostile {
-    background: var(--mc-nether);
-    color: white;
-}
-
-.badge-neutral {
-    background: var(--mc-gold);
-    color: #1a1a2e;
-}
-
-.badge-passive {
-    background: var(--mc-grass);
-    color: white;
-}
-
-.badge-boss {
-    background: var(--mc-obsidian);
-    color: white;
-}
-
-.badge-temperate {
-    background: var(--mc-grass);
-    color: white;
-}
-
-.badge-tropical {
-    background: #2d8a3e;
-    color: white;
-}
-
-.badge-dry {
-    background: #c4a35a;
-    color: #1a1a2e;
-}
-
-.badge-cold {
-    background: #6ba3c9;
-    color: white;
-}
-
-.badge-frozen {
-    background: #a8d8ea;
-    color: #1a1a2e;
-}
-
-.badge-wet {
-    background: #5a8a6a;
-    color: white;
-}
-
-.badge-aquatic {
-    background: var(--mc-water);
-    color: white;
-}
-
-.badge-special {
-    background: #9c4dcc;
-    color: white;
-}
-
-.badge-nether {
-    background: var(--mc-nether);
-    color: white;
-}
-
-.badge-end {
-    background: var(--mc-end);
-    color: white;
-}
-
-.badge-cave {
-    background: #4a4a4a;
-    color: white;
-}
-
-.badge-positive {
-    background: var(--mc-emerald);
-    color: white;
-}
-
-.badge-negative {
-    background: var(--mc-redstone);
-    color: white;
-}
-
-.badge-mixed {
-    background: var(--mc-gold);
-    color: #1a1a2e;
+    margin-bottom: var(--space-xs);
 }
 
 .description {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     color: var(--text-secondary);
     line-height: 1.5;
+    margin: 0;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    margin: 0;
 }
 
 .footer {
-    padding: 16px 20px;
+    margin-top: var(--space-md);
+    padding-top: var(--space-sm);
     border-top: 1px solid var(--border-color);
-    background: rgba(0, 0, 0, 0.1);
 }
 
 .viewMore {
-    font-size: 0.875rem;
-    font-weight: 500;
+    font-size: 0.75rem;
     color: var(--accent);
-    transition: color var(--transition-fast);
+    font-weight: 500;
 }
 
 .card:hover .viewMore {
-    color: var(--accent-hover);
+    text-decoration: underline;
 }

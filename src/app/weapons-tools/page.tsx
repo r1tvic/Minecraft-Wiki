@@ -48,11 +48,9 @@ export default function WeaponsToolsPage() {
                         key={item.id}
                         id={item.id}
                         name={item.name}
-                        emoji={item.emoji}
                         description={item.description}
                         category={item.category}
                         href={`/weapons-tools/${item.id}`}
-                        badge={item.recipe ? 'Craftable' : undefined}
                     />
                 ))}
             </div>

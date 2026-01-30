@@ -1,143 +1,114 @@
-.container {
+.searchContainer {
     position: relative;
     width: 100%;
-    max-width: 600px;
 }
 
-.searchWrapper {
+.inputWrapper {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 12px 16px;
-    background: var(--bg-card);
-    border: 2px solid var(--border-color);
-    border-radius: var(--radius-lg);
-    transition: all var(--transition-fast);
-}
-
-.searchWrapper.focused {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(23, 221, 98, 0.15);
 }
 
 .searchIcon {
-    font-size: 1.25rem;
-    opacity: 0.6;
-}
-
-.input {
-    flex: 1;
-    background: none;
-    border: none;
-    outline: none;
-    color: var(--text-primary);
+    position: absolute;
+    left: 14px;
     font-size: 1rem;
-}
-
-.input::placeholder {
     color: var(--text-muted);
+    pointer-events: none;
 }
 
-.clearBtn {
-    padding: 4px 8px;
-    background: rgba(255, 255, 255, 0.1);
-    border: none;
-    border-radius: var(--radius-sm);
-    color: var(--text-secondary);
-    cursor: pointer;
+.searchInput {
+    width: 100%;
+    padding: 12px 40px 12px 42px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    outline: none;
     transition: all var(--transition-fast);
 }
 
-.clearBtn:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: var(--text-primary);
+.searchInput::placeholder {
+    color: var(--text-muted);
 }
 
-.dropdown {
+.searchInput:focus {
+    border-color: var(--accent);
+    background: var(--bg-card-hover);
+}
+
+.clearBtn {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 4px;
+    opacity: 0.7;
+    transition: opacity var(--transition-fast);
+}
+
+.clearBtn:hover {
+    opacity: 1;
+}
+
+.resultsDropdown {
     position: absolute;
     top: calc(100% + 8px);
     left: 0;
     right: 0;
+    max-height: 360px;
+    overflow-y: auto;
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-md);
     box-shadow: var(--shadow-lg);
-    overflow: hidden;
-    z-index: 50;
-    animation: slideDown 0.2s ease;
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-8px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    z-index: 100;
 }
 
 .resultItem {
     display: flex;
     align-items: center;
-    gap: 12px;
-    width: 100%;
-    padding: 12px 16px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: all var(--transition-fast);
-    text-align: left;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    text-decoration: none;
+    transition: background var(--transition-fast);
 }
 
-.resultItem:hover {
-    background: var(--bg-hover);
-}
-
-.resultItem:not(:last-child) {
-    border-bottom: 1px solid var(--border-color);
+.resultItem:hover,
+.resultItem.highlighted {
+    background: var(--bg-card-hover);
 }
 
 .resultEmoji {
-    font-size: 1.5rem;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: var(--radius-md);
+    font-size: 1.25rem;
+    width: 32px;
+    text-align: center;
 }
 
 .resultInfo {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
+    flex: 1;
 }
 
 .resultName {
+    font-size: 0.875rem;
     color: var(--text-primary);
     font-weight: 500;
 }
 
 .resultType {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: var(--text-muted);
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 }
 
 .noResults {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 24px;
+    padding: var(--space-lg);
+    text-align: center;
     color: var(--text-muted);
-    justify-content: center;
-}
-
-.noResults span:first-child {
-    font-size: 1.5rem;
+    font-size: 0.875rem;
 }

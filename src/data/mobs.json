@@ -1,303 +1,766 @@
 {
     "mobs": [
         {
-            "id": "creeper",
-            "name": "Creeper",
-            "emoji": "💥",
-            "description": "An iconic hostile mob that silently approaches players and explodes. They are the source of gunpowder and music discs when killed by skeletons.",
-            "category": "Hostile",
-            "health": 20,
-            "damage": "Up to 49 (explosion)",
-            "behavior": "Chases players and explodes when close",
-            "drops": [
-                "Gunpowder (0-2)",
-                "Music Disc (if killed by Skeleton)"
-            ],
-            "spawnBiomes": [
-                "Most Overworld biomes (light level 0)"
-            ],
-            "tips": [
-                "Cats scare away Creepers",
-                "Water reduces explosion damage",
-                "Shield blocks all explosion damage"
-            ]
-        },
-        {
             "id": "zombie",
             "name": "Zombie",
-            "emoji": "🧟",
-            "description": "Common undead mobs that spawn in darkness. They burn in sunlight and can break doors on Hard difficulty.",
+            "description": "Undead hostile mob that spawns at night and in dark areas. Burns in sunlight.",
             "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/9b/Zombie_JE2_BE1.png",
             "health": 20,
             "damage": "2.5-4",
-            "behavior": "Chases players, attacks villagers, burns in sunlight",
+            "behavior": "Attacks players and villagers on sight. Can break down wooden doors on Hard difficulty.",
             "drops": [
-                "Rotten Flesh (0-2)",
+                "Rotten Flesh",
                 "Iron Ingot (rare)",
                 "Carrot (rare)",
                 "Potato (rare)"
             ],
             "spawnBiomes": [
-                "Most Overworld biomes (light level 0)"
-            ],
-            "variants": [
-                "Baby Zombie",
-                "Zombie Villager",
-                "Husk",
-                "Drowned"
+                "Most Overworld biomes at night",
+                "Dark caves"
             ]
         },
         {
             "id": "skeleton",
             "name": "Skeleton",
-            "emoji": "💀",
-            "description": "Undead archers that spawn in darkness. They are accurate shooters and burn in sunlight.",
+            "description": "Ranged hostile mob that shoots arrows. Burns in sunlight unless wearing a helmet.",
             "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7f/Skeleton_JE5_BE3.png",
             "health": 20,
-            "damage": "2-5 (bow)",
-            "behavior": "Shoots arrows at players from distance, burns in sunlight",
+            "damage": "1-5",
+            "behavior": "Keeps distance from players and attacks with bow. Seeks shade during daytime.",
             "drops": [
-                "Bone (0-2)",
-                "Arrow (0-2)",
+                "Bones",
+                "Arrows",
                 "Bow (rare)"
             ],
             "spawnBiomes": [
-                "Most Overworld biomes (light level 0)"
-            ],
-            "variants": [
-                "Stray",
-                "Wither Skeleton"
+                "Most Overworld biomes at night",
+                "Dark caves"
             ]
         },
         {
-            "id": "enderman",
-            "name": "Enderman",
-            "emoji": "👾",
-            "description": "Tall, dark neutral mobs that teleport. They become hostile when looked at directly or attacked. They drop Ender Pearls.",
-            "category": "Neutral",
-            "health": 40,
-            "damage": "7-10.5",
-            "behavior": "Teleports, moves blocks, hostile when looked at",
+            "id": "creeper",
+            "name": "Creeper",
+            "description": "Iconic explosive mob that silently approaches and detonates near players.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4d/Creeper_JE2_BE1.png",
+            "health": 20,
+            "damage": "Explosion (up to 65)",
+            "behavior": "Silently stalks players and explodes when close. Afraid of cats and ocelots.",
             "drops": [
-                "Ender Pearl (0-1)"
+                "Gunpowder",
+                "Music Disc (if killed by skeleton)"
             ],
             "spawnBiomes": [
-                "Most Overworld biomes",
-                "The End (abundant)"
-            ],
-            "tips": [
-                "Wears carved pumpkin to prevent aggro",
-                "Can't teleport in water",
-                "2 blocks tall spaces are safe"
+                "Most Overworld biomes at night",
+                "Dark caves"
             ]
         },
         {
             "id": "spider",
             "name": "Spider",
-            "emoji": "🕷️",
-            "description": "Mobs that can climb walls and are hostile at night but neutral during the day. They drop string and spider eyes.",
-            "category": "Neutral",
+            "description": "Neutral mob at day, hostile at night. Can climb walls and fit through 1-block gaps.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c4/Spider_JE3_BE2.png",
             "health": 16,
             "damage": "2-3",
-            "behavior": "Climbs walls, hostile at night, neutral in daylight",
+            "behavior": "Hostile in darkness, neutral in light. Climbs walls and can spawn as spider jockeys.",
             "drops": [
-                "String (0-2)",
-                "Spider Eye (0-1)"
+                "String",
+                "Spider Eye"
             ],
             "spawnBiomes": [
-                "Most Overworld biomes (light level 0)"
-            ],
-            "variants": [
-                "Cave Spider"
+                "Most Overworld biomes at night"
             ]
         },
         {
-            "id": "blaze",
-            "name": "Blaze",
-            "emoji": "🔥",
-            "description": "Flying hostile mobs found in Nether Fortresses. They shoot fireballs and drop Blaze Rods essential for brewing and reaching The End.",
+            "id": "cave_spider",
+            "name": "Cave Spider",
+            "description": "Smaller spider that inflicts poison. Found only in mineshafts.",
             "category": "Hostile",
-            "health": 20,
-            "damage": "6 (fireball)",
-            "behavior": "Flies, shoots fireballs, spawns from spawners",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/79/Cave_Spider_JE2_BE2.png",
+            "health": 12,
+            "damage": "2 + Poison",
+            "behavior": "Hostile and venomous. Can fit through 0.5 block gaps. Spawns from spawners in mineshafts.",
             "drops": [
-                "Blaze Rod (0-1)"
+                "String",
+                "Spider Eye"
             ],
             "spawnBiomes": [
-                "Nether Fortress"
-            ],
-            "tips": [
-                "Vulnerable to snowballs (3 damage each)",
-                "Water damages them",
-                "Found near spawners in fortresses"
+                "Mineshafts only"
             ]
         },
         {
-            "id": "ghast",
-            "name": "Ghast",
-            "emoji": "👻",
-            "description": "Large floating mobs in the Nether that shoot explosive fireballs. Their tears are used for potions of Regeneration.",
-            "category": "Hostile",
-            "health": 10,
-            "damage": "17 (fireball explosion)",
-            "behavior": "Floats in the Nether, shoots fireballs from range",
-            "drops": [
-                "Ghast Tear (0-1)",
-                "Gunpowder (0-2)"
-            ],
-            "spawnBiomes": [
-                "Nether Wastes",
-                "Soul Sand Valley",
-                "Basalt Deltas"
-            ],
-            "tips": [
-                "Fireballs can be deflected by hitting them",
-                "Low health - easy to kill if you can reach them"
-            ]
-        },
-        {
-            "id": "wither_skeleton",
-            "name": "Wither Skeleton",
-            "emoji": "☠️",
-            "description": "Tall skeleton variants found in Nether Fortresses. They inflict Wither effect and rarely drop Wither Skeleton Skulls for summoning the Wither.",
-            "category": "Hostile",
-            "health": 20,
-            "damage": "5-12",
-            "behavior": "Attacks with stone sword, inflicts Wither effect",
-            "drops": [
-                "Coal (0-1)",
-                "Bone (0-2)",
-                "Wither Skeleton Skull (2.5% chance)"
-            ],
-            "spawnBiomes": [
-                "Nether Fortress"
-            ],
-            "tips": [
-                "3 skulls needed to summon Wither",
-                "Looting enchantment increases skull drop chance"
-            ]
-        },
-        {
-            "id": "piglin",
-            "name": "Piglin",
-            "emoji": "🐷",
-            "description": "Intelligent hostile mobs in the Nether. They can be bartered with using gold ingots and won't attack if you wear gold armor.",
+            "id": "enderman",
+            "name": "Enderman",
+            "description": "Tall neutral mob that teleports. Becomes hostile when looked at or attacked.",
             "category": "Neutral",
-            "health": 16,
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/78/Enderman_JE2.png",
+            "health": 40,
+            "damage": "4.5-7",
+            "behavior": "Teleports randomly. Picks up and places blocks. Damaged by water.",
+            "drops": [
+                "Ender Pearl"
+            ],
+            "spawnBiomes": [
+                "Overworld (rare)",
+                "The End"
+            ]
+        },
+        {
+            "id": "slime",
+            "name": "Slime",
+            "description": "Bouncing hostile mob that splits into smaller slimes when killed.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a2/Slime_JE3_BE2.png",
+            "health": "1-16",
+            "damage": "0-4",
+            "behavior": "Bounces toward players. Large slimes split into medium, medium into small.",
+            "drops": [
+                "Slimeball (small only)"
+            ],
+            "spawnBiomes": [
+                "Swamps at night",
+                "Slime chunks below Y=40"
+            ]
+        },
+        {
+            "id": "witch",
+            "name": "Witch",
+            "description": "Hostile mob that throws harmful potions and drinks beneficial ones.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ee/Witch_JE4.png",
+            "health": 26,
+            "damage": "Potion effects",
+            "behavior": "Throws splash potions of poison, weakness, and harming. Heals itself with potions.",
+            "drops": [
+                "Glass Bottles",
+                "Glowstone Dust",
+                "Gunpowder",
+                "Redstone",
+                "Spider Eye",
+                "Sugar",
+                "Sticks"
+            ],
+            "spawnBiomes": [
+                "Witch huts in swamps",
+                "Raids"
+            ]
+        },
+        {
+            "id": "phantom",
+            "name": "Phantom",
+            "description": "Flying undead mob that spawns when players haven't slept for 3+ in-game days.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c6/Phantom_JE2_BE2.png",
+            "health": 20,
+            "damage": "2-6",
+            "behavior": "Swoops down to attack. Burns in sunlight. Repelled by cats.",
+            "drops": [
+                "Phantom Membrane"
+            ],
+            "spawnBiomes": [
+                "Night sky when player is insomnia-afflicted"
+            ]
+        },
+        {
+            "id": "drowned",
+            "name": "Drowned",
+            "description": "Underwater zombie variant. Can spawn with a trident for ranged attacks.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/40/Drowned_JE2_BE1.png",
+            "health": 20,
+            "damage": "2.5-9",
+            "behavior": "Attacks players in water. Throws tridents if equipped. Converts from zombies underwater.",
+            "drops": [
+                "Rotten Flesh",
+                "Copper Ingot",
+                "Trident (rare)",
+                "Nautilus Shell (rare)"
+            ],
+            "spawnBiomes": [
+                "Oceans",
+                "Rivers",
+                "Underwater ruins"
+            ]
+        },
+        {
+            "id": "guardian",
+            "name": "Guardian",
+            "description": "Underwater hostile mob found in ocean monuments. Attacks with laser beams.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4d/Guardian_JE4.gif",
+            "health": 30,
+            "damage": "4-9",
+            "behavior": "Attacks with laser beam attack. Defends ocean monuments alongside elder guardians.",
+            "drops": [
+                "Prismarine Shards",
+                "Prismarine Crystals",
+                "Raw Cod"
+            ],
+            "spawnBiomes": [
+                "Ocean Monuments"
+            ]
+        },
+        {
+            "id": "elder_guardian",
+            "name": "Elder Guardian",
+            "description": "Boss-like mob in ocean monuments that inflicts Mining Fatigue. Only 3 per monument.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4d/Elder_Guardian_JE2.gif",
+            "health": 80,
             "damage": "5-12",
-            "behavior": "Hostile unless wearing gold, trades for gold ingots",
+            "behavior": "Inflicts Mining Fatigue III on nearby players. Guards each wing of ocean monuments.",
             "drops": [
-                "Gold-related items when bartering"
+                "Prismarine Shards",
+                "Prismarine Crystals",
+                "Wet Sponge",
+                "Raw Cod"
             ],
             "spawnBiomes": [
-                "Crimson Forest",
-                "Nether Wastes",
-                "Bastion Remnants"
-            ],
-            "tips": [
-                "Always wear at least one piece of gold armor",
-                "Trading gives Ender Pearls, fire resistance potions, and more"
-            ]
-        },
-        {
-            "id": "ender_dragon",
-            "name": "Ender Dragon",
-            "emoji": "🐉",
-            "description": "The main boss of Minecraft found in The End. Defeating it unlocks the exit portal and End gateway to outer End islands.",
-            "category": "Boss",
-            "health": 200,
-            "damage": "15 (contact), 3+ (dragon's breath)",
-            "behavior": "Flies around the End, destroys blocks, charges at player",
-            "drops": [
-                "12,000 XP (first kill)",
-                "Dragon Egg",
-                "Exit Portal activation"
-            ],
-            "spawnBiomes": [
-                "The End (main island)"
-            ],
-            "tips": [
-                "Destroy End Crystals first to stop healing",
-                "Beds explode in The End - can be used as weapons",
-                "Shoot with arrows when perched"
-            ]
-        },
-        {
-            "id": "wither",
-            "name": "Wither",
-            "emoji": "💀",
-            "description": "A player-summoned boss created with 4 Soul Sand and 3 Wither Skeleton Skulls. Drops the Nether Star for crafting Beacons.",
-            "category": "Boss",
-            "health": 300,
-            "damage": "8-12 (wither skull)",
-            "behavior": "Flies, shoots wither skulls, destroys blocks, has shield at 50% health",
-            "drops": [
-                "Nether Star",
-                "50 XP"
-            ],
-            "spawnBiomes": [
-                "Player-summoned anywhere"
-            ],
-            "tips": [
-                "Fight in enclosed space like bedrock ceiling",
-                "Has armor at half health requiring melee attacks",
-                "Smite enchantment is very effective"
+                "Ocean Monuments (3 per monument)"
             ]
         },
         {
             "id": "warden",
             "name": "Warden",
-            "emoji": "👹",
-            "description": "The most powerful mob in Minecraft found in Deep Dark biomes. It's blind but detects vibrations and smell. Best avoided, not fought.",
+            "description": "Extremely dangerous mob found in deep dark. Responds to vibrations and smell.",
             "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/36/Warden_JE1_BE1.png",
             "health": 500,
             "damage": "16-45",
-            "behavior": "Detects vibrations and smell, one of strongest attacks in game",
+            "behavior": "Blind but detects vibrations and smell. Sonic boom attack ignores armor. Emerges from sculk.",
             "drops": [
-                "Sculk Catalyst (rarely)"
+                "Sculk Catalyst"
             ],
             "spawnBiomes": [
-                "Deep Dark (summoned by Sculk Shriekers)"
-            ],
-            "tips": [
-                "Crouch to reduce vibrations",
-                "Throw projectiles to distract it",
-                "Has 250 hearts - not designed to be killed"
+                "Ancient Cities (Deep Dark)"
             ]
         },
         {
-            "id": "iron_golem",
-            "name": "Iron Golem",
-            "emoji": "🤖",
-            "description": "Powerful utility mobs that protect villages and can be built by players. They attack most hostile mobs.",
-            "category": "Utility",
-            "health": 100,
-            "damage": "7.5-21.5",
-            "behavior": "Protects villagers, attacks hostile mobs, passive to players unless provoked",
+            "id": "blaze",
+            "name": "Blaze",
+            "description": "Flying Nether mob that shoots fireballs. Found in Nether fortresses.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/bb/Blaze_JE5.gif",
+            "health": 20,
+            "damage": "3 (melee) + 5 (fireball)",
+            "behavior": "Hovers and shoots fireballs in sets of 3. Takes damage from snowballs.",
             "drops": [
-                "Iron Ingot (3-5)",
-                "Poppy (0-2)"
+                "Blaze Rod"
             ],
             "spawnBiomes": [
-                "Villages (naturally)",
-                "Player-built anywhere"
+                "Nether Fortresses"
+            ]
+        },
+        {
+            "id": "ghast",
+            "name": "Ghast",
+            "description": "Large flying Nether mob that shoots explosive fireballs.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/30/Ghast_JE2_BE2.png",
+            "health": 10,
+            "damage": "Fireball explosion",
+            "behavior": "Floats through the Nether and shoots fireballs. Fireballs can be deflected back.",
+            "drops": [
+                "Ghast Tear",
+                "Gunpowder"
             ],
-            "tips": [
-                "Build with 4 iron blocks in T-shape + carved pumpkin",
-                "Can be healed with iron ingots"
+            "spawnBiomes": [
+                "Nether Wastes",
+                "Soul Sand Valley",
+                "Basalt Deltas"
+            ]
+        },
+        {
+            "id": "wither_skeleton",
+            "name": "Wither Skeleton",
+            "description": "Tall skeleton variant that inflicts Wither effect. Drops skulls for summoning the Wither.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/bb/Wither_Skeleton_JE4_BE3.png",
+            "health": 20,
+            "damage": "5-8 + Wither",
+            "behavior": "Patrols Nether fortresses. Inflicts Wither effect on hit. Rare skull drops.",
+            "drops": [
+                "Coal",
+                "Bones",
+                "Wither Skeleton Skull (rare)"
+            ],
+            "spawnBiomes": [
+                "Nether Fortresses"
+            ]
+        },
+        {
+            "id": "piglin",
+            "name": "Piglin",
+            "description": "Nether mob that barters gold for items. Hostile unless player wears gold armor.",
+            "category": "Neutral",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/ab/Piglin_JE1_BE2.png",
+            "health": 16,
+            "damage": "5-8",
+            "behavior": "Barters for gold ingots. Attacks unless player wears gold armor. Hunts hoglins.",
+            "drops": [
+                "Crossbow",
+                "Gold Ingot",
+                "Bartered items"
+            ],
+            "spawnBiomes": [
+                "Crimson Forest",
+                "Nether Wastes",
+                "Bastion Remnants"
+            ]
+        },
+        {
+            "id": "piglin_brute",
+            "name": "Piglin Brute",
+            "description": "Stronger piglin variant that always attacks. Found guarding bastion remnants.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/42/Piglin_Brute_JE1_BE1.png",
+            "health": 50,
+            "damage": "7-13",
+            "behavior": "Always hostile regardless of gold armor. Does not respawn. Guards bastion treasure.",
+            "drops": [
+                "Golden Axe"
+            ],
+            "spawnBiomes": [
+                "Bastion Remnants"
+            ]
+        },
+        {
+            "id": "hoglin",
+            "name": "Hoglin",
+            "description": "Large hostile Nether beast. Can be bred with crimson fungi.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/33/Hoglin_JE1.png",
+            "health": 40,
+            "damage": "3-12",
+            "behavior": "Hostile unless fleeing from warped fungi. Breedable. Hunted by piglins.",
+            "drops": [
+                "Raw Porkchop",
+                "Leather"
+            ],
+            "spawnBiomes": [
+                "Crimson Forest"
+            ]
+        },
+        {
+            "id": "magma_cube",
+            "name": "Magma Cube",
+            "description": "Nether equivalent of slime. Immune to fire and splits when killed.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/32/Magma_Cube_JE2_BE2.png",
+            "health": "1-16",
+            "damage": "3-6",
+            "behavior": "Bounces toward players. Immune to fire. Splits like slimes.",
+            "drops": [
+                "Magma Cream"
+            ],
+            "spawnBiomes": [
+                "Nether Wastes",
+                "Basalt Deltas"
+            ]
+        },
+        {
+            "id": "strider",
+            "name": "Strider",
+            "description": "Passive lava-walking mob that can be ridden with a saddle.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/72/Strider_JE4_BE4.png",
+            "health": 20,
+            "damage": "0",
+            "behavior": "Walks on lava. Can be ridden with saddle and controlled with warped fungus on a stick.",
+            "drops": [
+                "String"
+            ],
+            "spawnBiomes": [
+                "Lava lakes in all Nether biomes"
+            ]
+        },
+        {
+            "id": "endermite",
+            "name": "Endermite",
+            "description": "Small hostile mob that rarely spawns when using ender pearls.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/60/Endermite_JE2_BE2.png",
+            "health": 8,
+            "damage": "2",
+            "behavior": "Attacks players. Endermen are hostile toward endermites. Despawns after 2 minutes.",
+            "drops": [
+                "None"
+            ],
+            "spawnBiomes": [
+                "From ender pearl usage (5% chance)"
+            ]
+        },
+        {
+            "id": "shulker",
+            "name": "Shulker",
+            "description": "End mob that hides in a shell and shoots levitation projectiles.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/82/Shulker_JE2_BE2.png",
+            "health": 30,
+            "damage": "4 + Levitation",
+            "behavior": "Hides in shell for protection. Shoots homing bullets that cause Levitation.",
+            "drops": [
+                "Shulker Shell"
+            ],
+            "spawnBiomes": [
+                "End Cities"
+            ]
+        },
+        {
+            "id": "pig",
+            "name": "Pig",
+            "description": "Common passive mob that can be bred and drops porkchops.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/72/Pig_JE3_BE2.png",
+            "health": 10,
+            "damage": "0",
+            "behavior": "Wanders aimlessly. Can be bred with carrots, potatoes, or beetroots.",
+            "drops": [
+                "Raw Porkchop"
+            ],
+            "spawnBiomes": [
+                "Most grassy Overworld biomes"
+            ]
+        },
+        {
+            "id": "cow",
+            "name": "Cow",
+            "description": "Common passive mob that provides beef and leather. Can be milked with a bucket.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/64/Cow_JE5_BE3.png",
+            "health": 10,
+            "damage": "0",
+            "behavior": "Wanders aimlessly. Can be milked infinitely. Bred with wheat.",
+            "drops": [
+                "Raw Beef",
+                "Leather"
+            ],
+            "spawnBiomes": [
+                "Most grassy Overworld biomes"
+            ]
+        },
+        {
+            "id": "sheep",
+            "name": "Sheep",
+            "description": "Passive mob that provides wool. Can be dyed 16 different colors.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/6c/White_Sheep_JE4.png",
+            "health": 8,
+            "damage": "0",
+            "behavior": "Wanders and eats grass to regrow wool. Shearing is sustainable.",
+            "drops": [
+                "Wool",
+                "Raw Mutton"
+            ],
+            "spawnBiomes": [
+                "Most grassy Overworld biomes"
+            ]
+        },
+        {
+            "id": "chicken",
+            "name": "Chicken",
+            "description": "Small passive mob that provides feathers, eggs, and chicken meat.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/41/Chicken_JE3_BE2.png",
+            "health": 4,
+            "damage": "0",
+            "behavior": "Flaps wings to slow descent. Lays eggs every 5-10 minutes.",
+            "drops": [
+                "Raw Chicken",
+                "Feathers"
+            ],
+            "spawnBiomes": [
+                "Most grassy Overworld biomes"
+            ]
+        },
+        {
+            "id": "horse",
+            "name": "Horse",
+            "description": "Rideable passive mob with varying stats. Can be equipped with armor.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ee/White_Horse_JE5_BE3.png",
+            "health": "15-30",
+            "damage": "0",
+            "behavior": "Must be tamed by repeatedly mounting. Needs saddle to control.",
+            "drops": [
+                "Leather"
+            ],
+            "spawnBiomes": [
+                "Plains",
+                "Savanna"
+            ]
+        },
+        {
+            "id": "donkey",
+            "name": "Donkey",
+            "description": "Rideable mob that can carry chests. Slower but useful for storage.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3a/Donkey_JE5_BE3.png",
+            "health": "15-30",
+            "damage": "0",
+            "behavior": "Can be equipped with chest for 15 inventory slots. Slower than horses.",
+            "drops": [
+                "Leather"
+            ],
+            "spawnBiomes": [
+                "Plains",
+                "Savanna (less common)"
+            ]
+        },
+        {
+            "id": "llama",
+            "name": "Llama",
+            "description": "Can carry cargo and form caravans. Spits at enemies.",
+            "category": "Neutral",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/bc/Creamy_Llama_JE2_BE2.png",
+            "health": "15-30",
+            "damage": "1 (spit)",
+            "behavior": "Forms caravans when leashed. Equipped with carpet for decoration and chest for storage.",
+            "drops": [
+                "Leather"
+            ],
+            "spawnBiomes": [
+                "Savanna",
+                "Windswept Hills"
+            ]
+        },
+        {
+            "id": "wolf",
+            "name": "Wolf",
+            "description": "Tameable neutral mob. Loyal companion that attacks your enemies.",
+            "category": "Neutral",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/1c/Wolf_JE4.png",
+            "health": "8 (wild) / 20 (tamed)",
+            "damage": "3-4",
+            "behavior": "Tamed with bones. Attacks what you attack or what attacks you.",
+            "drops": [
+                "None"
+            ],
+            "spawnBiomes": [
+                "Taiga",
+                "Forest",
+                "Snowy biomes"
+            ]
+        },
+        {
+            "id": "cat",
+            "name": "Cat",
+            "description": "Tameable passive mob that scares away creepers and phantoms.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a8/Siamese_Cat_JE2.png",
+            "health": 10,
+            "damage": "0",
+            "behavior": "Tamed with raw fish. Scares creepers and phantoms. Gives gifts after sleeping.",
+            "drops": [
+                "String"
+            ],
+            "spawnBiomes": [
+                "Villages",
+                "Witch Huts (black cat)"
+            ]
+        },
+        {
+            "id": "fox",
+            "name": "Fox",
+            "description": "Nocturnal mob that can pick up items. Can be bred but not directly tamed.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2d/Fox_JE2.png",
+            "health": 10,
+            "damage": "2",
+            "behavior": "Picks up items in mouth. Baby foxes trust players if bred. Red and snow variants.",
+            "drops": [
+                "What it's carrying"
+            ],
+            "spawnBiomes": [
+                "Taiga",
+                "Grove",
+                "Snowy Taiga"
+            ]
+        },
+        {
+            "id": "polar_bear",
+            "name": "Polar Bear",
+            "description": "Neutral mob hostile when cubs are nearby. Found in cold biomes.",
+            "category": "Neutral",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ed/Polar_Bear_JE3_BE4.png",
+            "health": 30,
+            "damage": "3-6",
+            "behavior": "Neutral unless cubs are nearby, then highly aggressive. Cannot be tamed.",
+            "drops": [
+                "Raw Cod",
+                "Raw Salmon"
+            ],
+            "spawnBiomes": [
+                "Snowy biomes",
+                "Frozen Ocean"
+            ]
+        },
+        {
+            "id": "panda",
+            "name": "Panda",
+            "description": "Rare passive mob with different personality types. Found in jungle biomes.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ef/Panda_JE2_BE2.png",
+            "health": 20,
+            "damage": "2-6 (aggressive type)",
+            "behavior": "Eats bamboo. Has 7 personality types affecting behavior and appearance.",
+            "drops": [
+                "Bamboo"
+            ],
+            "spawnBiomes": [
+                "Jungle",
+                "Bamboo Jungle"
+            ]
+        },
+        {
+            "id": "parrot",
+            "name": "Parrot",
+            "description": "Flying mob that imitates nearby hostile mob sounds. Can sit on shoulders.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a1/Red_Parrot_JE2.png",
+            "health": 6,
+            "damage": "0",
+            "behavior": "Tamed with seeds. Dances near jukeboxes. Poisoned by cookies.",
+            "drops": [
+                "Feathers"
+            ],
+            "spawnBiomes": [
+                "Jungle"
+            ]
+        },
+        {
+            "id": "bee",
+            "name": "Bee",
+            "description": "Flying neutral mob that pollinates crops and produces honey.",
+            "category": "Neutral",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/52/Bee_JE4.png",
+            "health": 10,
+            "damage": "2 + Poison",
+            "behavior": "Pollinates flowers and crops. Lives in bee nests and beehives. Dies after stinging.",
+            "drops": [
+                "None"
+            ],
+            "spawnBiomes": [
+                "Flower Forest",
+                "Plains",
+                "Sunflower Plains",
+                "Meadow"
+            ]
+        },
+        {
+            "id": "axolotl",
+            "name": "Axolotl",
+            "description": "Aquatic passive mob that helps kill underwater hostile mobs.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/09/Lucy_Axolotl_JE2.png",
+            "health": 14,
+            "damage": "2",
+            "behavior": "Attacks drowned, guardians, and other aquatic hostiles. Plays dead to regenerate.",
+            "drops": [
+                "None (bucket capture only)"
+            ],
+            "spawnBiomes": [
+                "Lush Caves (water)"
+            ]
+        },
+        {
+            "id": "goat",
+            "name": "Goat",
+            "description": "Mountain mob that rams entities. Source of goat horns.",
+            "category": "Neutral",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/0e/Goat_JE1_BE1.png",
+            "health": 10,
+            "damage": "1-3 (ramming)",
+            "behavior": "Jumps very high. Rams other mobs. Screaming goats are rare and more aggressive.",
+            "drops": [
+                "None (horns from ramming hard blocks)"
+            ],
+            "spawnBiomes": [
+                "Snowy Slopes",
+                "Jagged Peaks",
+                "Frozen Peaks"
+            ]
+        },
+        {
+            "id": "frog",
+            "name": "Frog",
+            "description": "Passive mob with three temperature variants. Eats small slimes and magma cubes.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f1/Temperate_Frog_JE1_BE1.png",
+            "health": 10,
+            "damage": "0",
+            "behavior": "Jumps high and swims. Eats slimes and magma cubes. Drops froglights from eating magma cubes.",
+            "drops": [
+                "None"
+            ],
+            "spawnBiomes": [
+                "Swamps",
+                "Mangrove Swamps"
+            ]
+        },
+        {
+            "id": "allay",
+            "name": "Allay",
+            "description": "Flying passive mob that collects items matching what you give it.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/d2/Allay_JE2.png",
+            "health": 20,
+            "damage": "0",
+            "behavior": "Collects dropped items matching held item. Dances near jukeboxes. Trusts note blocks.",
+            "drops": [
+                "Held Item"
+            ],
+            "spawnBiomes": [
+                "Pillager Outposts (cages)",
+                "Woodland Mansions (cages)"
+            ]
+        },
+        {
+            "id": "camel",
+            "name": "Camel",
+            "description": "Two-seater rideable mob found in desert villages.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c1/Camel_JE1_BE1.png",
+            "health": 32,
+            "damage": "0",
+            "behavior": "Can carry two players. Dashes forward when sprinting. Too tall for zombies to reach riders.",
+            "drops": [
+                "None"
+            ],
+            "spawnBiomes": [
+                "Desert Villages"
+            ]
+        },
+        {
+            "id": "sniffer",
+            "name": "Sniffer",
+            "description": "Ancient mob that digs up ancient seeds. Hatched from sniffer eggs.",
+            "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/43/Sniffer_JE3.png",
+            "health": 14,
+            "damage": "0",
+            "behavior": "Sniffs the ground and digs up torchflower and pitcher plant seeds.",
+            "drops": [
+                "Moss Block"
+            ],
+            "spawnBiomes": [
+                "From Sniffer Eggs (found in ocean ruins)"
             ]
         },
         {
             "id": "villager",
             "name": "Villager",
-            "emoji": "🧑‍🌾",
-            "description": "Passive mobs that live in villages. They have different professions and can trade valuable items with players.",
+            "description": "Passive NPC that trades items. Has different professions based on job site blocks.",
             "category": "Passive",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4e/Plains_Farmer.png",
             "health": 20,
-            "damage": 0,
-            "behavior": "Trades items, works at job sites, breeds when happy",
+            "damage": "0",
+            "behavior": "Works at job site blocks. Trades items for emeralds. Flees from hostile mobs.",
             "drops": [
-                "Nothing"
+                "None"
             ],
             "spawnBiomes": [
                 "Villages"
@@ -305,109 +768,166 @@
             "professions": [
                 "Farmer",
                 "Librarian",
-                "Cleric",
-                "Armorer",
-                "Weaponsmith",
-                "Toolsmith",
-                "Fletcher",
-                "Cartographer",
-                "Mason",
+                "Blacksmith",
                 "Butcher",
+                "Cleric",
                 "Leatherworker",
+                "Mason",
+                "Cartographer",
                 "Fisherman",
-                "Shepherd",
-                "Nitwit"
+                "Fletcher",
+                "Shepherd"
             ]
         },
         {
-            "id": "wolf",
-            "name": "Wolf",
-            "emoji": "🐺",
-            "description": "Neutral mobs that can be tamed with bones to become loyal pets. Tamed wolves attack what the player attacks.",
+            "id": "iron_golem",
+            "name": "Iron Golem",
+            "description": "Powerful utility mob that defends villagers and players.",
             "category": "Neutral",
-            "health": "8 (wild), 20 (tamed)",
-            "damage": "4 (tamed)",
-            "behavior": "Follows and protects owner when tamed, attacks when provoked",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f8/Iron_Golem_JE2_BE2.png",
+            "health": 100,
+            "damage": "7-21",
+            "behavior": "Protects villagers. Can be built by players. Retaliates when attacked.",
             "drops": [
-                "Nothing"
-            ],
-            "spawnBiomes": [
-                "Forest",
-                "Taiga",
-                "Snowy Taiga"
-            ],
-            "tips": [
-                "Feed bones to tame",
-                "Tail height shows health",
-                "Feed meat to heal",
-                "Dye collar different colors"
-            ]
-        },
-        {
-            "id": "cat",
-            "name": "Cat",
-            "emoji": "🐱",
-            "description": "Tameable passive mobs found in villages. Tamed cats scare away Creepers and Phantoms, and bring gifts to sleeping players.",
-            "category": "Passive",
-            "health": 10,
-            "damage": 0,
-            "behavior": "Sits, follows owner, scares Creepers and Phantoms, brings gifts",
-            "drops": [
-                "String (0-2)"
+                "Iron Ingot",
+                "Poppy"
             ],
             "spawnBiomes": [
                 "Villages",
-                "Swamp Huts (black cat)"
-            ],
-            "tips": [
-                "Feed raw cod or salmon to tame",
-                "11 different cat variants",
-                "Useful for Creeper defense"
+                "Player-created"
             ]
         },
         {
-            "id": "horse",
-            "name": "Horse",
-            "emoji": "🐴",
-            "description": "Fast passive mobs that can be tamed and ridden with a saddle. They have varying speed, jump height, and health.",
+            "id": "snow_golem",
+            "name": "Snow Golem",
+            "description": "Utility mob that throws snowballs and leaves a snow trail.",
             "category": "Passive",
-            "health": "15-30",
-            "damage": 0,
-            "behavior": "Can be tamed and ridden, follows player if leashed",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/84/Sheared_Snow_Golem_JE2.png",
+            "health": 4,
+            "damage": "0 (knockback only)",
+            "behavior": "Throws snowballs at hostile mobs. Creates snow trail. Takes damage from rain and warm biomes.",
             "drops": [
-                "Leather (0-2)"
+                "Snowballs"
             ],
             "spawnBiomes": [
-                "Plains",
-                "Savanna"
-            ],
-            "tips": [
-                "Mount repeatedly to tame",
-                "Needs saddle to be controlled",
-                "Can wear horse armor for protection"
+                "Player-created only"
             ]
         },
         {
-            "id": "bee",
-            "name": "Bee",
-            "emoji": "🐝",
-            "description": "Flying neutral mobs that pollinate flowers and produce honey. They attack when provoked but die after stinging.",
-            "category": "Neutral",
-            "health": 10,
-            "damage": "2 + Poison",
-            "behavior": "Pollinates flowers, returns to nests, hostile if attacked or nest damaged",
+            "id": "pillager",
+            "name": "Pillager",
+            "description": "Hostile illager armed with crossbow. Leads patrols and raids.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f4/Pillager_JE5_BE2.png",
+            "health": 24,
+            "damage": "3-5",
+            "behavior": "Attacks villagers and players with crossbow. Patrol captains carry banners.",
             "drops": [
-                "Nothing"
+                "Arrows",
+                "Crossbow"
             ],
             "spawnBiomes": [
-                "Plains (near flowers)",
-                "Flower Forest",
-                "Meadow"
+                "Pillager Outposts",
+                "Patrols",
+                "Raids"
+            ]
+        },
+        {
+            "id": "vindicator",
+            "name": "Vindicator",
+            "description": "Strong illager armed with an iron axe. Found in Woodland Mansions and raids.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/72/Vindicator_JE4_BE3.png",
+            "health": 24,
+            "damage": "7-19",
+            "behavior": "Charges at targets with axe. High damage output. Spawns in groups.",
+            "drops": [
+                "Emerald",
+                "Iron Axe"
+            ],
+            "spawnBiomes": [
+                "Woodland Mansions",
+                "Raids"
+            ]
+        },
+        {
+            "id": "evoker",
+            "name": "Evoker",
+            "description": "Spellcasting illager that summons fangs and vexes.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c3/Evoker_JE2_BE2.png",
+            "health": 24,
+            "damage": "6 (fangs)",
+            "behavior": "Summons evoker fangs from the ground and vexes. Transforms blue sheep to red.",
+            "drops": [
+                "Totem of Undying",
+                "Emerald"
+            ],
+            "spawnBiomes": [
+                "Woodland Mansions",
+                "Raids"
+            ]
+        },
+        {
+            "id": "ravager",
+            "name": "Ravager",
+            "description": "Massive hostile mob that appears in raids. Extremely dangerous.",
+            "category": "Hostile",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/1f/Ravager_JE2.png",
+            "health": 100,
+            "damage": "7-18",
+            "behavior": "Charges and stomps. Destroys crops and leaves. Ridden by pillagers or evokers.",
+            "drops": [
+                "Saddle"
+            ],
+            "spawnBiomes": [
+                "Raids only"
+            ]
+        },
+        {
+            "id": "ender_dragon",
+            "name": "Ender Dragon",
+            "description": "The final boss of Minecraft that guards the End portal back to the Overworld.",
+            "category": "Boss",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b0/Ender_Dragon_JE3.png",
+            "health": 200,
+            "damage": "6-15",
+            "behavior": "Flies around the End. Charges players. Healed by end crystals. Drops massive XP on death.",
+            "drops": [
+                "Dragon Egg (first time)",
+                "12000 XP"
+            ],
+            "spawnBiomes": [
+                "The End (central island)"
             ],
             "tips": [
-                "Use campfire under nest to harvest safely",
-                "Leads to honey and honeycomb",
-                "Accelerates crop growth through pollination"
+                "Destroy end crystals first",
+                "Bring beds for explosions",
+                "A bow is essential",
+                "Slow Falling potions help"
+            ]
+        },
+        {
+            "id": "wither",
+            "name": "Wither",
+            "description": "Player-summoned boss that destroys everything. Required to obtain Nether Star.",
+            "category": "Boss",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/8b/Wither_JE2_BE2.png",
+            "health": 300,
+            "damage": "5-12 + Wither",
+            "behavior": "Shoots explosive wither skulls. Destroys blocks. Gains armor at half health.",
+            "drops": [
+                "Nether Star",
+                "50 XP"
+            ],
+            "spawnBiomes": [
+                "Summoned by player with 4 soul sand + 3 wither skeleton skulls"
+            ],
+            "tips": [
+                "Fight underground to limit destruction",
+                "Smite enchantment is very effective",
+                "Milk removes Wither effect",
+                "Trap in bedrock ceiling for easy kill"
             ]
         }
     ]

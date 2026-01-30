@@ -22,7 +22,7 @@ export default function PotionsPage() {
         <div>
             <header className={styles.pageHeader}>
                 <h1 className={styles.title}>
-                    <span className={styles.titleEmoji}>⚗️</span>
+                    <span className={styles.titleEmoji}>🧪</span>
                     Potions
                 </h1>
                 <p className={styles.subtitle}>
@@ -48,7 +48,6 @@ export default function PotionsPage() {
                         key={potion.id}
                         id={potion.id}
                         name={potion.name}
-                        emoji={potion.emoji}
                         description={potion.description}
                         category={potion.category}
                         href={`/potions/${potion.id}`}

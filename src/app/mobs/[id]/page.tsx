@@ -1,11 +1,19 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import mobsData from '@/data/mobs.json';
-import styles from '../../detail.module.css';
+import styles from '@/app/detail.module.css';
 
 interface PageProps {
     params: Promise<{ id: string }>;
 }
+
+// Category emoji mapping
+const categoryEmojis: Record<string, string> = {
+    'Hostile': '💀',
+    'Neutral': '🐺',
+    'Passive': '🐄',
+    'Boss': '👹',
+};
 
 export async function generateStaticParams() {
     return mobsData.mobs.map((mob) => ({
@@ -21,6 +29,8 @@ export default async function MobDetailPage({ params }: PageProps) {
         notFound();
     }
 
+    const emoji = categoryEmojis[mob.category] || '🧟';
+
     return (
         <div className={styles.container}>
             <Link href="/mobs" className={styles.backLink}>
@@ -29,7 +39,7 @@ export default async function MobDetailPage({ params }: PageProps) {
 
             <header className={styles.header}>
                 <div className={styles.iconWrapper}>
-                    <span className={styles.emoji}>{mob.emoji}</span>
+                    <span className={styles.emoji}>{emoji}</span>
                 </div>
                 <div className={styles.titleArea}>
                     <h1 className={styles.title}>
@@ -48,7 +58,7 @@ export default async function MobDetailPage({ params }: PageProps) {
                 <div className={styles.statsGrid}>
                     <div className={styles.statCard}>
                         <div className={styles.statLabel}>Health</div>
-                        <div className={styles.statValue}>{mob.health} ❤️</div>
+                        <div className={styles.statValue}>{mob.health}</div>
                     </div>
                     <div className={styles.statCard}>
                         <div className={styles.statLabel}>Damage</div>
@@ -59,7 +69,7 @@ export default async function MobDetailPage({ params }: PageProps) {
 
             <section className={styles.section}>
                 <h2 className={styles.sectionTitle}>
-                    <span className={styles.sectionIcon}>🎭</span>
+                    <span className={styles.sectionIcon}>🧠</span>
                     Behavior
                 </h2>
                 <p className={styles.description}>{mob.behavior}</p>
@@ -82,26 +92,12 @@ export default async function MobDetailPage({ params }: PageProps) {
             {mob.spawnBiomes && mob.spawnBiomes.length > 0 && (
                 <section className={styles.section}>
                     <h2 className={styles.sectionTitle}>
-                        <span className={styles.sectionIcon}>🗺️</span>
+                        <span className={styles.sectionIcon}>🌍</span>
                         Spawn Locations
                     </h2>
                     <div className={styles.list}>
                         {mob.spawnBiomes.map((biome, idx) => (
                             <span key={idx} className={styles.listItem}>{biome}</span>
-                        ))}
-                    </div>
-                </section>
-            )}
-
-            {mob.variants && mob.variants.length > 0 && (
-                <section className={styles.section}>
-                    <h2 className={styles.sectionTitle}>
-                        <span className={styles.sectionIcon}>🔄</span>
-                        Variants
-                    </h2>
-                    <div className={styles.list}>
-                        {mob.variants.map((variant, idx) => (
-                            <span key={idx} className={styles.listItem}>{variant}</span>
                         ))}
                     </div>
                 </section>
@@ -119,20 +115,6 @@ export default async function MobDetailPage({ params }: PageProps) {
                                 <span className={styles.tipIcon}>💡</span>
                                 <p className={styles.tipText}>{tip}</p>
                             </div>
-                        ))}
-                    </div>
-                </section>
-            )}
-
-            {mob.professions && mob.professions.length > 0 && (
-                <section className={styles.section}>
-                    <h2 className={styles.sectionTitle}>
-                        <span className={styles.sectionIcon}>👔</span>
-                        Professions
-                    </h2>
-                    <div className={styles.list}>
-                        {mob.professions.map((prof, idx) => (
-                            <span key={idx} className={styles.listItem}>{prof}</span>
                         ))}
                     </div>
                 </section>

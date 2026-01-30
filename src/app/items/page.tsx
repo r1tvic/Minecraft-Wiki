@@ -48,7 +48,7 @@ export default function ItemsPage() {
                         key={item.id}
                         id={item.id}
                         name={item.name}
-                        emoji={item.emoji}
+                        imageUrl={item.imageUrl}
                         description={item.description}
                         category={item.category}
                         href={`/items/${item.id}`}

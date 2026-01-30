@@ -3,274 +3,508 @@
         {
             "id": "plains",
             "name": "Plains",
-            "emoji": "🌾",
-            "description": "A flat and grassy biome with few trees. Plains are great for building and are home to villages, horses, and donkeys.",
-            "category": "Temperate",
-            "temperature": "Normal",
+            "description": "Flat grassland biome with scattered trees and abundant passive mobs. Ideal for building and farming.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/26/Plains_JE1_BE1.png",
+            "temperature": "Temperate",
             "structures": [
                 "Villages",
                 "Pillager Outposts"
             ],
             "mobs": [
-                "Horse",
-                "Donkey",
+                "Pigs",
+                "Cows",
                 "Sheep",
-                "Cow",
-                "Pig",
-                "Chicken",
-                "Bee"
+                "Horses",
+                "Donkeys"
             ],
             "resources": [
-                "Grass",
-                "Flowers",
-                "Hay Bales (in villages)"
+                "Oak Trees",
+                "Tall Grass",
+                "Flowers"
             ],
             "tips": [
-                "Great starting biome for beginners",
-                "Easy to find villages",
-                "Best biome for horse taming"
+                "Great for farming and ranching",
+                "Easy to navigate",
+                "Common source of horses"
             ]
         },
         {
             "id": "forest",
             "name": "Forest",
-            "emoji": "🌲",
-            "description": "A biome filled with oak and birch trees. Forests provide abundant wood and are home to wolves.",
-            "category": "Temperate",
-            "temperature": "Normal",
+            "description": "Dense woodland biome with oak and birch trees. Good source of wood and mushrooms.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c4/Forest_JE1_BE1.png",
+            "temperature": "Temperate",
             "structures": [
                 "None"
             ],
             "mobs": [
-                "Wolf",
+                "Wolves",
+                "Pigs",
                 "Sheep",
-                "Cow",
-                "Pig",
-                "Chicken"
+                "Cows"
             ],
             "resources": [
                 "Oak Wood",
                 "Birch Wood",
-                "Flowers",
-                "Mushrooms"
+                "Mushrooms",
+                "Flowers"
             ],
-            "variants": [
-                "Birch Forest",
-                "Dark Forest",
-                "Flower Forest"
+            "tips": [
+                "Excellent early-game wood source",
+                "Watch for wolves at night"
+            ]
+        },
+        {
+            "id": "birch_forest",
+            "name": "Birch Forest",
+            "description": "Forest variant containing exclusively birch trees. Brighter and more open than regular forests.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/78/Birch_Forest_JE2_BE2.png",
+            "temperature": "Temperate",
+            "structures": [
+                "None"
+            ],
+            "mobs": [
+                "Sheep",
+                "Pigs",
+                "Cows"
+            ],
+            "resources": [
+                "Birch Wood",
+                "Flowers",
+                "Lily of the Valley"
+            ],
+            "tips": [
+                "Birch is great for lighter-colored builds"
+            ]
+        },
+        {
+            "id": "dark_forest",
+            "name": "Dark Forest",
+            "description": "Dense, dark woodland with giant mushrooms and low light levels. Home to Woodland Mansions.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/eb/Dark_Forest_JE2_BE1.png",
+            "temperature": "Temperate",
+            "structures": [
+                "Woodland Mansions"
+            ],
+            "mobs": [
+                "Standard passive mobs",
+                "Illagers (in mansions)"
+            ],
+            "resources": [
+                "Dark Oak Wood",
+                "Giant Mushrooms",
+                "Roses"
+            ],
+            "tips": [
+                "Mobs can spawn during daytime",
+                "Woodland Mansions contain rare loot"
+            ]
+        },
+        {
+            "id": "flower_forest",
+            "name": "Flower Forest",
+            "description": "Beautiful forest variant covered in various flower types. Great for dyes and bees.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/8c/Flower_Forest_JE1_BE1.png",
+            "temperature": "Temperate",
+            "structures": [
+                "Bee Nests"
+            ],
+            "mobs": [
+                "Bees",
+                "Rabbits",
+                "Standard passive mobs"
+            ],
+            "resources": [
+                "All Flower Types",
+                "Oak Wood",
+                "Birch Wood"
+            ],
+            "tips": [
+                "Best source for all flower types and dyes",
+                "Abundant bee nests"
             ]
         },
         {
             "id": "jungle",
             "name": "Jungle",
-            "emoji": "🌴",
-            "description": "A lush biome with towering jungle trees, bamboo, and cocoa beans. Home to ocelots, parrots, and jungle temples.",
-            "category": "Tropical",
-            "temperature": "Warm",
+            "description": "Lush, dense biome with tall trees, vines, and unique wildlife. Challenging to navigate.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/dd/Jungle_JE2_BE2.png",
+            "temperature": "Hot",
             "structures": [
-                "Jungle Temple"
+                "Jungle Temples"
             ],
             "mobs": [
-                "Ocelot",
-                "Parrot",
-                "Panda (bamboo jungle)"
+                "Parrots",
+                "Ocelots",
+                "Pandas"
             ],
             "resources": [
                 "Jungle Wood",
-                "Bamboo",
                 "Cocoa Beans",
-                "Melons"
+                "Melons",
+                "Bamboo"
             ],
             "tips": [
-                "Difficult to navigate due to dense vegetation",
-                "Unique wood type",
-                "Only place to find cocoa beans naturally"
+                "Vines allow wall climbing",
+                "Temples have traps",
+                "Only place with parrots"
             ]
         },
         {
-            "id": "desert",
-            "name": "Desert",
-            "emoji": "🏜️",
-            "description": "A sandy biome with cacti, dead bushes, and desert temples. Villages and wells can be found here.",
-            "category": "Dry",
+            "id": "bamboo_jungle",
+            "name": "Bamboo Jungle",
+            "description": "Dense bamboo variant of jungle biome. Excellent bamboo source and home to pandas.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/46/Bamboo_Jungle_JE2_BE2.png",
             "temperature": "Hot",
             "structures": [
-                "Desert Temple",
-                "Desert Village",
-                "Desert Well",
-                "Pillager Outpost"
+                "None"
             ],
             "mobs": [
-                "Rabbit",
-                "Husk (night)"
+                "Pandas",
+                "Parrots",
+                "Ocelots"
             ],
             "resources": [
-                "Sand",
-                "Sandstone",
-                "Cactus",
-                "Dead Bush"
+                "Bamboo",
+                "Jungle Wood",
+                "Podzol"
             ],
             "tips": [
-                "Temples have TNT traps - be careful!",
-                "Sand is useful for glass and concrete",
-                "No rain means fire spreads easily"
+                "Best bamboo source",
+                "Pandas spawn here frequently"
             ]
         },
         {
             "id": "savanna",
             "name": "Savanna",
-            "emoji": "🦒",
-            "description": "A flat, dry biome with acacia trees. Savannas feature villages and are the only place to find acacia wood.",
-            "category": "Dry",
-            "temperature": "Warm",
+            "description": "Dry grassland with acacia trees and flat terrain. Never rains here.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/86/Savanna_JE1_BE1.png",
+            "temperature": "Hot",
             "structures": [
                 "Villages",
                 "Pillager Outposts"
             ],
             "mobs": [
-                "Horse",
-                "Donkey",
-                "Llama",
-                "Sheep",
-                "Cow"
+                "Horses",
+                "Donkeys",
+                "Llamas",
+                "Cows",
+                "Sheep"
             ],
             "resources": [
                 "Acacia Wood",
-                "Tall Grass"
-            ],
-            "variants": [
-                "Shattered Savanna (extreme terrain)"
-            ]
-        },
-        {
-            "id": "taiga",
-            "name": "Taiga",
-            "emoji": "🌲",
-            "description": "A cold forested biome with spruce trees and ferns. Home to wolves, foxes, and berries.",
-            "category": "Cold",
-            "temperature": "Cold",
-            "structures": [
-                "Villages"
-            ],
-            "mobs": [
-                "Wolf",
-                "Fox",
-                "Rabbit"
-            ],
-            "resources": [
-                "Spruce Wood",
-                "Ferns",
-                "Sweet Berries",
-                "Podzol"
-            ],
-            "variants": [
-                "Snowy Taiga",
-                "Old Growth Spruce Taiga",
-                "Old Growth Pine Taiga"
-            ]
-        },
-        {
-            "id": "snowy_plains",
-            "name": "Snowy Plains",
-            "emoji": "❄️",
-            "description": "A flat, frozen biome covered in snow. Features igloos, frozen lakes, and polar bears.",
-            "category": "Frozen",
-            "temperature": "Freezing",
-            "structures": [
-                "Igloos",
-                "Villages"
-            ],
-            "mobs": [
-                "Polar Bear",
-                "Rabbit",
-                "Stray (night)"
-            ],
-            "resources": [
-                "Snow",
-                "Ice",
-                "Packed Ice"
+                "Tall Grass",
+                "Coarse Dirt"
             ],
             "tips": [
-                "Water freezes to ice",
-                "Igloos sometimes have basements with zombie villagers",
-                "Strays drop Slowness arrows"
+                "Unique orange acacia wood",
+                "Llamas can carry cargo"
+            ]
+        },
+        {
+            "id": "desert",
+            "name": "Desert",
+            "description": "Sandy biome with no trees and cacti. Contains villages, temples, and pillager outposts.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f3/Desert_JE5_BE2.png",
+            "temperature": "Hot",
+            "structures": [
+                "Villages",
+                "Desert Temples",
+                "Pillager Outposts"
+            ],
+            "mobs": [
+                "Rabbits",
+                "Husks (hostile)"
+            ],
+            "resources": [
+                "Sand",
+                "Sandstone",
+                "Cactus",
+                "Dead Bushes"
+            ],
+            "tips": [
+                "Desert temples have TNT traps",
+                "Husks cause hunger effect",
+                "Good for glass production"
+            ]
+        },
+        {
+            "id": "badlands",
+            "name": "Badlands",
+            "description": "Rare biome with colorful terracotta layers. Excellent for gold mining.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2f/Badlands_JE1_BE1.png",
+            "temperature": "Hot",
+            "structures": [
+                "Mineshafts (more common)"
+            ],
+            "mobs": [
+                "Standard hostile mobs"
+            ],
+            "resources": [
+                "Terracotta (many colors)",
+                "Red Sand",
+                "Gold Ore (abundant)"
+            ],
+            "tips": [
+                "Gold spawns at all levels",
+                "Mineshafts on surface",
+                "Never rains here"
             ]
         },
         {
             "id": "swamp",
             "name": "Swamp",
-            "emoji": "🐸",
-            "description": "A murky lowland biome with shallow waters, lily pads, and witch huts. Home to slimes at night.",
-            "category": "Wet",
-            "temperature": "Normal",
+            "description": "Murky wetland with shallow water and lily pads. Home to witch huts and slimes.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/28/Swamp_JE1_BE1.png",
+            "temperature": "Temperate",
             "structures": [
-                "Witch Hut"
+                "Witch Huts"
             ],
             "mobs": [
-                "Slime",
-                "Frog",
-                "Witch (in huts)"
+                "Slimes",
+                "Frogs",
+                "Witches"
             ],
             "resources": [
-                "Lily Pad",
-                "Vines",
                 "Clay",
-                "Blue Orchid"
+                "Lily Pads",
+                "Blue Orchids",
+                "Seagrass"
             ],
             "tips": [
-                "Slimes spawn here on full moons",
-                "Good source of clay for bricks",
-                "Mangrove swamps have unique wood and frogs"
+                "Slimes spawn at night",
+                "Frogs drop froglights from magma cubes"
             ]
         },
         {
-            "id": "ocean",
-            "name": "Ocean",
-            "emoji": "🌊",
-            "description": "A vast water biome with various depths and features. Contains shipwrecks, ocean monuments, and underwater ruins.",
-            "category": "Aquatic",
-            "temperature": "Normal",
-            "structures": [
-                "Ocean Monument",
-                "Shipwreck",
-                "Underwater Ruins",
-                "Ocean Ruin"
-            ],
-            "mobs": [
-                "Dolphin",
-                "Cod",
-                "Salmon",
-                "Squid",
-                "Drowned",
-                "Guardian",
-                "Elder Guardian"
-            ],
-            "resources": [
-                "Kelp",
-                "Seagrass",
-                "Coral (warm)",
-                "Prismarine (monuments)"
-            ],
-            "variants": [
-                "Deep Ocean",
-                "Warm Ocean",
-                "Lukewarm Ocean",
-                "Cold Ocean",
-                "Frozen Ocean"
-            ]
-        },
-        {
-            "id": "mushroom_island",
-            "name": "Mushroom Fields",
-            "emoji": "🍄",
-            "description": "A rare island biome covered in mycelium and giant mushrooms. Hostile mobs cannot spawn here naturally.",
-            "category": "Special",
-            "temperature": "Normal",
+            "id": "mangrove_swamp",
+            "name": "Mangrove Swamp",
+            "description": "Tropical swamp with mangrove trees and unique root structures.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/97/Mangrove_Swamp_JE1_BE1.png",
+            "temperature": "Warm",
             "structures": [
                 "None"
             ],
             "mobs": [
-                "Mooshroom"
+                "Frogs",
+                "Tropical Fish",
+                "Bees"
+            ],
+            "resources": [
+                "Mangrove Wood",
+                "Mud",
+                "Moss"
+            ],
+            "tips": [
+                "Mangrove roots are waterloggable",
+                "Mud converts to clay with pointed dripstone"
+            ]
+        },
+        {
+            "id": "taiga",
+            "name": "Taiga",
+            "description": "Coniferous forest with spruce trees and wolves. Generates villages with unique style.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/52/Taiga_JE1_BE1.png",
+            "temperature": "Cold",
+            "structures": [
+                "Villages",
+                "Pillager Outposts"
+            ],
+            "mobs": [
+                "Wolves",
+                "Foxes",
+                "Rabbits"
+            ],
+            "resources": [
+                "Spruce Wood",
+                "Sweet Berries",
+                "Ferns"
+            ],
+            "tips": [
+                "Wolves can be tamed with bones",
+                "Sweet berries damage entities walking through them"
+            ]
+        },
+        {
+            "id": "snowy_taiga",
+            "name": "Snowy Taiga",
+            "description": "Cold taiga variant with snow coverage. Features igloos occasionally.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/51/Snowy_Taiga_JE1_BE1.png",
+            "temperature": "Cold",
+            "structures": [
+                "Igloos"
+            ],
+            "mobs": [
+                "Wolves",
+                "Foxes (white)",
+                "Rabbits (white)"
+            ],
+            "resources": [
+                "Spruce Wood",
+                "Snow",
+                "Sweet Berries"
+            ],
+            "tips": [
+                "Some igloos have basements with secrets"
+            ]
+        },
+        {
+            "id": "snowy_plains",
+            "name": "Snowy Plains",
+            "description": "Flat, snowy biome with igloos and polar bears. Water freezes here.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c2/Snowy_Plains_JE1_BE1.png",
+            "temperature": "Cold",
+            "structures": [
+                "Igloos",
+                "Villages"
+            ],
+            "mobs": [
+                "Polar Bears",
+                "Rabbits",
+                "Strays (hostile)"
+            ],
+            "resources": [
+                "Snow",
+                "Ice"
+            ],
+            "tips": [
+                "Strays shoot slowness arrows",
+                "Polar bears are neutral unless cubs are nearby"
+            ]
+        },
+        {
+            "id": "ice_spikes",
+            "name": "Ice Spikes",
+            "description": "Rare frozen biome featuring large packed ice pillars. Unique and beautiful.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/8d/Ice_Spikes_JE1_BE1.png",
+            "temperature": "Cold",
+            "structures": [
+                "None"
+            ],
+            "mobs": [
+                "Polar Bears",
+                "Strays",
+                "Rabbits"
+            ],
+            "resources": [
+                "Packed Ice",
+                "Snow",
+                "Ice"
+            ],
+            "tips": [
+                "Packed ice doesn't melt",
+                "Great for ice roads (boat travel)"
+            ]
+        },
+        {
+            "id": "frozen_ocean",
+            "name": "Frozen Ocean",
+            "description": "Ocean biome covered with ice. Contains icebergs made of packed and blue ice.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ed/Frozen_Ocean_JE1_BE1.png",
+            "temperature": "Cold",
+            "structures": [
+                "Ocean Ruins",
+                "Shipwrecks"
+            ],
+            "mobs": [
+                "Polar Bears",
+                "Strays",
+                "Drowned"
+            ],
+            "resources": [
+                "Blue Ice",
+                "Packed Ice",
+                "Standard Ocean Resources"
+            ],
+            "tips": [
+                "Blue ice is super slippery",
+                "Great for fast travel builds"
+            ]
+        },
+        {
+            "id": "deep_ocean",
+            "name": "Deep Ocean",
+            "description": "Ocean variant with depths over 30 blocks. Contains ocean monuments.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a8/Deep_Ocean_JE1_BE1.png",
+            "temperature": "Temperate",
+            "structures": [
+                "Ocean Monuments",
+                "Shipwrecks",
+                "Ruins"
+            ],
+            "mobs": [
+                "Guardians",
+                "Elder Guardians",
+                "Drowned",
+                "Dolphins"
+            ],
+            "resources": [
+                "Prismarine",
+                "Sponges",
+                "Sea Lanterns"
+            ],
+            "tips": [
+                "Need water breathing for monuments",
+                "Elder guardians inflict Mining Fatigue"
+            ]
+        },
+        {
+            "id": "warm_ocean",
+            "name": "Warm Ocean",
+            "description": "Tropical ocean with coral reefs and colorful aquatic life.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a0/Warm_Ocean_JE1_BE1.png",
+            "temperature": "Warm",
+            "structures": [
+                "Coral Reefs",
+                "Ocean Ruins",
+                "Shipwrecks"
+            ],
+            "mobs": [
+                "Tropical Fish",
+                "Pufferfish",
+                "Dolphins"
+            ],
+            "resources": [
+                "Coral",
+                "Sea Pickles",
+                "Seagrass"
+            ],
+            "tips": [
+                "Coral dies out of water unless waterlogged",
+                "Pufferfish are poisonous"
+            ]
+        },
+        {
+            "id": "mushroom_fields",
+            "name": "Mushroom Fields",
+            "description": "Rare biome with giant mushrooms and mycelium. No hostile mobs spawn here.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/42/Mushroom_Fields_JE1_BE1.png",
+            "temperature": "Temperate",
+            "structures": [
+                "None"
+            ],
+            "mobs": [
+                "Mooshrooms (exclusive)"
             ],
             "resources": [
                 "Mycelium",
@@ -278,218 +512,416 @@
                 "Mushrooms"
             ],
             "tips": [
-                "Safest biome - no hostile mob spawning!",
-                "Mooshrooms give mushroom stew when milked",
-                "Extremely rare to find"
+                "Safest surface biome - no hostile spawns",
+                "Mooshrooms give mushroom stew"
             ]
         },
         {
-            "id": "badlands",
-            "name": "Badlands",
-            "emoji": "🏜️",
-            "description": "A rare biome featuring terracotta mountains and mineshafts. Gold ore generates more frequently here.",
-            "category": "Dry",
-            "temperature": "Hot",
+            "id": "windswept_hills",
+            "name": "Windswept Hills",
+            "description": "Mountainous biome with steep terrain. Previously called Extreme Hills.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4f/Windswept_Hills_JE1_BE1.png",
+            "temperature": "Cold",
             "structures": [
-                "Mineshafts (exposed)"
+                "None"
             ],
             "mobs": [
-                "Standard Overworld mobs"
+                "Llamas",
+                "Goats",
+                "Standard mobs"
             ],
             "resources": [
-                "Terracotta (various colors)",
-                "Gold Ore (enhanced)",
-                "Dead Bush",
-                "Cactus"
-            ],
-            "variants": [
-                "Wooded Badlands",
-                "Eroded Badlands"
+                "Emerald Ore",
+                "Infested Stone",
+                "Gravel"
             ],
             "tips": [
-                "Great for mining gold",
-                "Colorful terracotta for building",
-                "Mineshafts spawn at surface level"
+                "Only place emeralds spawn outside mountains",
+                "Watch for silverfish in stone"
             ]
         },
         {
-            "id": "nether_wastes",
-            "name": "Nether Wastes",
-            "emoji": "🔥",
-            "description": "The classic Nether biome with netherrack, lava lakes, and Nether fortresses. Home to Zombified Piglins and Ghasts.",
-            "category": "Nether",
-            "temperature": "Hot",
+            "id": "meadow",
+            "name": "Meadow",
+            "description": "High-altitude flower-filled plains. Features bee nests and villages.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/89/Meadow_JE1_BE1.png",
+            "temperature": "Temperate",
             "structures": [
-                "Nether Fortress",
-                "Bastion Remnant"
+                "Villages",
+                "Pillager Outposts"
             ],
             "mobs": [
-                "Zombified Piglin",
-                "Ghast",
-                "Magma Cube",
-                "Piglin",
-                "Blaze (fortress)"
+                "Bees",
+                "Rabbits",
+                "Donkeys"
             ],
             "resources": [
-                "Netherrack",
-                "Nether Quartz",
-                "Glowstone",
-                "Nether Gold Ore"
-            ]
-        },
-        {
-            "id": "crimson_forest",
-            "name": "Crimson Forest",
-            "emoji": "🔴",
-            "description": "A red Nether biome with crimson fungi and huge crimson trees. Safer than other Nether biomes due to fewer Ghasts.",
-            "category": "Nether",
-            "temperature": "Hot",
-            "structures": [
-                "Bastion Remnant"
-            ],
-            "mobs": [
-                "Piglin",
-                "Hoglin",
-                "Zombified Piglin"
-            ],
-            "resources": [
-                "Crimson Wood",
-                "Crimson Fungi",
-                "Shroomlight",
-                "Weeping Vines"
-            ]
-        },
-        {
-            "id": "warped_forest",
-            "name": "Warped Forest",
-            "emoji": "🟢",
-            "description": "A teal Nether biome with warped fungi. The safest Nether biome as hostile mobs rarely spawn here.",
-            "category": "Nether",
-            "temperature": "Hot",
-            "structures": [
-                "Bastion Remnant"
-            ],
-            "mobs": [
-                "Enderman",
-                "Strider"
-            ],
-            "resources": [
-                "Warped Wood",
-                "Warped Fungi",
-                "Shroomlight",
-                "Twisting Vines"
+                "Flowers",
+                "Grass",
+                "Bee Nests"
             ],
             "tips": [
-                "Safest Nether biome for building",
-                "Good for Enderman farming",
-                "Striders spawn in lava here"
+                "Beautiful building location",
+                "Abundant bee nests for honey farms"
             ]
         },
         {
-            "id": "soul_sand_valley",
-            "name": "Soul Sand Valley",
-            "emoji": "💀",
-            "description": "A haunted Nether biome filled with soul sand, soul fire, and fossils. Very dangerous due to many Ghasts and Skeletons.",
-            "category": "Nether",
-            "temperature": "Hot",
+            "id": "cherry_grove",
+            "name": "Cherry Grove",
+            "description": "Pink-themed biome with cherry blossom trees. Petals fall from trees.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/90/Cherry_Grove_JE1_BE1.png",
+            "temperature": "Temperate",
             "structures": [
-                "Basalt Pillars",
-                "Fossils",
-                "Nether Fortress"
+                "None"
             ],
             "mobs": [
-                "Ghast",
-                "Skeleton",
-                "Enderman"
+                "Pigs",
+                "Sheep",
+                "Bees"
             ],
             "resources": [
-                "Soul Sand",
-                "Soul Soil",
-                "Bone Block (fossils)",
-                "Basalt"
-            ]
-        },
-        {
-            "id": "the_end",
-            "name": "The End",
-            "emoji": "🟣",
-            "description": "A dark dimension accessed through End Portals. Features the Ender Dragon boss and End Cities with Elytras.",
-            "category": "End",
-            "temperature": "N/A",
-            "structures": [
-                "End Gateway",
-                "End City",
-                "End Ship"
-            ],
-            "mobs": [
-                "Enderman",
-                "Ender Dragon (boss)",
-                "Shulker (End City)"
-            ],
-            "resources": [
-                "End Stone",
-                "Chorus Fruit",
-                "Purpur Block",
-                "Elytra",
-                "Shulker Shell"
+                "Cherry Wood",
+                "Pink Petals"
             ],
             "tips": [
-                "Defeat dragon to access outer islands",
-                "End Cities have best loot including Elytras",
-                "Bring ender pearls or build bridges"
+                "Only source of cherry wood",
+                "Petals can be collected and placed"
             ]
         },
         {
-            "id": "deep_dark",
-            "name": "Deep Dark",
-            "emoji": "🌑",
-            "description": "A dangerous underground biome found in the deepslate layer. Contains sculk blocks and the terrifying Warden.",
-            "category": "Cave",
-            "temperature": "N/A",
+            "id": "grove",
+            "name": "Grove",
+            "description": "Snow-covered spruce forest found at high altitudes.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/01/Grove_JE1_BE1.png",
+            "temperature": "Cold",
             "structures": [
-                "Ancient City"
+                "None"
             ],
             "mobs": [
-                "Warden"
+                "Foxes",
+                "Rabbits",
+                "Wolves"
             ],
             "resources": [
-                "Sculk",
-                "Sculk Sensor",
-                "Sculk Catalyst",
-                "Swift Sneak Enchantment"
+                "Spruce Wood",
+                "Snow",
+                "Powder Snow"
             ],
             "tips": [
-                "Crouch to avoid triggering sculk sensors",
-                "Don't fight the Warden - sneak past it",
-                "Ancient Cities have unique loot and Echo Shards"
+                "Powder snow traps entities",
+                "Wear leather boots to walk on powder snow"
+            ]
+        },
+        {
+            "id": "jagged_peaks",
+            "name": "Jagged Peaks",
+            "description": "Dramatic mountain peaks with steep cliffs and goats.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3b/Jagged_Peaks_JE1_BE1.png",
+            "temperature": "Cold",
+            "structures": [
+                "None"
+            ],
+            "mobs": [
+                "Goats"
+            ],
+            "resources": [
+                "Stone",
+                "Snow",
+                "Ice"
+            ],
+            "tips": [
+                "Goats drop horns when ramming hard blocks",
+                "Highest terrain generation"
+            ]
+        },
+        {
+            "id": "stony_peaks",
+            "name": "Stony Peaks",
+            "description": "Warm mountain variant with exposed stone instead of snow.",
+            "category": "Overworld",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/60/Stony_Peaks_JE1_BE1.png",
+            "temperature": "Temperate",
+            "structures": [
+                "None"
+            ],
+            "mobs": [
+                "Goats"
+            ],
+            "resources": [
+                "Stone",
+                "Calcite",
+                "Smooth Basalt"
+            ],
+            "tips": [
+                "Contains calcite strips",
+                "Good mining spot"
             ]
         },
         {
             "id": "lush_caves",
             "name": "Lush Caves",
-            "emoji": "🌿",
-            "description": "Beautiful underground caves with glow berries, dripleaf, and azalea trees. Home to Axolotls.",
+            "description": "Underground biome filled with moss, glow berries, and axolotls.",
             "category": "Cave",
-            "temperature": "N/A",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/8c/Lush_Caves_JE3.png",
+            "temperature": "Temperate",
             "structures": [
                 "None"
             ],
             "mobs": [
-                "Axolotl",
-                "Glow Squid",
+                "Axolotls",
+                "Glow Squids",
                 "Tropical Fish"
             ],
             "resources": [
-                "Glow Berries",
                 "Moss",
+                "Glow Berries",
                 "Dripleaf",
-                "Azalea",
-                "Spore Blossom"
+                "Clay",
+                "Azalea"
             ],
             "tips": [
                 "Azalea trees on surface indicate lush caves below",
-                "Axolotls help fight underwater mobs",
-                "Great source of food and decoration"
+                "Axolotls help fight aquatic mobs"
+            ]
+        },
+        {
+            "id": "dripstone_caves",
+            "name": "Dripstone Caves",
+            "description": "Underground biome featuring pointed dripstone stalactites and stalagmites.",
+            "category": "Cave",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/97/Dripstone_Caves_JE1_BE1.png",
+            "temperature": "Temperate",
+            "structures": [
+                "None"
+            ],
+            "mobs": [
+                "Standard cave mobs",
+                "Drowned (in pools)"
+            ],
+            "resources": [
+                "Dripstone",
+                "Pointed Dripstone",
+                "Copper Ore"
+            ],
+            "tips": [
+                "Pointed dripstone can hurt you",
+                "Renewable lava source with cauldrons"
+            ]
+        },
+        {
+            "id": "deep_dark",
+            "name": "Deep Dark",
+            "description": "Dangerous underground biome at the deepest levels. Home to the Warden.",
+            "category": "Cave",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/1c/Deep_Dark_JE1_BE1.png",
+            "temperature": "Cold",
+            "structures": [
+                "Ancient Cities"
+            ],
+            "mobs": [
+                "Warden (spawns from sculk shriekers)"
+            ],
+            "resources": [
+                "Sculk Blocks",
+                "Swift Sneak Enchantment",
+                "Echo Shards",
+                "Disc Fragments"
+            ],
+            "tips": [
+                "Crouch to avoid vibrations",
+                "Wool muffles sounds",
+                "Warden has 500 HP - avoid combat"
+            ]
+        },
+        {
+            "id": "nether_wastes",
+            "name": "Nether Wastes",
+            "description": "The classic Nether biome with netherrack and lava seas.",
+            "category": "Nether",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/cf/Nether_Wastes_JE1_BE1.png",
+            "temperature": "Hot",
+            "structures": [
+                "Nether Fortresses",
+                "Bastion Remnants",
+                "Ruined Portals"
+            ],
+            "mobs": [
+                "Piglins",
+                "Zombified Piglins",
+                "Ghasts",
+                "Magma Cubes"
+            ],
+            "resources": [
+                "Netherrack",
+                "Glowstone",
+                "Nether Quartz",
+                "Gold Ore"
+            ],
+            "tips": [
+                "Fire resistance is essential",
+                "Piglins barter for useful items"
+            ]
+        },
+        {
+            "id": "crimson_forest",
+            "name": "Crimson Forest",
+            "description": "Red-colored Nether forest with crimson fungi and hoglins.",
+            "category": "Nether",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/ba/Crimson_Forest_JE1_BE1.png",
+            "temperature": "Hot",
+            "structures": [
+                "Bastion Remnants",
+                "Ruined Portals"
+            ],
+            "mobs": [
+                "Piglins",
+                "Hoglins",
+                "Zombified Piglins"
+            ],
+            "resources": [
+                "Crimson Wood",
+                "Shroomlights",
+                "Weeping Vines"
+            ],
+            "tips": [
+                "Hoglins are food source but hostile",
+                "Crimson wood is fireproof"
+            ]
+        },
+        {
+            "id": "warped_forest",
+            "name": "Warped Forest",
+            "description": "Teal-colored Nether forest with warped fungi. Safest Nether biome.",
+            "category": "Nether",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7b/Warped_Forest_JE1_BE1.png",
+            "temperature": "Hot",
+            "structures": [
+                "Bastion Remnants",
+                "Ruined Portals"
+            ],
+            "mobs": [
+                "Endermen",
+                "Striders"
+            ],
+            "resources": [
+                "Warped Wood",
+                "Shroomlights",
+                "Twisting Vines"
+            ],
+            "tips": [
+                "No hostile mobs except Endermen",
+                "Safest Nether travel route"
+            ]
+        },
+        {
+            "id": "soul_sand_valley",
+            "name": "Soul Sand Valley",
+            "description": "Blue-fire biome filled with soul sand, fossils, and skeletons.",
+            "category": "Nether",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4a/Soul_Sand_Valley_JE1_BE1.png",
+            "temperature": "Hot",
+            "structures": [
+                "Nether Fortresses",
+                "Bastion Remnants"
+            ],
+            "mobs": [
+                "Skeletons",
+                "Ghasts"
+            ],
+            "resources": [
+                "Soul Sand",
+                "Soul Soil",
+                "Bone Blocks",
+                "Nether Fossils"
+            ],
+            "tips": [
+                "Soul sand slows movement",
+                "Soul speed enchantment helps",
+                "Many skeleton spawns"
+            ]
+        },
+        {
+            "id": "basalt_deltas",
+            "name": "Basalt Deltas",
+            "description": "Volcanic Nether biome with basalt pillars and magma cubes.",
+            "category": "Nether",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/ae/Basalt_Deltas_JE1_BE1.png",
+            "temperature": "Hot",
+            "structures": [
+                "None"
+            ],
+            "mobs": [
+                "Magma Cubes",
+                "Striders"
+            ],
+            "resources": [
+                "Basalt",
+                "Blackstone",
+                "Magma Blocks"
+            ],
+            "tips": [
+                "Very dangerous terrain with lava",
+                "Good source of blackstone",
+                "Magma cubes everywhere"
+            ]
+        },
+        {
+            "id": "the_end",
+            "name": "The End",
+            "description": "Dark dimension with the Ender Dragon. Access via End Portal in Stronghold.",
+            "category": "End",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/73/The_End_JE2_BE2.png",
+            "temperature": "Unknown",
+            "structures": [
+                "End Gateway",
+                "Exit Portal",
+                "Obsidian Pillars"
+            ],
+            "mobs": [
+                "Ender Dragon",
+                "Endermen"
+            ],
+            "resources": [
+                "End Stone",
+                "Obsidian",
+                "Dragon Egg"
+            ],
+            "tips": [
+                "Bring beds for damage",
+                "Destroy crystals first",
+                "Jump into portal after victory"
+            ]
+        },
+        {
+            "id": "end_highlands",
+            "name": "End Highlands",
+            "description": "Outer End biome with chorus plants and End Cities.",
+            "category": "End",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/9e/End_Highlands_JE3_BE2.png",
+            "temperature": "Unknown",
+            "structures": [
+                "End Cities",
+                "End Ships"
+            ],
+            "mobs": [
+                "Endermen",
+                "Shulkers"
+            ],
+            "resources": [
+                "End Stone",
+                "Chorus Fruit",
+                "Purpur Blocks",
+                "Elytra"
+            ],
+            "tips": [
+                "End ships have elytra",
+                "Shulker shells for boxes",
+                "Chorus fruit teleports you"
             ]
         }
     ]

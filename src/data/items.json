@@ -3,15 +3,16 @@
         {
             "id": "diamond",
             "name": "Diamond",
-            "emoji": "💎",
-            "description": "Diamonds are one of the rarest and most valuable materials in Minecraft. They are used to craft the strongest tools, weapons, and armor before netherite.",
-            "category": "Materials",
+            "description": "One of the most valuable ores. Used to craft top-tier tools, armor, and the enchanting table.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a7/Diamond_JE3_BE3.png",
             "stackSize": 64,
             "renewable": false,
             "obtainedFrom": [
-                "Diamond Ore",
-                "Deepslate Diamond Ore",
-                "Loot Chests"
+                "Diamond Ore (Y=-64 to 16)",
+                "Buried Treasure",
+                "Shipwrecks",
+                "Temples"
             ],
             "uses": [
                 "Diamond Tools",
@@ -21,151 +22,223 @@
             ]
         },
         {
+            "id": "netherite_ingot",
+            "name": "Netherite Ingot",
+            "description": "The strongest material in the game. Used to upgrade diamond gear to netherite.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/8b/Netherite_Ingot_JE1_BE2.png",
+            "stackSize": 64,
+            "renewable": false,
+            "obtainedFrom": [
+                "Combine 4 Netherite Scraps + 4 Gold Ingots"
+            ],
+            "uses": [
+                "Netherite Gear",
+                "Lodestone"
+            ]
+        },
+        {
+            "id": "netherite_scrap",
+            "name": "Netherite Scrap",
+            "description": "Obtained by smelting ancient debris. Four are needed for one netherite ingot.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/d4/Netherite_Scrap_JE1_BE1.png",
+            "stackSize": 64,
+            "renewable": false,
+            "obtainedFrom": [
+                "Smelting Ancient Debris"
+            ],
+            "uses": [
+                "Netherite Ingot"
+            ]
+        },
+        {
             "id": "iron_ingot",
             "name": "Iron Ingot",
-            "emoji": "🔩",
-            "description": "Iron ingots are a versatile metal used extensively in crafting. They are obtained by smelting iron ore or raw iron in a furnace.",
-            "category": "Materials",
+            "description": "Common metal used for tools, armor, and many crafting recipes.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/1b/Iron_Ingot_JE3_BE2.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Smelting Iron Ore",
-                "Smelting Raw Iron",
-                "Iron Golem drops",
-                "Zombie drops"
+                "Iron Ore",
+                "Iron Golems",
+                "Zombies (rare)"
             ],
             "uses": [
                 "Iron Tools",
                 "Iron Armor",
-                "Anvil",
-                "Hopper",
-                "Rails"
+                "Bucket",
+                "Compass",
+                "Many crafting recipes"
             ]
         },
         {
             "id": "gold_ingot",
             "name": "Gold Ingot",
-            "emoji": "🥇",
-            "description": "Gold ingots are a precious metal with unique properties. Gold tools are fast but fragile, and gold is loved by Piglins in the Nether.",
-            "category": "Materials",
+            "description": "Soft metal with low durability but high enchantability. Used for piglin bartering.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/eb/Gold_Ingot_JE4_BE2.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Smelting Gold Ore",
-                "Smelting Raw Gold",
-                "Piglin Bartering",
-                "Drowned drops"
+                "Gold Ore",
+                "Nether Gold Ore",
+                "Zombified Piglins"
             ],
             "uses": [
                 "Gold Tools",
-                "Gold Armor",
-                "Powered Rails",
-                "Clocks",
-                "Piglin Trading"
+                "Golden Armor",
+                "Golden Apples",
+                "Netherite Ingot",
+                "Piglin Bartering"
             ]
         },
         {
-            "id": "netherite_ingot",
-            "name": "Netherite Ingot",
-            "emoji": "⬛",
-            "description": "Netherite ingots are the most powerful material in Minecraft. They are fire-resistant and used to upgrade diamond gear to netherite.",
-            "category": "Materials",
+            "id": "copper_ingot",
+            "name": "Copper Ingot",
+            "description": "Decorative metal that oxidizes over time. Used for various copper blocks.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/cb/Copper_Ingot_JE2_BE1.png",
             "stackSize": 64,
-            "renewable": false,
+            "renewable": true,
             "obtainedFrom": [
-                "Crafting (4 Netherite Scrap + 4 Gold Ingots)"
+                "Copper Ore",
+                "Drowned"
             ],
             "uses": [
-                "Upgrading Diamond Gear",
-                "Lodestone"
+                "Copper Blocks",
+                "Spyglass",
+                "Lightning Rod",
+                "Brush"
             ]
         },
         {
             "id": "emerald",
             "name": "Emerald",
-            "emoji": "💚",
-            "description": "Emeralds are the currency used for trading with villagers. They are found only in mountain biomes and are quite rare.",
-            "category": "Materials",
+            "description": "Rare gem used as currency for trading with villagers.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/43/Emerald_JE3_BE3.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Emerald Ore",
-                "Trading with Villagers",
-                "Raid Drops"
+                "Emerald Ore (Mountains)",
+                "Villager Trading",
+                "Various Structures"
             ],
             "uses": [
                 "Villager Trading",
                 "Beacon Base",
-                "Decoration"
-            ]
-        },
-        {
-            "id": "redstone",
-            "name": "Redstone Dust",
-            "emoji": "🔴",
-            "description": "Redstone is Minecraft's equivalent of electricity. It is used to create complex contraptions, circuits, and automated machines.",
-            "category": "Redstone",
-            "stackSize": 64,
-            "renewable": true,
-            "obtainedFrom": [
-                "Redstone Ore",
-                "Witch drops",
-                "Trading"
-            ],
-            "uses": [
-                "Redstone Circuits",
-                "Pistons",
-                "Dispensers",
-                "Clocks",
-                "Compasses"
+                "Block of Emerald"
             ]
         },
         {
             "id": "lapis_lazuli",
             "name": "Lapis Lazuli",
-            "emoji": "🔵",
-            "description": "Lapis lazuli is a blue mineral used primarily for enchanting items at an enchanting table. It is also used as a dye.",
-            "category": "Materials",
+            "description": "Blue dye and essential component for enchanting items.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a8/Lapis_Lazuli_JE2_BE2.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Lapis Lazuli Ore",
-                "Trading"
+                "Lapis Ore",
+                "Cleric Villagers"
             ],
             "uses": [
                 "Enchanting",
                 "Blue Dye",
-                "Decoration"
+                "Block of Lapis Lazuli"
+            ]
+        },
+        {
+            "id": "redstone",
+            "name": "Redstone Dust",
+            "description": "Minecraft's equivalent of electricity. Powers contraptions and machines.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4b/Redstone_Dust_JE2_BE2.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Redstone Ore",
+                "Witches",
+                "Cleric Villagers"
+            ],
+            "uses": [
+                "Redstone Circuits",
+                "Clock",
+                "Compass",
+                "Powered Rails",
+                "Many contraptions"
             ]
         },
         {
             "id": "coal",
             "name": "Coal",
-            "emoji": "🖤",
-            "description": "Coal is a common fuel source used in furnaces and for crafting torches. It is one of the first materials players typically gather.",
-            "category": "Fuel",
+            "description": "Primary fuel source. One coal smelts 8 items.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/74/Coal_JE4_BE3.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
                 "Coal Ore",
-                "Wither Skeleton drops"
+                "Wither Skeletons"
             ],
             "uses": [
                 "Fuel",
                 "Torches",
-                "Campfires"
+                "Fire Charge",
+                "Block of Coal"
+            ]
+        },
+        {
+            "id": "charcoal",
+            "name": "Charcoal",
+            "description": "Renewable alternative to coal. Made by smelting wood logs.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c4/Charcoal_JE4_BE2.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Smelting Wood Logs"
+            ],
+            "uses": [
+                "Fuel",
+                "Torches",
+                "Fire Charge"
+            ]
+        },
+        {
+            "id": "stick",
+            "name": "Stick",
+            "description": "Basic crafting component used in almost every tool and weapon.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/44/Stick_JE1_BE1.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Crafted from Planks",
+                "Dead Bushes",
+                "Witches"
+            ],
+            "uses": [
+                "Tools",
+                "Weapons",
+                "Fences",
+                "Signs",
+                "Arrows",
+                "Torches"
             ]
         },
         {
             "id": "blaze_rod",
             "name": "Blaze Rod",
-            "emoji": "🔥",
-            "description": "Blaze rods are dropped by Blazes in the Nether. They are essential for brewing potions and crafting Eyes of Ender.",
-            "category": "Materials",
+            "description": "Dropped by blazes. Essential for brewing and eyes of ender.",
+            "category": "Mob Drop",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/51/Blaze_Rod_JE2_BE1.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Blaze drops"
+                "Blazes (Nether Fortress)"
             ],
             "uses": [
                 "Blaze Powder",
@@ -174,48 +247,112 @@
             ]
         },
         {
+            "id": "blaze_powder",
+            "name": "Blaze Powder",
+            "description": "Fuel for brewing stands and component for eyes of ender.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/d6/Blaze_Powder_JE2_BE1.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Crafted from Blaze Rods"
+            ],
+            "uses": [
+                "Brewing Stand Fuel",
+                "Eyes of Ender",
+                "Fire Charge",
+                "Magma Cream"
+            ]
+        },
+        {
             "id": "ender_pearl",
             "name": "Ender Pearl",
-            "emoji": "🟣",
-            "description": "Ender pearls allow teleportation when thrown. They are also used to craft Eyes of Ender needed to find the End Portal.",
-            "category": "Materials",
+            "description": "Teleports the thrower to where it lands. Used to craft eyes of ender.",
+            "category": "Mob Drop",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/d3/Ender_Pearl_JE3_BE2.png",
             "stackSize": 16,
             "renewable": true,
             "obtainedFrom": [
-                "Enderman drops",
+                "Endermen",
                 "Piglin Bartering"
             ],
             "uses": [
                 "Teleportation",
-                "Eye of Ender",
-                "Ender Chest"
+                "Eyes of Ender"
+            ]
+        },
+        {
+            "id": "eye_of_ender",
+            "name": "Eye of Ender",
+            "description": "Used to locate strongholds and activate End portals.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/dd/Eye_of_Ender_JE2_BE2.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Crafted from Ender Pearl + Blaze Powder"
+            ],
+            "uses": [
+                "Finding Strongholds",
+                "Activating End Portal"
             ]
         },
         {
             "id": "nether_star",
             "name": "Nether Star",
-            "emoji": "⭐",
-            "description": "The nether star is a rare item dropped by the Wither boss. It is used to craft beacons.",
-            "category": "Materials",
+            "description": "Rare drop from the Wither boss. Used to craft beacons.",
+            "category": "Mob Drop",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f5/Nether_Star_JE3_BE2.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Wither Boss drop"
+                "Wither Boss"
             ],
             "uses": [
                 "Beacon"
             ]
         },
         {
-            "id": "ghast_tear",
-            "name": "Ghast Tear",
-            "emoji": "💧",
-            "description": "Ghast tears are dropped by Ghasts in the Nether. They are used in brewing potions of Regeneration.",
-            "category": "Brewing",
+            "id": "heart_of_the_sea",
+            "name": "Heart of the Sea",
+            "description": "Rare treasure found in buried chests. Used to craft conduits.",
+            "category": "Treasure",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/40/Heart_of_the_Sea_JE1_BE1.png",
+            "stackSize": 64,
+            "renewable": false,
+            "obtainedFrom": [
+                "Buried Treasure Chests"
+            ],
+            "uses": [
+                "Conduit"
+            ]
+        },
+        {
+            "id": "nautilus_shell",
+            "name": "Nautilus Shell",
+            "description": "Rare item held by drowned or obtained from fishing. Used for conduits.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/45/Nautilus_Shell_JE1_BE2.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Ghast drops"
+                "Drowned",
+                "Fishing"
+            ],
+            "uses": [
+                "Conduit"
+            ]
+        },
+        {
+            "id": "ghast_tear",
+            "name": "Ghast Tear",
+            "description": "Dropped by ghasts. Used in brewing regeneration potions.",
+            "category": "Mob Drop",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e1/Ghast_Tear_JE2_BE2.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Ghasts"
             ],
             "uses": [
                 "Potion of Regeneration",
@@ -223,76 +360,195 @@
             ]
         },
         {
-            "id": "bone",
-            "name": "Bone",
-            "emoji": "🦴",
-            "description": "Bones are dropped by Skeletons and can be crafted into bone meal for farming or taming wolves.",
-            "category": "Materials",
+            "id": "phantom_membrane",
+            "name": "Phantom Membrane",
+            "description": "Dropped by phantoms. Used for slow falling potions and elytra repair.",
+            "category": "Mob Drop",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/ce/Phantom_Membrane_JE1_BE1.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Skeleton drops",
-                "Fishing"
+                "Phantoms"
             ],
             "uses": [
-                "Bone Meal",
-                "Taming Wolves"
+                "Potion of Slow Falling",
+                "Elytra Repair (Anvil)"
             ]
         },
         {
-            "id": "gunpowder",
-            "name": "Gunpowder",
-            "emoji": "💨",
-            "description": "Gunpowder is an explosive material dropped by Creepers. It is used to craft TNT and firework rockets.",
-            "category": "Materials",
+            "id": "shulker_shell",
+            "name": "Shulker Shell",
+            "description": "Dropped by shulkers in End Cities. Used to craft shulker boxes.",
+            "category": "Mob Drop",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3f/Shulker_Shell_JE2_BE2.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Creeper drops",
-                "Witch drops",
-                "Ghast drops"
+                "Shulkers (End Cities)"
             ],
             "uses": [
-                "TNT",
+                "Shulker Box"
+            ]
+        },
+        {
+            "id": "totem_of_undying",
+            "name": "Totem of Undying",
+            "description": "Prevents death when held in either hand. Single-use life saver.",
+            "category": "Treasure",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/10/Totem_of_Undying_JE2_BE2.png",
+            "stackSize": 1,
+            "renewable": true,
+            "obtainedFrom": [
+                "Evokers"
+            ],
+            "uses": [
+                "Prevents death when held"
+            ]
+        },
+        {
+            "id": "elytra",
+            "name": "Elytra",
+            "description": "Rare wings that allow gliding flight. Found in End Ships.",
+            "category": "Equipment",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f6/Elytra_JE2_BE2.png",
+            "stackSize": 1,
+            "renewable": false,
+            "obtainedFrom": [
+                "End Ships (End Cities)"
+            ],
+            "uses": [
+                "Gliding Flight",
+                "Firework Boost Flight"
+            ]
+        },
+        {
+            "id": "trident",
+            "name": "Trident",
+            "description": "Powerful weapon that can be thrown. Has unique enchantments.",
+            "category": "Weapon",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/6f/Trident_JE1_BE1.png",
+            "stackSize": 1,
+            "renewable": true,
+            "obtainedFrom": [
+                "Drowned (rare drop)"
+            ],
+            "uses": [
+                "Melee Combat",
+                "Ranged Throwing",
+                "Riptide Travel",
+                "Channeling Lightning"
+            ]
+        },
+        {
+            "id": "saddle",
+            "name": "Saddle",
+            "description": "Allows riding of horses, pigs, and striders. Cannot be crafted.",
+            "category": "Equipment",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4e/Saddle_JE3_BE2.png",
+            "stackSize": 1,
+            "renewable": true,
+            "obtainedFrom": [
+                "Dungeons",
+                "Temples",
+                "Fishing",
+                "Ravagers",
+                "Villager Trading"
+            ],
+            "uses": [
+                "Riding Horses",
+                "Riding Pigs (with carrot on stick)",
+                "Riding Striders"
+            ]
+        },
+        {
+            "id": "name_tag",
+            "name": "Name Tag",
+            "description": "Names mobs to prevent despawning. Cannot be crafted.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/5/5d/Name_Tag_JE2_BE2.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Dungeons",
+                "Mineshafts",
+                "Fishing",
+                "Villager Trading"
+            ],
+            "uses": [
+                "Naming Mobs",
+                "Preventing Mob Despawn",
+                "Easter Eggs (Dinnerbone, jeb_)"
+            ]
+        },
+        {
+            "id": "lead",
+            "name": "Lead",
+            "description": "Leashes mobs to you or fences. Useful for transporting animals.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/33/Lead_JE3_BE2.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Crafted from String + Slimeball",
+                "Wandering Traders"
+            ],
+            "uses": [
+                "Leashing Mobs",
+                "Creating Mob Caravans",
+                "Tying to Fences"
+            ]
+        },
+        {
+            "id": "book",
+            "name": "Book",
+            "description": "Crafted from paper and leather. Used for bookshelves and enchanting.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f5/Book_JE2_BE2.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Crafted from Paper + Leather",
+                "Libraries"
+            ],
+            "uses": [
+                "Bookshelf",
+                "Book and Quill",
+                "Enchanted Book"
+            ]
+        },
+        {
+            "id": "paper",
+            "name": "Paper",
+            "description": "Made from sugar cane. Used for books, maps, and fireworks.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/6/65/Paper_JE2_BE2.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Crafted from Sugar Cane",
+                "Shipwrecks"
+            ],
+            "uses": [
+                "Books",
+                "Maps",
                 "Firework Rockets",
-                "Fire Charges",
-                "Splash Potions"
-            ]
-        },
-        {
-            "id": "string",
-            "name": "String",
-            "emoji": "🧵",
-            "description": "String is dropped by Spiders and can be found in webs. It is used for crafting bows, fishing rods, and wool.",
-            "category": "Materials",
-            "stackSize": 64,
-            "renewable": true,
-            "obtainedFrom": [
-                "Spider drops",
-                "Cobwebs",
-                "Fishing"
-            ],
-            "uses": [
-                "Bow",
-                "Fishing Rod",
-                "Wool",
-                "Leads",
-                "Crossbow"
+                "Banner Patterns"
             ]
         },
         {
             "id": "leather",
             "name": "Leather",
-            "emoji": "🟤",
-            "description": "Leather is obtained from cows and used to craft leather armor, books, and item frames.",
-            "category": "Materials",
+            "description": "Dropped by cows and horses. Used for armor and books.",
+            "category": "Mob Drop",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/bb/Leather_JE2_BE2.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Cow drops",
-                "Horse drops",
-                "Llama drops",
-                "Hoglin drops"
+                "Cows",
+                "Horses",
+                "Llamas",
+                "Hoglins",
+                "Fishing"
             ],
             "uses": [
                 "Leather Armor",
@@ -301,31 +557,56 @@
             ]
         },
         {
-            "id": "feather",
-            "name": "Feather",
-            "emoji": "🪶",
-            "description": "Feathers are dropped by chickens and parrots. They are essential for crafting arrows.",
-            "category": "Materials",
+            "id": "string",
+            "name": "String",
+            "description": "Dropped by spiders. Used for bows, fishing rods, and wool.",
+            "category": "Mob Drop",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c9/String_JE2_BE2.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Chicken drops"
+                "Spiders",
+                "Cats",
+                "Striders",
+                "Cobwebs"
+            ],
+            "uses": [
+                "Bow",
+                "Fishing Rod",
+                "Leads",
+                "Wool",
+                "Scaffolding"
+            ]
+        },
+        {
+            "id": "feather",
+            "name": "Feather",
+            "description": "Dropped by chickens and parrots. Used for arrows and books.",
+            "category": "Mob Drop",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f5/Feather_JE3_BE2.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Chickens",
+                "Parrots"
             ],
             "uses": [
                 "Arrows",
-                "Book and Quill"
+                "Book and Quill",
+                "Firework Stars"
             ]
         },
         {
             "id": "flint",
             "name": "Flint",
-            "emoji": "🪨",
-            "description": "Flint is obtained from mining gravel. It is used to craft arrows and flint and steel.",
-            "category": "Materials",
+            "description": "Obtained from breaking gravel. Used for arrows and flint and steel.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b7/Flint_JE2_BE2.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Gravel drops"
+                "Gravel (10% chance)",
+                "Fletcher Villagers"
             ],
             "uses": [
                 "Arrows",
@@ -333,159 +614,306 @@
             ]
         },
         {
-            "id": "slime_ball",
-            "name": "Slime Ball",
-            "emoji": "🟢",
-            "description": "Slime balls are dropped by Slimes. They are used to craft sticky pistons, leads, and slime blocks.",
-            "category": "Materials",
+            "id": "gunpowder",
+            "name": "Gunpowder",
+            "description": "Dropped by creepers. Used for TNT and splash potions.",
+            "category": "Mob Drop",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/a9/Gunpowder_JE2_BE2.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Slime drops",
-                "Baby Pandas sneezing"
+                "Creepers",
+                "Witches",
+                "Ghasts"
+            ],
+            "uses": [
+                "TNT",
+                "Splash Potions",
+                "Firework Rockets",
+                "Fire Charge"
+            ]
+        },
+        {
+            "id": "slimeball",
+            "name": "Slimeball",
+            "description": "Dropped by slimes. Used for sticky pistons and leads.",
+            "category": "Mob Drop",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f6/Slimeball_JE2_BE2.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Slimes",
+                "Baby Pandas (when sneezing)"
             ],
             "uses": [
                 "Sticky Piston",
-                "Leads",
+                "Lead",
                 "Slime Block",
                 "Magma Cream"
             ]
         },
         {
-            "id": "book",
-            "name": "Book",
-            "emoji": "📕",
-            "description": "Books are crafted from paper and leather. They are used for bookshelves, enchanting, and written books.",
-            "category": "Materials",
+            "id": "honeycomb",
+            "name": "Honeycomb",
+            "description": "Harvested from bee nests using shears. Used for candles and waxing.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/3/3e/Honeycomb_JE2_BE2.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Crafting (Paper + Leather)"
+                "Bee Nests/Hives (with Shears)"
             ],
             "uses": [
-                "Bookshelf",
-                "Enchanting Table",
-                "Book and Quill"
-            ],
-            "recipe": {
-                "type": "shapeless",
-                "ingredients": [
-                    "paper",
-                    "paper",
-                    "paper",
-                    "leather"
-                ],
-                "result": {
-                    "item": "book",
-                    "count": 1
-                }
-            }
+                "Beehive",
+                "Candles",
+                "Waxing Copper Blocks",
+                "Honeycomb Block"
+            ]
         },
         {
-            "id": "eye_of_ender",
-            "name": "Eye of Ender",
-            "emoji": "👁️",
-            "description": "Eyes of Ender are crafted items used to locate and activate End Portals to reach The End dimension.",
-            "category": "Materials",
-            "stackSize": 64,
+            "id": "honey_bottle",
+            "name": "Honey Bottle",
+            "description": "Food item that removes poison. Collected from full bee hives.",
+            "category": "Food",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/98/Honey_Bottle_JE1_BE2.png",
+            "stackSize": 16,
             "renewable": true,
             "obtainedFrom": [
-                "Crafting (Ender Pearl + Blaze Powder)"
+                "Bee Nests/Hives (with Bottle)"
             ],
             "uses": [
-                "Finding Strongholds",
-                "Activating End Portal"
-            ],
-            "recipe": {
-                "type": "shapeless",
-                "ingredients": [
-                    "ender_pearl",
-                    "blaze_powder"
-                ],
-                "result": {
-                    "item": "eye_of_ender",
-                    "count": 1
-                }
-            }
+                "Food (removes Poison)",
+                "Honey Block",
+                "Sugar"
+            ]
         },
         {
-            "id": "clock",
-            "name": "Clock",
-            "emoji": "🕐",
-            "description": "A clock displays the current in-game time using the sun and moon position. Useful when underground or in the Nether.",
-            "category": "Tools",
+            "id": "bone",
+            "name": "Bone",
+            "description": "Dropped by skeletons. Used for bone meal and taming wolves.",
+            "category": "Mob Drop",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/47/Bone_JE3_BE3.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Crafting"
+                "Skeletons",
+                "Wither Skeletons",
+                "Skeleton Horses",
+                "Fishing"
             ],
             "uses": [
-                "Telling Time"
-            ],
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        null,
-                        "gold_ingot",
-                        null
-                    ],
-                    [
-                        "gold_ingot",
-                        "redstone",
-                        "gold_ingot"
-                    ],
-                    [
-                        null,
-                        "gold_ingot",
-                        null
-                    ]
-                ],
-                "result": {
-                    "item": "clock",
-                    "count": 1
-                }
-            }
+                "Bone Meal",
+                "Bone Block",
+                "Taming Wolves"
+            ]
         },
         {
-            "id": "compass",
-            "name": "Compass",
-            "emoji": "🧭",
-            "description": "A compass points toward the world spawn point. It can be combined with a lodestone to point to that block instead.",
-            "category": "Tools",
+            "id": "bone_meal",
+            "name": "Bone Meal",
+            "description": "Fertilizer that grows crops instantly. Also a white dye.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/d2/Bone_Meal_JE3_BE3.png",
             "stackSize": 64,
             "renewable": true,
             "obtainedFrom": [
-                "Crafting"
+                "Bones",
+                "Composters",
+                "Bone Blocks"
             ],
             "uses": [
-                "Navigation",
-                "Locator Maps"
+                "Crop Growth",
+                "Tree Sapling Growth",
+                "White Dye",
+                "Coral Growth"
+            ]
+        },
+        {
+            "id": "golden_apple",
+            "name": "Golden Apple",
+            "description": "Powerful consumable that grants Regeneration and Absorption.",
+            "category": "Food",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/0a/Golden_Apple_JE2_BE2.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Crafted from Apple + Gold Ingots",
+                "Various Structure Chests"
             ],
-            "recipe": {
-                "type": "shaped",
-                "pattern": [
-                    [
-                        null,
-                        "iron_ingot",
-                        null
-                    ],
-                    [
-                        "iron_ingot",
-                        "redstone",
-                        "iron_ingot"
-                    ],
-                    [
-                        null,
-                        "iron_ingot",
-                        null
-                    ]
-                ],
-                "result": {
-                    "item": "compass",
-                    "count": 1
-                }
-            }
+            "uses": [
+                "Food",
+                "Curing Zombie Villagers",
+                "Breeding Horses"
+            ]
+        },
+        {
+            "id": "enchanted_golden_apple",
+            "name": "Enchanted Golden Apple",
+            "description": "Ultra-rare apple with massive buffs. Cannot be crafted.",
+            "category": "Food",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/49/Enchanted_Golden_Apple_JE2_BE2.gif",
+            "stackSize": 64,
+            "renewable": false,
+            "obtainedFrom": [
+                "Ancient City",
+                "Mineshaft",
+                "Desert Temple",
+                "Dungeon",
+                "Woodland Mansion"
+            ],
+            "uses": [
+                "Regeneration V",
+                "Absorption IV",
+                "Fire Resistance",
+                "Resistance"
+            ]
+        },
+        {
+            "id": "glow_berries",
+            "name": "Glow Berries",
+            "description": "Edible berries that emit light. Grow on cave vines in lush caves.",
+            "category": "Food",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f4/Glow_Berries_JE1_BE1.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Cave Vines (Lush Caves)",
+                "Mineshaft Chests"
+            ],
+            "uses": [
+                "Food",
+                "Planting Cave Vines",
+                "Fox Breeding"
+            ]
+        },
+        {
+            "id": "chorus_fruit",
+            "name": "Chorus Fruit",
+            "description": "End food that teleports you randomly when eaten.",
+            "category": "Food",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/12/Chorus_Fruit_JE2_BE2.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Chorus Plants (End)"
+            ],
+            "uses": [
+                "Food",
+                "Random Teleportation",
+                "Popped Chorus Fruit (smelted)"
+            ]
+        },
+        {
+            "id": "echo_shard",
+            "name": "Echo Shard",
+            "description": "Rare item found in Ancient Cities. Used to craft recovery compasses.",
+            "category": "Treasure",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/1c/Echo_Shard_JE1_BE1.png",
+            "stackSize": 64,
+            "renewable": false,
+            "obtainedFrom": [
+                "Ancient City Chests"
+            ],
+            "uses": [
+                "Recovery Compass"
+            ]
+        },
+        {
+            "id": "disc_fragment",
+            "name": "Disc Fragment",
+            "description": "Rare fragment found in Ancient Cities. 9 fragments make a music disc.",
+            "category": "Treasure",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/d/df/Disc_Fragment_5_JE1_BE1.png",
+            "stackSize": 64,
+            "renewable": false,
+            "obtainedFrom": [
+                "Ancient City Chests"
+            ],
+            "uses": [
+                "Music Disc 5"
+            ]
+        },
+        {
+            "id": "amethyst_shard",
+            "name": "Amethyst Shard",
+            "description": "Obtained from amethyst clusters. Used for tinted glass and spyglasses.",
+            "category": "Material",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b0/Amethyst_Shard_JE3_BE1.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Amethyst Clusters (Amethyst Geodes)"
+            ],
+            "uses": [
+                "Spyglass",
+                "Tinted Glass",
+                "Calibrated Sculk Sensor",
+                "Block of Amethyst"
+            ]
+        },
+        {
+            "id": "spyglass",
+            "name": "Spyglass",
+            "description": "Allows zooming in to see distant objects clearly.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4d/Spyglass_JE2_BE1.png",
+            "stackSize": 1,
+            "renewable": true,
+            "obtainedFrom": [
+                "Crafted from Amethyst Shard + Copper Ingots"
+            ],
+            "uses": [
+                "Zooming In",
+                "Observing Distant Objects"
+            ]
+        },
+        {
+            "id": "goat_horn",
+            "name": "Goat Horn",
+            "description": "Dropped when goats ram hard blocks. Makes horn sounds when used.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ef/Goat_Horn_JE2_BE1.png",
+            "stackSize": 64,
+            "renewable": true,
+            "obtainedFrom": [
+                "Goats ramming hard blocks",
+                "Pillager Outposts"
+            ],
+            "uses": [
+                "Making Sounds",
+                "8 Different Horn Types"
+            ]
+        },
+        {
+            "id": "brush",
+            "name": "Brush",
+            "description": "Used for archaeology to extract items from suspicious sand and gravel.",
+            "category": "Tool",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e5/Brush_JE3_BE2.png",
+            "stackSize": 1,
+            "renewable": true,
+            "obtainedFrom": [
+                "Crafted from Feather + Copper Ingot + Stick"
+            ],
+            "uses": [
+                "Extracting Items from Suspicious Blocks",
+                "Finding Pottery Sherds"
+            ]
+        },
+        {
+            "id": "recovery_compass",
+            "name": "Recovery Compass",
+            "description": "Points to your last death location. Requires echo shards to craft.",
+            "category": "Utility",
+            "imageUrl": "https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/97/Recovery_Compass_JE1_BE1.gif",
+            "stackSize": 1,
+            "renewable": false,
+            "obtainedFrom": [
+                "Crafted from 8 Echo Shards + Compass"
+            ],
+            "uses": [
+                "Finding Death Location",
+                "Item Recovery"
+            ]
         }
     ]
 }

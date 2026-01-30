@@ -1,13 +1,14 @@
 .main {
-    margin-left: 260px;
+    margin-left: 240px;
     min-height: 100vh;
-    padding: 32px;
+    padding: var(--space-xl);
+    max-width: 1400px;
 }
 
 @media (max-width: 768px) {
     .main {
         margin-left: 0;
-        margin-top: 60px;
-        padding: 20px;
+        margin-top: 56px;
+        padding: var(--space-lg);
     }
 }

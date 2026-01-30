@@ -1,15 +1,16 @@
 .container {
-    max-width: 900px;
+    max-width: 800px;
 }
 
 .backLink {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--space-xs);
     color: var(--text-secondary);
     text-decoration: none;
-    font-size: 0.875rem;
-    margin-bottom: 24px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: var(--space-lg);
     transition: color var(--transition-fast);
 }
 
@@ -20,26 +21,32 @@
 .header {
     display: flex;
     align-items: flex-start;
-    gap: 24px;
-    margin-bottom: 32px;
-    padding-bottom: 32px;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-xl);
     border-bottom: 1px solid var(--border-color);
 }
 
 .iconWrapper {
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(135deg, var(--bg-hover) 0%, var(--bg-card) 100%);
-    border-radius: var(--radius-xl);
+    width: 80px;
+    height: 80px;
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
 }
 
 .emoji {
-    font-size: 4rem;
+    font-size: 2.5rem;
+}
+
+.itemImage {
+    width: 56px;
+    height: 56px;
+    image-rendering: pixelated;
 }
 
 .titleArea {
@@ -47,62 +54,68 @@
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin: 0 0 8px 0;
+    margin: 0 0 var(--space-sm) 0;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
 }
 
 .badge {
-    font-size: 0.75rem;
-    padding: 4px 12px;
-    background: var(--accent);
-    color: #1a1a2e;
-    border-radius: 9999px;
+    font-size: 0.65rem;
+    padding: 4px 10px;
+    background: var(--bg-elevated);
+    color: var(--text-muted);
+    border-radius: 4px;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
 }
 
 .description {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--text-secondary);
     line-height: 1.7;
     margin: 0;
 }
 
 .section {
-    margin-bottom: 32px;
+    margin-bottom: var(--space-xl);
 }
 
 .sectionTitle {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 1.25rem;
+    gap: var(--space-sm);
+    font-size: 0.9rem;
     font-weight: 600;
-    margin: 0 0 16px 0;
+    margin: 0 0 var(--space-md) 0;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .sectionIcon {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .statsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: var(--space-sm);
 }
 
 .statCard {
-    padding: 16px;
+    padding: var(--space-md);
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
 }
 
 .statLabel {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -110,7 +123,7 @@
 }
 
 .statValue {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: var(--text-primary);
 }
@@ -118,41 +131,41 @@
 .list {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: var(--space-sm);
 }
 
 .listItem {
-    padding: 8px 14px;
+    padding: var(--space-sm) var(--space-md);
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     color: var(--text-secondary);
 }
 
 .tipsList {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: var(--space-sm);
 }
 
 .tip {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
-    padding: 16px;
+    gap: var(--space-sm);
+    padding: var(--space-md);
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
 }
 
 .tipIcon {
-    font-size: 1.25rem;
+    font-size: 1rem;
     flex-shrink: 0;
 }
 
 .tipText {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--text-secondary);
     line-height: 1.5;
     margin: 0;
@@ -160,22 +173,22 @@
 
 .notFound {
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px var(--space-lg);
 }
 
 .notFoundEmoji {
-    font-size: 4rem;
-    margin-bottom: 16px;
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
 }
 
 .notFoundTitle {
-    font-size: 1.5rem;
-    margin-bottom: 8px;
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
 }
 
 .notFoundText {
     color: var(--text-muted);
-    margin-bottom: 24px;
+    margin-bottom: var(--space-lg);
 }
 
 @media (max-width: 768px) {
@@ -187,7 +200,6 @@
 
     .title {
         justify-content: center;
-        flex-wrap: wrap;
     }
 
     .statsGrid {

@@ -48,7 +48,7 @@ export default function BiomesPage() {
                         key={biome.id}
                         id={biome.id}
                         name={biome.name}
-                        emoji={biome.emoji}
+                        imageUrl={biome.imageUrl}
                         description={biome.description}
                         category={biome.category}
                         href={`/biomes/${biome.id}`}

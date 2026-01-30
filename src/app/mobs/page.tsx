@@ -48,11 +48,11 @@ export default function MobsPage() {
                         key={mob.id}
                         id={mob.id}
                         name={mob.name}
-                        emoji={mob.emoji}
+                        imageUrl={mob.imageUrl}
                         description={mob.description}
                         category={mob.category}
                         href={`/mobs/${mob.id}`}
-                        badge={mob.category === 'Boss' ? '⚠️ BOSS' : undefined}
+                        badge={mob.category === 'Boss' ? 'BOSS' : undefined}
                     />
                 ))}
             </div>

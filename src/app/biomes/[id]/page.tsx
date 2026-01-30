@@ -1,11 +1,19 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import biomesData from '@/data/biomes.json';
-import styles from '../../detail.module.css';
+import styles from '@/app/detail.module.css';
 
 interface PageProps {
     params: Promise<{ id: string }>;
 }
+
+// Category emoji mapping
+const categoryEmojis: Record<string, string> = {
+    'Overworld': '🌍',
+    'Nether': '🔥',
+    'End': '🌌',
+    'Cave': '🕳️',
+};
 
 export async function generateStaticParams() {
     return biomesData.biomes.map((biome) => ({
@@ -21,6 +29,8 @@ export default async function BiomeDetailPage({ params }: PageProps) {
         notFound();
     }
 
+    const emoji = categoryEmojis[biome.category] || '🌲';
+
     return (
         <div className={styles.container}>
             <Link href="/biomes" className={styles.backLink}>
@@ -29,7 +39,7 @@ export default async function BiomeDetailPage({ params }: PageProps) {
 
             <header className={styles.header}>
                 <div className={styles.iconWrapper}>
-                    <span className={styles.emoji}>{biome.emoji}</span>
+                    <span className={styles.emoji}>{emoji}</span>
                 </div>
                 <div className={styles.titleArea}>
                     <h1 className={styles.title}>
@@ -94,20 +104,6 @@ export default async function BiomeDetailPage({ params }: PageProps) {
                     <div className={styles.list}>
                         {biome.resources.map((resource, idx) => (
                             <span key={idx} className={styles.listItem}>{resource}</span>
-                        ))}
-                    </div>
-                </section>
-            )}
-
-            {biome.variants && biome.variants.length > 0 && (
-                <section className={styles.section}>
-                    <h2 className={styles.sectionTitle}>
-                        <span className={styles.sectionIcon}>🔄</span>
-                        Variants
-                    </h2>
-                    <div className={styles.list}>
-                        {biome.variants.map((variant, idx) => (
-                            <span key={idx} className={styles.listItem}>{variant}</span>
                         ))}
                     </div>
                 </section>

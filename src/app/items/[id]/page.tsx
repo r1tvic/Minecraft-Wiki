@@ -1,12 +1,23 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import itemsData from '@/data/items.json';
-import CraftingTable from '@/components/CraftingTable';
-import styles from '../../detail.module.css';
+import styles from '@/app/detail.module.css';
 
 interface PageProps {
     params: Promise<{ id: string }>;
 }
+
+// Category emoji mapping
+const categoryEmojis: Record<string, string> = {
+    'Material': '💎',
+    'Mob Drop': '🎁',
+    'Treasure': '👑',
+    'Food': '🍖',
+    'Equipment': '🛡️',
+    'Tool': '🔧',
+    'Weapon': '⚔️',
+    'Utility': '⚙️',
+};
 
 export async function generateStaticParams() {
     return itemsData.items.map((item) => ({
@@ -22,6 +33,8 @@ export default async function ItemDetailPage({ params }: PageProps) {
         notFound();
     }
 
+    const emoji = categoryEmojis[item.category] || '💎';
+
     return (
         <div className={styles.container}>
             <Link href="/items" className={styles.backLink}>
@@ -30,7 +43,7 @@ export default async function ItemDetailPage({ params }: PageProps) {
 
             <header className={styles.header}>
                 <div className={styles.iconWrapper}>
-                    <span className={styles.emoji}>{item.emoji}</span>
+                    <span className={styles.emoji}>{emoji}</span>
                 </div>
                 <div className={styles.titleArea}>
                     <h1 className={styles.title}>
@@ -53,7 +66,7 @@ export default async function ItemDetailPage({ params }: PageProps) {
                     </div>
                     <div className={styles.statCard}>
                         <div className={styles.statLabel}>Renewable</div>
-                        <div className={styles.statValue}>{item.renewable ? 'Yes ✓' : 'No ✗'}</div>
+                        <div className={styles.statValue}>{item.renewable ? 'Yes' : 'No'}</div>
                     </div>
                 </div>
             </section>
@@ -61,7 +74,7 @@ export default async function ItemDetailPage({ params }: PageProps) {
             {item.obtainedFrom && item.obtainedFrom.length > 0 && (
                 <section className={styles.section}>
                     <h2 className={styles.sectionTitle}>
-                        <span className={styles.sectionIcon}>📥</span>
+                        <span className={styles.sectionIcon}>📍</span>
                         How to Obtain
                     </h2>
                     <div className={styles.list}>
@@ -75,7 +88,7 @@ export default async function ItemDetailPage({ params }: PageProps) {
             {item.uses && item.uses.length > 0 && (
                 <section className={styles.section}>
                     <h2 className={styles.sectionTitle}>
-                        <span className={styles.sectionIcon}>🔧</span>
+                        <span className={styles.sectionIcon}>⚒️</span>
                         Uses
                     </h2>
                     <div className={styles.list}>
@@ -83,16 +96,6 @@ export default async function ItemDetailPage({ params }: PageProps) {
                             <span key={idx} className={styles.listItem}>{use}</span>
                         ))}
                     </div>
-                </section>
-            )}
-
-            {item.recipe && (
-                <section className={styles.section}>
-                    <h2 className={styles.sectionTitle}>
-                        <span className={styles.sectionIcon}>🛠️</span>
-                        Crafting Recipe
-                    </h2>
-                    <CraftingTable recipe={item.recipe} />
                 </section>
             )}
         </div>

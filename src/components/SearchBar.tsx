@@ -6,7 +6,6 @@ import styles from './SearchBar.module.css';
 // Import data
 import blocksData from '@/data/blocks.json';
 import itemsData from '@/data/items.json';
-import weaponsToolsData from '@/data/weapons-tools.json';
 import mobsData from '@/data/mobs.json';
 import biomesData from '@/data/biomes.json';
 import potionsData from '@/data/potions.json';
@@ -14,14 +13,25 @@ import potionsData from '@/data/potions.json';
 interface SearchResult {
     id: string;
     name: string;
-    emoji: string;
     category: string;
-    type: 'blocks' | 'items' | 'weapons-tools' | 'mobs' | 'biomes' | 'potions';
+    type: 'blocks' | 'items' | 'mobs' | 'biomes' | 'potions';
 }
 
 interface SearchBarProps {
     onResultClick?: (result: SearchResult) => void;
 }
+
+// Type emoji based on category
+const getCategoryEmoji = (type: string): string => {
+    switch (type) {
+        case 'blocks': return '🧱';
+        case 'items': return '💎';
+        case 'mobs': return '🧟';
+        case 'biomes': return '🌲';
+        case 'potions': return '🧪';
+        default: return '📦';
+    }
+};
 
 export default function SearchBar({ onResultClick }: SearchBarProps) {
     const [query, setQuery] = useState('');
@@ -32,27 +42,23 @@ export default function SearchBar({ onResultClick }: SearchBarProps) {
         const items: SearchResult[] = [];
 
         blocksData.blocks.forEach(b => items.push({
-            id: b.id, name: b.name, emoji: b.emoji, category: b.category, type: 'blocks'
+            id: b.id, name: b.name, category: b.category, type: 'blocks'
         }));
 
         itemsData.items.forEach(i => items.push({
-            id: i.id, name: i.name, emoji: i.emoji, category: i.category, type: 'items'
-        }));
-
-        weaponsToolsData.weapons_and_tools.forEach(w => items.push({
-            id: w.id, name: w.name, emoji: w.emoji, category: w.category, type: 'weapons-tools'
+            id: i.id, name: i.name, category: i.category, type: 'items'
         }));
 
         mobsData.mobs.forEach(m => items.push({
-            id: m.id, name: m.name, emoji: m.emoji, category: m.category, type: 'mobs'
+            id: m.id, name: m.name, category: m.category, type: 'mobs'
         }));
 
         biomesData.biomes.forEach(b => items.push({
-            id: b.id, name: b.name, emoji: b.emoji, category: b.category, type: 'biomes'
+            id: b.id, name: b.name, category: b.category, type: 'biomes'
         }));
 
         potionsData.potions.forEach(p => items.push({
-            id: p.id, name: p.name, emoji: p.emoji, category: p.category, type: 'potions'
+            id: p.id, name: p.name, category: p.category, type: 'potions'
         }));
 
         return items;
@@ -84,19 +90,18 @@ export default function SearchBar({ onResultClick }: SearchBarProps) {
     const typeLabels: Record<string, string> = {
         'blocks': 'Block',
         'items': 'Item',
-        'weapons-tools': 'Weapon/Tool',
         'mobs': 'Mob',
         'biomes': 'Biome',
         'potions': 'Potion',
     };
 
     return (
-        <div className={styles.container}>
-            <div className={`${styles.searchWrapper} ${isFocused ? styles.focused : ''}`}>
+        <div className={styles.searchContainer}>
+            <div className={styles.inputWrapper}>
                 <span className={styles.searchIcon}>🔍</span>
                 <input
                     type="text"
-                    className={styles.input}
+                    className={styles.searchInput}
                     placeholder="Search blocks, items, mobs..."
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
@@ -115,14 +120,14 @@ export default function SearchBar({ onResultClick }: SearchBarProps) {
             </div>
 
             {isFocused && results.length > 0 && (
-                <div className={styles.dropdown}>
+                <div className={styles.resultsDropdown}>
                     {results.map((result) => (
                         <button
                             key={`${result.type}-${result.id}`}
                             className={styles.resultItem}
                             onClick={() => handleResultClick(result)}
                         >
-                            <span className={styles.resultEmoji}>{result.emoji}</span>
+                            <span className={styles.resultEmoji}>{getCategoryEmoji(result.type)}</span>
                             <div className={styles.resultInfo}>
                                 <span className={styles.resultName}>{result.name}</span>
                                 <span className={styles.resultType}>{typeLabels[result.type]}</span>
@@ -133,10 +138,9 @@ export default function SearchBar({ onResultClick }: SearchBarProps) {
             )}
 
             {isFocused && query && results.length === 0 && (
-                <div className={styles.dropdown}>
+                <div className={styles.resultsDropdown}>
                     <div className={styles.noResults}>
-                        <span>😕</span>
-                        <span>No results found for &quot;{query}&quot;</span>
+                        No results found for &quot;{query}&quot;
                     </div>
                 </div>
             )}

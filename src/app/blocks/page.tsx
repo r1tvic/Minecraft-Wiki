@@ -48,11 +48,10 @@ export default function BlocksPage() {
                         key={block.id}
                         id={block.id}
                         name={block.name}
-                        emoji={block.emoji}
+                        imageUrl={block.imageUrl}
                         description={block.description}
                         category={block.category}
                         href={`/blocks/${block.id}`}
-                        badge={block.recipe ? 'Craftable' : undefined}
                     />
                 ))}
             </div>
